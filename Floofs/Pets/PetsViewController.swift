@@ -1,16 +1,19 @@
 //
-// CatsViewController.swift
+// PetsViewController.swift
 // Floofs
 //
 
 import UIKit
-import CatsAPI
 
-final class CatsViewController: UITableViewController {
+final class PetsViewController: UITableViewController {
 
-    private let dataSource: CatsDataSource
+    // MARK: - Properties
 
-    init(dataSource: CatsDataSource) {
+    private let dataSource: any PetsDataSource
+
+    // MARK: - Constructor
+
+    init(dataSource: any PetsDataSource) {
         self.dataSource = dataSource
         super.init(nibName: nil, bundle: nil)
     }
@@ -20,13 +23,15 @@ final class CatsViewController: UITableViewController {
         fatalError("init(coder:) has not been implemented")
     }
 
+    // MARK - API
+
     override func viewDidLoad() {
         super.viewDidLoad()
         tableView.register(UITableViewCell.self, forCellReuseIdentifier: "cell")
         tableView.dataSource = self
         tableView.delegate = self
 
-        dataSource.fetchCats { [weak self] success in
+        dataSource.fetchPets { [weak self] success in
             if success {
                 self?.tableView.reloadData()
             }
@@ -36,23 +41,21 @@ final class CatsViewController: UITableViewController {
     override func tableView(_ tableView: UITableView, cellForRowAt indexPath: IndexPath) -> UITableViewCell {
         // Temporarily:
         let cell = tableView.dequeueReusableCell(withIdentifier: "cell", for: indexPath)
-        let cat = dataSource.cats[indexPath.row]
+        let pet = dataSource.pets[indexPath.row]
         var cellContext = cell.defaultContentConfiguration()
-        cellContext.text = cat.name
-        cellContext.secondaryText = "Images count: \(cat.images.urls.count)"
+        cellContext.text = pet.displayName
+        cellContext.secondaryText = "Images count: \(pet.imageURLs.count)"
         cell.contentConfiguration = cellContext
         return cell
     }
 
     override func tableView(_ tableView: UITableView, numberOfRowsInSection section: Int) -> Int {
-        dataSource.cats.count
+        dataSource.pets.count
     }
 
     override func tableView(_ tableView: UITableView, didSelectRowAt indexPath: IndexPath) {
         tableView.deselectRow(at: indexPath, animated: true)
-
-        let cat = dataSource.cats[indexPath.row]
-        dataSource.fetchImages(cat: cat) { [weak self] success in
+        dataSource.fetchImages(petIndex: indexPath.row) { [weak self] success in
             if success {
                 self?.tableView.reloadRows(at: [indexPath], with: .none)
             }

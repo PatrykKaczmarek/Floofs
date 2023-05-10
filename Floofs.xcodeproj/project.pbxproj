@@ -20,12 +20,10 @@
 		5E68DE2A2A0BBAC200582122 /* CatsAPIVersion.swift in Sources */ = {isa = PBXBuildFile; fileRef = 5E68DE232A0BBAC200582122 /* CatsAPIVersion.swift */; };
 		5E68DE2B2A0BBAC200582122 /* CatsAPIClient.swift in Sources */ = {isa = PBXBuildFile; fileRef = 5E68DE242A0BBAC200582122 /* CatsAPIClient.swift */; };
 		5E68DE2D2A0BBB3A00582122 /* Cat.swift in Sources */ = {isa = PBXBuildFile; fileRef = 5E68DE2C2A0BBB3A00582122 /* Cat.swift */; };
-		5E68DE332A0BBE6900582122 /* CatsViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 5E68DE322A0BBE6900582122 /* CatsViewController.swift */; };
 		5E68DE352A0BC73A00582122 /* Tab.swift in Sources */ = {isa = PBXBuildFile; fileRef = 5E68DE342A0BC73A00582122 /* Tab.swift */; };
 		5E68DE372A0BC74200582122 /* TabConfigurable.swift in Sources */ = {isa = PBXBuildFile; fileRef = 5E68DE362A0BC74200582122 /* TabConfigurable.swift */; };
 		5E68DE3B2A0BC8F600582122 /* AppConfig.swift in Sources */ = {isa = PBXBuildFile; fileRef = 5E68DE3A2A0BC8F600582122 /* AppConfig.swift */; };
 		5E68DE3D2A0BCEF500582122 /* AppLaunchFailureSceneDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = 5E68DE3C2A0BCEF500582122 /* AppLaunchFailureSceneDelegate.swift */; };
-		5E68DE412A0BDB3D00582122 /* CatsDataSource.swift in Sources */ = {isa = PBXBuildFile; fileRef = 5E68DE402A0BDB3D00582122 /* CatsDataSource.swift */; };
 		5E68DE442A0BEB9800582122 /* AppScene.swift in Sources */ = {isa = PBXBuildFile; fileRef = 5E68DE432A0BEB9800582122 /* AppScene.swift */; };
 		5E68DE462A0BEC5E00582122 /* AppLaunchFailureViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 5E68DE452A0BEC5E00582122 /* AppLaunchFailureViewController.swift */; };
 		5E68DE482A0BF1E700582122 /* AppConfigError.swift in Sources */ = {isa = PBXBuildFile; fileRef = 5E68DE472A0BF1E700582122 /* AppConfigError.swift */; };
@@ -34,9 +32,18 @@
 		5E68DE522A0BFCAF00582122 /* CatsImagesResponseMapper.swift in Sources */ = {isa = PBXBuildFile; fileRef = 5E68DE512A0BFCAF00582122 /* CatsImagesResponseMapper.swift */; };
 		5E68DE542A0BFCBC00582122 /* CatsImagesResponse.swift in Sources */ = {isa = PBXBuildFile; fileRef = 5E68DE532A0BFCBC00582122 /* CatsImagesResponse.swift */; };
 		5E68DE5F2A0C268C00582122 /* CatsDataProvider.swift in Sources */ = {isa = PBXBuildFile; fileRef = 5E68DE5E2A0C268C00582122 /* CatsDataProvider.swift */; };
+		5E68DE612A0C2A5600582122 /* DogsImagesRequest.swift in Sources */ = {isa = PBXBuildFile; fileRef = 5E68DE602A0C2A5600582122 /* DogsImagesRequest.swift */; };
+		5E68DE632A0C2A6100582122 /* DogsImagesResponse.swift in Sources */ = {isa = PBXBuildFile; fileRef = 5E68DE622A0C2A6100582122 /* DogsImagesResponse.swift */; };
+		5E68DE652A0C2A6A00582122 /* DogsImagesResponseMapper.swift in Sources */ = {isa = PBXBuildFile; fileRef = 5E68DE642A0C2A6A00582122 /* DogsImagesResponseMapper.swift */; };
+		5E68DE6A2A0C2CFD00582122 /* DogsDataProvider.swift in Sources */ = {isa = PBXBuildFile; fileRef = 5E68DE692A0C2CFD00582122 /* DogsDataProvider.swift */; };
+		5E68DE6C2A0C2D7800582122 /* Array.swift in Sources */ = {isa = PBXBuildFile; fileRef = 5E68DE6B2A0C2D7800582122 /* Array.swift */; };
+		5E68DE702A0C35B100582122 /* PetsViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 5E68DE6F2A0C35B000582122 /* PetsViewController.swift */; };
+		5E68DE722A0C45D500582122 /* PetsDataSource.swift in Sources */ = {isa = PBXBuildFile; fileRef = 5E68DE712A0C45D500582122 /* PetsDataSource.swift */; };
+		5E68DE742A0C45DA00582122 /* Pet.swift in Sources */ = {isa = PBXBuildFile; fileRef = 5E68DE732A0C45DA00582122 /* Pet.swift */; };
+		5E68DE772A0C4AB200582122 /* Cat.swift in Sources */ = {isa = PBXBuildFile; fileRef = 5E68DE762A0C4AB200582122 /* Cat.swift */; };
+		5E68DE792A0C4AC400582122 /* Dog.swift in Sources */ = {isa = PBXBuildFile; fileRef = 5E68DE782A0C4AC400582122 /* Dog.swift */; };
 		5EA557D02A0A5CB70023C2E7 /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = 5EA557CF2A0A5CB70023C2E7 /* AppDelegate.swift */; };
 		5EA557D22A0A5CB70023C2E7 /* AppLaunchSceneDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = 5EA557D12A0A5CB70023C2E7 /* AppLaunchSceneDelegate.swift */; };
-		5EA557D42A0A5CB70023C2E7 /* DogsViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 5EA557D32A0A5CB70023C2E7 /* DogsViewController.swift */; };
 		5EA557D92A0A5CBA0023C2E7 /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 5EA557D82A0A5CBA0023C2E7 /* Assets.xcassets */; };
 		5EA557DC2A0A5CBA0023C2E7 /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 5EA557DA2A0A5CBA0023C2E7 /* LaunchScreen.storyboard */; };
 		5EA557F42A0A6AE70023C2E7 /* APILayer.docc in Sources */ = {isa = PBXBuildFile; fileRef = 5EA557F32A0A6AE70023C2E7 /* APILayer.docc */; };
@@ -63,9 +70,9 @@
 		5EA558442A0A70CF0023C2E7 /* DogsAPI.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 5EA5582F2A0A70CD0023C2E7 /* DogsAPI.framework */; };
 		5EA558452A0A70CF0023C2E7 /* DogsAPI.framework in Embed Frameworks */ = {isa = PBXBuildFile; fileRef = 5EA5582F2A0A70CD0023C2E7 /* DogsAPI.framework */; settings = {ATTRIBUTES = (CodeSignOnCopy, RemoveHeadersOnCopy, ); }; };
 		5EA558532A0A712D0023C2E7 /* DogsAPIConfiguration.swift in Sources */ = {isa = PBXBuildFile; fileRef = 5EA5584C2A0A712D0023C2E7 /* DogsAPIConfiguration.swift */; };
-		5EA558542A0A712D0023C2E7 /* BreedListResponseMapper.swift in Sources */ = {isa = PBXBuildFile; fileRef = 5EA5584E2A0A712D0023C2E7 /* BreedListResponseMapper.swift */; };
-		5EA558552A0A712D0023C2E7 /* BreedsListResponse.swift in Sources */ = {isa = PBXBuildFile; fileRef = 5EA5584F2A0A712D0023C2E7 /* BreedsListResponse.swift */; };
-		5EA558562A0A712D0023C2E7 /* BreedsListRequest.swift in Sources */ = {isa = PBXBuildFile; fileRef = 5EA558502A0A712D0023C2E7 /* BreedsListRequest.swift */; };
+		5EA558542A0A712D0023C2E7 /* DogsBreedListResponseMapper.swift in Sources */ = {isa = PBXBuildFile; fileRef = 5EA5584E2A0A712D0023C2E7 /* DogsBreedListResponseMapper.swift */; };
+		5EA558552A0A712D0023C2E7 /* DogsBreedsListResponse.swift in Sources */ = {isa = PBXBuildFile; fileRef = 5EA5584F2A0A712D0023C2E7 /* DogsBreedsListResponse.swift */; };
+		5EA558562A0A712D0023C2E7 /* DogsBreedsListRequest.swift in Sources */ = {isa = PBXBuildFile; fileRef = 5EA558502A0A712D0023C2E7 /* DogsBreedsListRequest.swift */; };
 		5EA558572A0A712D0023C2E7 /* DogsAPIResponse.swift in Sources */ = {isa = PBXBuildFile; fileRef = 5EA558512A0A712D0023C2E7 /* DogsAPIResponse.swift */; };
 		5EA558582A0A712D0023C2E7 /* DogsAPIClient.swift in Sources */ = {isa = PBXBuildFile; fileRef = 5EA558522A0A712D0023C2E7 /* DogsAPIClient.swift */; };
 		5EA5585C2A0A71C50023C2E7 /* Dog.swift in Sources */ = {isa = PBXBuildFile; fileRef = 5EA5585B2A0A71C50023C2E7 /* Dog.swift */; };
@@ -173,12 +180,10 @@
 		5E68DE232A0BBAC200582122 /* CatsAPIVersion.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = CatsAPIVersion.swift; sourceTree = "<group>"; };
 		5E68DE242A0BBAC200582122 /* CatsAPIClient.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = CatsAPIClient.swift; sourceTree = "<group>"; };
 		5E68DE2C2A0BBB3A00582122 /* Cat.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Cat.swift; sourceTree = "<group>"; };
-		5E68DE322A0BBE6900582122 /* CatsViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = CatsViewController.swift; sourceTree = "<group>"; };
 		5E68DE342A0BC73A00582122 /* Tab.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Tab.swift; sourceTree = "<group>"; };
 		5E68DE362A0BC74200582122 /* TabConfigurable.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = TabConfigurable.swift; sourceTree = "<group>"; };
 		5E68DE3A2A0BC8F600582122 /* AppConfig.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppConfig.swift; sourceTree = "<group>"; };
 		5E68DE3C2A0BCEF500582122 /* AppLaunchFailureSceneDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppLaunchFailureSceneDelegate.swift; sourceTree = "<group>"; };
-		5E68DE402A0BDB3D00582122 /* CatsDataSource.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = CatsDataSource.swift; sourceTree = "<group>"; };
 		5E68DE432A0BEB9800582122 /* AppScene.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppScene.swift; sourceTree = "<group>"; };
 		5E68DE452A0BEC5E00582122 /* AppLaunchFailureViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppLaunchFailureViewController.swift; sourceTree = "<group>"; };
 		5E68DE472A0BF1E700582122 /* AppConfigError.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppConfigError.swift; sourceTree = "<group>"; };
@@ -187,10 +192,19 @@
 		5E68DE512A0BFCAF00582122 /* CatsImagesResponseMapper.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = CatsImagesResponseMapper.swift; sourceTree = "<group>"; };
 		5E68DE532A0BFCBC00582122 /* CatsImagesResponse.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = CatsImagesResponse.swift; sourceTree = "<group>"; };
 		5E68DE5E2A0C268C00582122 /* CatsDataProvider.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = CatsDataProvider.swift; sourceTree = "<group>"; };
+		5E68DE602A0C2A5600582122 /* DogsImagesRequest.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = DogsImagesRequest.swift; sourceTree = "<group>"; };
+		5E68DE622A0C2A6100582122 /* DogsImagesResponse.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = DogsImagesResponse.swift; sourceTree = "<group>"; };
+		5E68DE642A0C2A6A00582122 /* DogsImagesResponseMapper.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = DogsImagesResponseMapper.swift; sourceTree = "<group>"; };
+		5E68DE692A0C2CFD00582122 /* DogsDataProvider.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = DogsDataProvider.swift; sourceTree = "<group>"; };
+		5E68DE6B2A0C2D7800582122 /* Array.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Array.swift; sourceTree = "<group>"; };
+		5E68DE6F2A0C35B000582122 /* PetsViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = PetsViewController.swift; sourceTree = "<group>"; };
+		5E68DE712A0C45D500582122 /* PetsDataSource.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = PetsDataSource.swift; sourceTree = "<group>"; };
+		5E68DE732A0C45DA00582122 /* Pet.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Pet.swift; sourceTree = "<group>"; };
+		5E68DE762A0C4AB200582122 /* Cat.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Cat.swift; sourceTree = "<group>"; };
+		5E68DE782A0C4AC400582122 /* Dog.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Dog.swift; sourceTree = "<group>"; };
 		5EA557CC2A0A5CB70023C2E7 /* Floofs.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = Floofs.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		5EA557CF2A0A5CB70023C2E7 /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
 		5EA557D12A0A5CB70023C2E7 /* AppLaunchSceneDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppLaunchSceneDelegate.swift; sourceTree = "<group>"; };
-		5EA557D32A0A5CB70023C2E7 /* DogsViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = DogsViewController.swift; sourceTree = "<group>"; };
 		5EA557D82A0A5CBA0023C2E7 /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
 		5EA557DB2A0A5CBA0023C2E7 /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/LaunchScreen.storyboard; sourceTree = "<group>"; };
 		5EA557DD2A0A5CBA0023C2E7 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
@@ -216,9 +230,9 @@
 		5EA558382A0A70CE0023C2E7 /* DogsAPITests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = DogsAPITests.xctest; sourceTree = BUILT_PRODUCTS_DIR; };
 		5EA5583F2A0A70CF0023C2E7 /* DogsAPITests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = DogsAPITests.swift; sourceTree = "<group>"; };
 		5EA5584C2A0A712D0023C2E7 /* DogsAPIConfiguration.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = DogsAPIConfiguration.swift; sourceTree = "<group>"; };
-		5EA5584E2A0A712D0023C2E7 /* BreedListResponseMapper.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = BreedListResponseMapper.swift; sourceTree = "<group>"; };
-		5EA5584F2A0A712D0023C2E7 /* BreedsListResponse.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = BreedsListResponse.swift; sourceTree = "<group>"; };
-		5EA558502A0A712D0023C2E7 /* BreedsListRequest.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = BreedsListRequest.swift; sourceTree = "<group>"; };
+		5EA5584E2A0A712D0023C2E7 /* DogsBreedListResponseMapper.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = DogsBreedListResponseMapper.swift; sourceTree = "<group>"; };
+		5EA5584F2A0A712D0023C2E7 /* DogsBreedsListResponse.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = DogsBreedsListResponse.swift; sourceTree = "<group>"; };
+		5EA558502A0A712D0023C2E7 /* DogsBreedsListRequest.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = DogsBreedsListRequest.swift; sourceTree = "<group>"; };
 		5EA558512A0A712D0023C2E7 /* DogsAPIResponse.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = DogsAPIResponse.swift; sourceTree = "<group>"; };
 		5EA558522A0A712D0023C2E7 /* DogsAPIClient.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = DogsAPIClient.swift; sourceTree = "<group>"; };
 		5EA5585B2A0A71C50023C2E7 /* Dog.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Dog.swift; sourceTree = "<group>"; };
@@ -360,7 +374,8 @@
 		5E68DE3E2A0BDB2600582122 /* Dogs */ = {
 			isa = PBXGroup;
 			children = (
-				5EA557D32A0A5CB70023C2E7 /* DogsViewController.swift */,
+				5E68DE692A0C2CFD00582122 /* DogsDataProvider.swift */,
+				5E68DE782A0C4AC400582122 /* Dog.swift */,
 			);
 			path = Dogs;
 			sourceTree = "<group>";
@@ -368,9 +383,8 @@
 		5E68DE3F2A0BDB2D00582122 /* Cats */ = {
 			isa = PBXGroup;
 			children = (
-				5E68DE322A0BBE6900582122 /* CatsViewController.swift */,
-				5E68DE402A0BDB3D00582122 /* CatsDataSource.swift */,
 				5E68DE5E2A0C268C00582122 /* CatsDataProvider.swift */,
+				5E68DE762A0C4AB200582122 /* Cat.swift */,
 			);
 			path = Cats;
 			sourceTree = "<group>";
@@ -417,6 +431,43 @@
 			path = Images;
 			sourceTree = "<group>";
 		};
+		5E68DE662A0C2A7000582122 /* Images */ = {
+			isa = PBXGroup;
+			children = (
+				5E68DE602A0C2A5600582122 /* DogsImagesRequest.swift */,
+				5E68DE622A0C2A6100582122 /* DogsImagesResponse.swift */,
+				5E68DE642A0C2A6A00582122 /* DogsImagesResponseMapper.swift */,
+			);
+			path = Images;
+			sourceTree = "<group>";
+		};
+		5E68DE6D2A0C2D7E00582122 /* Helpers */ = {
+			isa = PBXGroup;
+			children = (
+				5E68DE342A0BC73A00582122 /* Tab.swift */,
+				5E68DE362A0BC74200582122 /* TabConfigurable.swift */,
+			);
+			path = Helpers;
+			sourceTree = "<group>";
+		};
+		5E68DE6E2A0C2D8200582122 /* Extensions */ = {
+			isa = PBXGroup;
+			children = (
+				5E68DE6B2A0C2D7800582122 /* Array.swift */,
+			);
+			path = Extensions;
+			sourceTree = "<group>";
+		};
+		5E68DE752A0C45F300582122 /* Pets */ = {
+			isa = PBXGroup;
+			children = (
+				5E68DE6F2A0C35B000582122 /* PetsViewController.swift */,
+				5E68DE712A0C45D500582122 /* PetsDataSource.swift */,
+				5E68DE732A0C45DA00582122 /* Pet.swift */,
+			);
+			path = Pets;
+			sourceTree = "<group>";
+		};
 		5EA557C32A0A5CB70023C2E7 = {
 			isa = PBXGroup;
 			children = (
@@ -450,10 +501,11 @@
 			children = (
 				5E68DE492A0BF58F00582122 /* App */,
 				5E68DE422A0BEB0300582122 /* Scenes */,
+				5E68DE752A0C45F300582122 /* Pets */,
 				5E68DE3E2A0BDB2600582122 /* Dogs */,
 				5E68DE3F2A0BDB2D00582122 /* Cats */,
-				5E68DE342A0BC73A00582122 /* Tab.swift */,
-				5E68DE362A0BC74200582122 /* TabConfigurable.swift */,
+				5E68DE6D2A0C2D7E00582122 /* Helpers */,
+				5E68DE6E2A0C2D8200582122 /* Extensions */,
 				5EA557D82A0A5CBA0023C2E7 /* Assets.xcassets */,
 				5EA557DA2A0A5CBA0023C2E7 /* LaunchScreen.storyboard */,
 				5EA557DD2A0A5CBA0023C2E7 /* Info.plist */,
@@ -528,6 +580,7 @@
 			isa = PBXGroup;
 			children = (
 				5EA558592A0A71750023C2E7 /* BreedsList */,
+				5E68DE662A0C2A7000582122 /* Images */,
 			);
 			path = Endpoints;
 			sourceTree = "<group>";
@@ -535,9 +588,9 @@
 		5EA558592A0A71750023C2E7 /* BreedsList */ = {
 			isa = PBXGroup;
 			children = (
-				5EA5584E2A0A712D0023C2E7 /* BreedListResponseMapper.swift */,
-				5EA5584F2A0A712D0023C2E7 /* BreedsListResponse.swift */,
-				5EA558502A0A712D0023C2E7 /* BreedsListRequest.swift */,
+				5EA5584E2A0A712D0023C2E7 /* DogsBreedListResponseMapper.swift */,
+				5EA5584F2A0A712D0023C2E7 /* DogsBreedsListResponse.swift */,
+				5EA558502A0A712D0023C2E7 /* DogsBreedsListRequest.swift */,
 			);
 			path = BreedsList;
 			sourceTree = "<group>";
@@ -859,19 +912,23 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				5E68DE722A0C45D500582122 /* PetsDataSource.swift in Sources */,
 				5E68DE5F2A0C268C00582122 /* CatsDataProvider.swift in Sources */,
+				5E68DE742A0C45DA00582122 /* Pet.swift in Sources */,
 				5E68DE3D2A0BCEF500582122 /* AppLaunchFailureSceneDelegate.swift in Sources */,
 				5E68DE372A0BC74200582122 /* TabConfigurable.swift in Sources */,
 				5E68DE442A0BEB9800582122 /* AppScene.swift in Sources */,
 				5E68DE462A0BEC5E00582122 /* AppLaunchFailureViewController.swift in Sources */,
+				5E68DE6C2A0C2D7800582122 /* Array.swift in Sources */,
 				5E68DE482A0BF1E700582122 /* AppConfigError.swift in Sources */,
-				5EA557D42A0A5CB70023C2E7 /* DogsViewController.swift in Sources */,
-				5E68DE332A0BBE6900582122 /* CatsViewController.swift in Sources */,
+				5E68DE792A0C4AC400582122 /* Dog.swift in Sources */,
+				5E68DE6A2A0C2CFD00582122 /* DogsDataProvider.swift in Sources */,
+				5E68DE702A0C35B100582122 /* PetsViewController.swift in Sources */,
 				5E68DE3B2A0BC8F600582122 /* AppConfig.swift in Sources */,
+				5E68DE772A0C4AB200582122 /* Cat.swift in Sources */,
 				5E68DE352A0BC73A00582122 /* Tab.swift in Sources */,
 				5EA557D02A0A5CB70023C2E7 /* AppDelegate.swift in Sources */,
 				5EA557D22A0A5CB70023C2E7 /* AppLaunchSceneDelegate.swift in Sources */,
-				5E68DE412A0BDB3D00582122 /* CatsDataSource.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -906,14 +963,17 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
-				5EA558542A0A712D0023C2E7 /* BreedListResponseMapper.swift in Sources */,
+				5EA558542A0A712D0023C2E7 /* DogsBreedListResponseMapper.swift in Sources */,
 				5EA558532A0A712D0023C2E7 /* DogsAPIConfiguration.swift in Sources */,
 				5EA558572A0A712D0023C2E7 /* DogsAPIResponse.swift in Sources */,
 				5EA558582A0A712D0023C2E7 /* DogsAPIClient.swift in Sources */,
-				5EA558562A0A712D0023C2E7 /* BreedsListRequest.swift in Sources */,
+				5EA558562A0A712D0023C2E7 /* DogsBreedsListRequest.swift in Sources */,
+				5E68DE652A0C2A6A00582122 /* DogsImagesResponseMapper.swift in Sources */,
 				5EA5585C2A0A71C50023C2E7 /* Dog.swift in Sources */,
 				5EA558332A0A70CE0023C2E7 /* DogsAPI.docc in Sources */,
-				5EA558552A0A712D0023C2E7 /* BreedsListResponse.swift in Sources */,
+				5E68DE632A0C2A6100582122 /* DogsImagesResponse.swift in Sources */,
+				5E68DE612A0C2A5600582122 /* DogsImagesRequest.swift in Sources */,
+				5EA558552A0A712D0023C2E7 /* DogsBreedsListResponse.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};

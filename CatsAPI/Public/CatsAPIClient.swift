@@ -24,7 +24,6 @@ public final class CatsAPIClient {
     }
 
     public func fetchImages(cat: Cat, completion: @escaping (Result<Cat, APIClientError>) -> Void) {
-        print(cat.images.isComplete)
         guard !cat.images.isComplete else {
             completion(.success(cat))
             return

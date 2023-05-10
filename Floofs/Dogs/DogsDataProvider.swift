@@ -1,22 +1,22 @@
 //
-// CatsDataProvider.swift
+// DogsDataProvider.swift
 // Floofs
 //
+        
+import DogsAPI
 
-import CatsAPI
-
-final class CatsDataProvider: PetsDataSource {
+final class DogsDataProvider: PetsDataSource {
 
     // MARK: - Properties
 
-    private let apiClient: CatsAPIClient
+    private let apiClient: DogsAPIClient
 
-    private(set) var pets: [Cat] = []
+    private(set) var pets: [Dog] = []
 
     // MARK: - Constructor
 
-    init(apiKey: String) {
-        apiClient = CatsAPIClient(urlSession: .shared, apiKey: apiKey)
+    init() {
+        apiClient = DogsAPIClient(urlSession: .shared)
     }
 
     // MARK - PetsDataSource
@@ -24,8 +24,8 @@ final class CatsDataProvider: PetsDataSource {
     func fetchPets(completion: ((Bool) -> Void)?) {
         apiClient.fetchAllBreeds { [weak self] result in
             switch result {
-            case .success(let cats):
-                self?.pets = cats.sorted(by: { $0.name < $1.name })
+            case .success(let dogs):
+                self?.pets = dogs.sorted(by: { $0.breed < $1.breed })
                 completion?(true)
             case .failure(let error):
                 print(error)
@@ -36,12 +36,12 @@ final class CatsDataProvider: PetsDataSource {
     }
 
     func fetchImages(petIndex: Int, completion: ((Bool) -> Void)?) {
-        apiClient.fetchImages(cat: pets[petIndex]) { [weak self] result in
+        apiClient.fetchImages(dog: pets[petIndex]) { [weak self] result in
             switch result {
-            case .success(let catWithImages):
+            case .success(let dogWithImages):
                 self?.pets.replace(
-                    with: catWithImages,
-                    elementMatching: { $0.identifier == catWithImages.identifier }
+                    with: dogWithImages,
+                    elementMatching: { $0.identifier == dogWithImages.identifier }
                 )
                 completion?(true)
             case .failure(let error):
@@ -52,3 +52,5 @@ final class CatsDataProvider: PetsDataSource {
         }
     }
 }
+
+

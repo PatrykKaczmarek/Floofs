@@ -7,6 +7,9 @@ import UIKit
 
 final class AppLaunchSceneDelegate: UIResponder, UIWindowSceneDelegate {
 
+    private var catsDataProvider: CatsDataProvider?
+    private lazy var dogsDataProvider = DogsDataProvider()
+
     // MARK: - Properties
 
     var window: UIWindow?
@@ -18,16 +21,20 @@ final class AppLaunchSceneDelegate: UIResponder, UIWindowSceneDelegate {
         willConnectTo session: UISceneSession,
         options connectionOptions: UIScene.ConnectionOptions
     ) {
-        guard let scene = (scene as? UIWindowScene) else {
+        guard
+            let scene = (scene as? UIWindowScene),
+            let apiKey = session.userInfo?.catsAPIKey
+        else {
             return
         }
-        let apiKey = session.userInfo?.catsAPIKey ?? ""
-        let catsDataSource = CatsDataProvider(apiKey: apiKey)
         window = UIWindow(windowScene: scene)
+
+        let catsDataProvider = CatsDataProvider(apiKey: apiKey)
+        self.catsDataProvider = catsDataProvider
         let tabBarController = UITabBarController()
         tabBarController.viewControllers = [
-            DogsViewController().configure(for: .dogs),
-            CatsViewController(dataSource: catsDataSource).configure(for: .cats)
+            PetsViewController(dataSource: dogsDataProvider).configure(for: .dogs),
+            PetsViewController(dataSource: catsDataProvider).configure(for: .cats)
         ]
         window?.rootViewController = tabBarController
         window?.makeKeyAndVisible()
