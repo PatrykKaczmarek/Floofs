@@ -12,6 +12,8 @@ struct AppConfig {
         case appConfigError = "AppConfigError"
     }
 
+    // MARK: - API
+
     static func read(into result: inout [String: Any]) throws {
         guard let plistPath = Bundle.main.path(forResource: "AppConfig", ofType: "plist") else {
             throw saveBeforeThrowing(error: AppConfigError.fileNotFound, result: &result)
@@ -34,6 +36,8 @@ struct AppConfig {
     }
 }
 
+// MARK: - Dictionary
+
 extension Dictionary where Key == String, Value == Any {
     var appConfigError: AppConfigError? {
         self[AppConfig.Keys.appConfigError.rawValue] as? AppConfigError
@@ -44,12 +48,16 @@ extension Dictionary where Key == String, Value == Any {
     }
 }
 
+// MARK: - Private
+
 private extension AppConfig {
     static func saveBeforeThrowing(error: Error, result: inout [String: Any]) -> Error {
         result[AppConfig.Keys.appConfigError.rawValue] = error
         return error
     }
 }
+
+// MARK: - Private
 
 private extension Data {
     func decodeToPlist() throws -> [String: AnyObject] {

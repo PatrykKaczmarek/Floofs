@@ -10,6 +10,8 @@ enum AppConfigError: Error {
     case wrongXMLFormat
     case missingEntry(String)
 
+    // MARK: - Properties
+
     var localizedDescription: String {
         switch self {
         case .fileNotFound:

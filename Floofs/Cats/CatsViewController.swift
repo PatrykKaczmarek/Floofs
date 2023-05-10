@@ -24,6 +24,7 @@ final class CatsViewController: UITableViewController {
         super.viewDidLoad()
         tableView.register(UITableViewCell.self, forCellReuseIdentifier: "cell")
         tableView.dataSource = self
+        tableView.delegate = self
 
         dataSource.fetchCats { [weak self] success in
             if success {
@@ -37,7 +38,8 @@ final class CatsViewController: UITableViewController {
         let cell = tableView.dequeueReusableCell(withIdentifier: "cell", for: indexPath)
         let cat = dataSource.cats[indexPath.row]
         var cellContext = cell.defaultContentConfiguration()
-        cellContext.text = cat.breed
+        cellContext.text = cat.name
+        cellContext.secondaryText = "Images count: \(cat.images.urls.count)"
         cell.contentConfiguration = cellContext
         return cell
     }
@@ -45,5 +47,15 @@ final class CatsViewController: UITableViewController {
     override func tableView(_ tableView: UITableView, numberOfRowsInSection section: Int) -> Int {
         dataSource.cats.count
     }
-}
 
+    override func tableView(_ tableView: UITableView, didSelectRowAt indexPath: IndexPath) {
+        tableView.deselectRow(at: indexPath, animated: true)
+
+        let cat = dataSource.cats[indexPath.row]
+        dataSource.fetchImages(cat: cat) { [weak self] success in
+            if success {
+                self?.tableView.reloadRows(at: [indexPath], with: .none)
+            }
+        }
+    }
+}

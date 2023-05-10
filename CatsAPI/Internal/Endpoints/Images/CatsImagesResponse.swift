@@ -1,14 +1,15 @@
 //
-//  CatsBreedsListResponse.swift
-//  CatsAPI
+// CatsImagesResponse.swift
+// CatsAPI
 //
-
+        
 import APILayer
 
-struct CatsBreedsListResponse: APIResponse {
+struct CatsImagesResponse: APIResponse {
+
     struct Content: Decodable {
         let id: String
-        let name: String
+        let url: String
     }
 
     let content: [Content]

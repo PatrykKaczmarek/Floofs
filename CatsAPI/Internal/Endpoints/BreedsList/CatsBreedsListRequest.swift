@@ -3,7 +3,6 @@
 //  CatsAPI
 //
 
-import Foundation
 import APILayer
 
 struct CatsBreedsListRequest: APIRequest {

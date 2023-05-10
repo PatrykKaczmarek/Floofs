@@ -21,8 +21,8 @@ final class AppLaunchSceneDelegate: UIResponder, UIWindowSceneDelegate {
         guard let scene = (scene as? UIWindowScene) else {
             return
         }
-        let apiKey = session.userInfo?.catsAPIKey
-        let catsDataSource = CatsDataProvider(apiKey: apiKey!)
+        let apiKey = session.userInfo?.catsAPIKey ?? ""
+        let catsDataSource = CatsDataProvider(apiKey: apiKey)
         window = UIWindow(windowScene: scene)
         let tabBarController = UITabBarController()
         tabBarController.viewControllers = [

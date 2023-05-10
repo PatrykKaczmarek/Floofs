@@ -30,6 +30,10 @@
 		5E68DE462A0BEC5E00582122 /* AppLaunchFailureViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 5E68DE452A0BEC5E00582122 /* AppLaunchFailureViewController.swift */; };
 		5E68DE482A0BF1E700582122 /* AppConfigError.swift in Sources */ = {isa = PBXBuildFile; fileRef = 5E68DE472A0BF1E700582122 /* AppConfigError.swift */; };
 		5E68DE4C2A0BF68D00582122 /* AppConfig.plist in Resources */ = {isa = PBXBuildFile; fileRef = 5E68DE4B2A0BF68D00582122 /* AppConfig.plist */; };
+		5E68DE4F2A0BFC3900582122 /* CatsImagesRequest.swift in Sources */ = {isa = PBXBuildFile; fileRef = 5E68DE4E2A0BFC3900582122 /* CatsImagesRequest.swift */; };
+		5E68DE522A0BFCAF00582122 /* CatsImagesResponseMapper.swift in Sources */ = {isa = PBXBuildFile; fileRef = 5E68DE512A0BFCAF00582122 /* CatsImagesResponseMapper.swift */; };
+		5E68DE542A0BFCBC00582122 /* CatsImagesResponse.swift in Sources */ = {isa = PBXBuildFile; fileRef = 5E68DE532A0BFCBC00582122 /* CatsImagesResponse.swift */; };
+		5E68DE5F2A0C268C00582122 /* CatsDataProvider.swift in Sources */ = {isa = PBXBuildFile; fileRef = 5E68DE5E2A0C268C00582122 /* CatsDataProvider.swift */; };
 		5EA557D02A0A5CB70023C2E7 /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = 5EA557CF2A0A5CB70023C2E7 /* AppDelegate.swift */; };
 		5EA557D22A0A5CB70023C2E7 /* AppLaunchSceneDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = 5EA557D12A0A5CB70023C2E7 /* AppLaunchSceneDelegate.swift */; };
 		5EA557D42A0A5CB70023C2E7 /* DogsViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 5EA557D32A0A5CB70023C2E7 /* DogsViewController.swift */; };
@@ -179,6 +183,10 @@
 		5E68DE452A0BEC5E00582122 /* AppLaunchFailureViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppLaunchFailureViewController.swift; sourceTree = "<group>"; };
 		5E68DE472A0BF1E700582122 /* AppConfigError.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppConfigError.swift; sourceTree = "<group>"; };
 		5E68DE4B2A0BF68D00582122 /* AppConfig.plist */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text.plist.xml; path = AppConfig.plist; sourceTree = "<group>"; };
+		5E68DE4E2A0BFC3900582122 /* CatsImagesRequest.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = CatsImagesRequest.swift; sourceTree = "<group>"; };
+		5E68DE512A0BFCAF00582122 /* CatsImagesResponseMapper.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = CatsImagesResponseMapper.swift; sourceTree = "<group>"; };
+		5E68DE532A0BFCBC00582122 /* CatsImagesResponse.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = CatsImagesResponse.swift; sourceTree = "<group>"; };
+		5E68DE5E2A0C268C00582122 /* CatsDataProvider.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = CatsDataProvider.swift; sourceTree = "<group>"; };
 		5EA557CC2A0A5CB70023C2E7 /* Floofs.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = Floofs.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		5EA557CF2A0A5CB70023C2E7 /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
 		5EA557D12A0A5CB70023C2E7 /* AppLaunchSceneDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppLaunchSceneDelegate.swift; sourceTree = "<group>"; };
@@ -343,9 +351,8 @@
 		5E68DE312A0BBBA000582122 /* Endpoints */ = {
 			isa = PBXGroup;
 			children = (
-				5E68DE1F2A0BBAC200582122 /* CatsBreedsListRequest.swift */,
-				5E68DE212A0BBAC200582122 /* CatsBreedListResponseMapper.swift */,
-				5E68DE222A0BBAC200582122 /* CatsBreedsListResponse.swift */,
+				5E68DE4D2A0BFBBC00582122 /* BreedsList */,
+				5E68DE502A0BFC3E00582122 /* Images */,
 			);
 			path = Endpoints;
 			sourceTree = "<group>";
@@ -363,6 +370,7 @@
 			children = (
 				5E68DE322A0BBE6900582122 /* CatsViewController.swift */,
 				5E68DE402A0BDB3D00582122 /* CatsDataSource.swift */,
+				5E68DE5E2A0C268C00582122 /* CatsDataProvider.swift */,
 			);
 			path = Cats;
 			sourceTree = "<group>";
@@ -387,6 +395,26 @@
 				5E68DE4B2A0BF68D00582122 /* AppConfig.plist */,
 			);
 			path = App;
+			sourceTree = "<group>";
+		};
+		5E68DE4D2A0BFBBC00582122 /* BreedsList */ = {
+			isa = PBXGroup;
+			children = (
+				5E68DE1F2A0BBAC200582122 /* CatsBreedsListRequest.swift */,
+				5E68DE212A0BBAC200582122 /* CatsBreedListResponseMapper.swift */,
+				5E68DE222A0BBAC200582122 /* CatsBreedsListResponse.swift */,
+			);
+			path = BreedsList;
+			sourceTree = "<group>";
+		};
+		5E68DE502A0BFC3E00582122 /* Images */ = {
+			isa = PBXGroup;
+			children = (
+				5E68DE4E2A0BFC3900582122 /* CatsImagesRequest.swift */,
+				5E68DE512A0BFCAF00582122 /* CatsImagesResponseMapper.swift */,
+				5E68DE532A0BFCBC00582122 /* CatsImagesResponse.swift */,
+			);
+			path = Images;
 			sourceTree = "<group>";
 		};
 		5EA557C32A0A5CB70023C2E7 = {
@@ -805,6 +833,7 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				5E68DE542A0BFCBC00582122 /* CatsImagesResponse.swift in Sources */,
 				5E68DE292A0BBAC200582122 /* CatsBreedsListResponse.swift in Sources */,
 				5E68DE2A2A0BBAC200582122 /* CatsAPIVersion.swift in Sources */,
 				5E68DE2B2A0BBAC200582122 /* CatsAPIClient.swift in Sources */,
@@ -812,6 +841,8 @@
 				5E68DE2D2A0BBB3A00582122 /* Cat.swift in Sources */,
 				5E68DE012A0BBA1A00582122 /* CatsAPI.docc in Sources */,
 				5E68DE282A0BBAC200582122 /* CatsBreedListResponseMapper.swift in Sources */,
+				5E68DE4F2A0BFC3900582122 /* CatsImagesRequest.swift in Sources */,
+				5E68DE522A0BFCAF00582122 /* CatsImagesResponseMapper.swift in Sources */,
 				5E68DE262A0BBAC200582122 /* CatsBreedsListRequest.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
@@ -828,6 +859,7 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				5E68DE5F2A0C268C00582122 /* CatsDataProvider.swift in Sources */,
 				5E68DE3D2A0BCEF500582122 /* AppLaunchFailureSceneDelegate.swift in Sources */,
 				5E68DE372A0BC74200582122 /* TabConfigurable.swift in Sources */,
 				5E68DE442A0BEB9800582122 /* AppScene.swift in Sources */,
