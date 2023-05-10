@@ -348,24 +348,16 @@
 			isa = PBXGroup;
 			children = (
 				5E68DE242A0BBAC200582122 /* CatsAPIClient.swift */,
-				5E68DE2E2A0BBB4500582122 /* Models */,
-			);
-			path = Public;
-			sourceTree = "<group>";
-		};
-		5E68DE2E2A0BBB4500582122 /* Models */ = {
-			isa = PBXGroup;
-			children = (
 				5E68DE2C2A0BBB3A00582122 /* Cat.swift */,
 			);
-			path = Models;
+			path = Public;
 			sourceTree = "<group>";
 		};
 		5E68DE2F2A0BBB5000582122 /* Public */ = {
 			isa = PBXGroup;
 			children = (
 				5EA558522A0A712D0023C2E7 /* DogsAPIClient.swift */,
-				5EA5585A2A0A71BB0023C2E7 /* Models */,
+				5EA5585B2A0A71C50023C2E7 /* Dog.swift */,
 			);
 			path = Public;
 			sourceTree = "<group>";
@@ -627,14 +619,6 @@
 				5EA558502A0A712D0023C2E7 /* DogsBreedsListRequest.swift */,
 			);
 			path = BreedsList;
-			sourceTree = "<group>";
-		};
-		5EA5585A2A0A71BB0023C2E7 /* Models */ = {
-			isa = PBXGroup;
-			children = (
-				5EA5585B2A0A71C50023C2E7 /* Dog.swift */,
-			);
-			path = Models;
 			sourceTree = "<group>";
 		};
 /* End PBXGroup section */
