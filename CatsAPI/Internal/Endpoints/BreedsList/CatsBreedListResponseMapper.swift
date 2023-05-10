@@ -10,7 +10,7 @@ struct CatsBreedListResponseMapper: APIResponseCustomMapping {
         response.content.map {
             Cat(
                 identifier: $0.identifier,
-                name: $0.name,
+                breed: $0.name,
                 description: $0.description,
                 lifeSpan: $0.lifeSpan,
                 temperament: $0.temperament,

@@ -5,7 +5,7 @@
         
 public struct Cat {
     public let identifier: String
-    public let name: String
+    public let breed: String
     public let description: String
     public let lifeSpan: String
     public let temperament: String

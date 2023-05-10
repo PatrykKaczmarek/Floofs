@@ -10,9 +10,20 @@ public struct Dog {
 
     public let subbreed: String?
 
-    public var imagesURLs: [String]?
+    public var images = Images()
 
-    mutating func addImages(urls: [String]) {
-        imagesURLs = urls
+    public struct Images {
+        public var coverImageUrl: String?
+        public var urls: [String] = []
+        public var isComplete = false
+    }
+
+    mutating func addImages(urls: [String], isComplete: Bool) {
+        images.urls = urls
+        images.isComplete = isComplete
+    }
+
+    mutating func addCoverImage(url: String) {
+        images.coverImageUrl = url
     }
 }

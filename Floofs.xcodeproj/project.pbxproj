@@ -42,6 +42,9 @@
 		5E68DE742A0C45DA00582122 /* Pet.swift in Sources */ = {isa = PBXBuildFile; fileRef = 5E68DE732A0C45DA00582122 /* Pet.swift */; };
 		5E68DE772A0C4AB200582122 /* Cat.swift in Sources */ = {isa = PBXBuildFile; fileRef = 5E68DE762A0C4AB200582122 /* Cat.swift */; };
 		5E68DE792A0C4AC400582122 /* Dog.swift in Sources */ = {isa = PBXBuildFile; fileRef = 5E68DE782A0C4AC400582122 /* Dog.swift */; };
+		5E68DE7B2A0C4BDE00582122 /* DogsRandomImageRequest.swift in Sources */ = {isa = PBXBuildFile; fileRef = 5E68DE7A2A0C4BDE00582122 /* DogsRandomImageRequest.swift */; };
+		5E68DE7D2A0C4BE700582122 /* DogsRandomImageResponse.swift in Sources */ = {isa = PBXBuildFile; fileRef = 5E68DE7C2A0C4BE700582122 /* DogsRandomImageResponse.swift */; };
+		5E68DE7F2A0C4BF200582122 /* DogsRandomImageResponseMapper.swift in Sources */ = {isa = PBXBuildFile; fileRef = 5E68DE7E2A0C4BF200582122 /* DogsRandomImageResponseMapper.swift */; };
 		5EA557D02A0A5CB70023C2E7 /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = 5EA557CF2A0A5CB70023C2E7 /* AppDelegate.swift */; };
 		5EA557D22A0A5CB70023C2E7 /* AppLaunchSceneDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = 5EA557D12A0A5CB70023C2E7 /* AppLaunchSceneDelegate.swift */; };
 		5EA557D92A0A5CBA0023C2E7 /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 5EA557D82A0A5CBA0023C2E7 /* Assets.xcassets */; };
@@ -202,6 +205,9 @@
 		5E68DE732A0C45DA00582122 /* Pet.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Pet.swift; sourceTree = "<group>"; };
 		5E68DE762A0C4AB200582122 /* Cat.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Cat.swift; sourceTree = "<group>"; };
 		5E68DE782A0C4AC400582122 /* Dog.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Dog.swift; sourceTree = "<group>"; };
+		5E68DE7A2A0C4BDE00582122 /* DogsRandomImageRequest.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = DogsRandomImageRequest.swift; sourceTree = "<group>"; };
+		5E68DE7C2A0C4BE700582122 /* DogsRandomImageResponse.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = DogsRandomImageResponse.swift; sourceTree = "<group>"; };
+		5E68DE7E2A0C4BF200582122 /* DogsRandomImageResponseMapper.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = DogsRandomImageResponseMapper.swift; sourceTree = "<group>"; };
 		5EA557CC2A0A5CB70023C2E7 /* Floofs.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = Floofs.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		5EA557CF2A0A5CB70023C2E7 /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
 		5EA557D12A0A5CB70023C2E7 /* AppLaunchSceneDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppLaunchSceneDelegate.swift; sourceTree = "<group>"; };
@@ -468,6 +474,16 @@
 			path = Pets;
 			sourceTree = "<group>";
 		};
+		5E68DE802A0C4BF600582122 /* RandomImage */ = {
+			isa = PBXGroup;
+			children = (
+				5E68DE7A2A0C4BDE00582122 /* DogsRandomImageRequest.swift */,
+				5E68DE7C2A0C4BE700582122 /* DogsRandomImageResponse.swift */,
+				5E68DE7E2A0C4BF200582122 /* DogsRandomImageResponseMapper.swift */,
+			);
+			path = RandomImage;
+			sourceTree = "<group>";
+		};
 		5EA557C32A0A5CB70023C2E7 = {
 			isa = PBXGroup;
 			children = (
@@ -581,6 +597,7 @@
 			children = (
 				5EA558592A0A71750023C2E7 /* BreedsList */,
 				5E68DE662A0C2A7000582122 /* Images */,
+				5E68DE802A0C4BF600582122 /* RandomImage */,
 			);
 			path = Endpoints;
 			sourceTree = "<group>";
@@ -964,10 +981,13 @@
 			buildActionMask = 2147483647;
 			files = (
 				5EA558542A0A712D0023C2E7 /* DogsBreedListResponseMapper.swift in Sources */,
+				5E68DE7B2A0C4BDE00582122 /* DogsRandomImageRequest.swift in Sources */,
+				5E68DE7D2A0C4BE700582122 /* DogsRandomImageResponse.swift in Sources */,
 				5EA558532A0A712D0023C2E7 /* DogsAPIConfiguration.swift in Sources */,
 				5EA558572A0A712D0023C2E7 /* DogsAPIResponse.swift in Sources */,
 				5EA558582A0A712D0023C2E7 /* DogsAPIClient.swift in Sources */,
 				5EA558562A0A712D0023C2E7 /* DogsBreedsListRequest.swift in Sources */,
+				5E68DE7F2A0C4BF200582122 /* DogsRandomImageResponseMapper.swift in Sources */,
 				5E68DE652A0C2A6A00582122 /* DogsImagesResponseMapper.swift in Sources */,
 				5EA5585C2A0A71C50023C2E7 /* Dog.swift in Sources */,
 				5EA558332A0A70CE0023C2E7 /* DogsAPI.docc in Sources */,

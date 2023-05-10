@@ -25,7 +25,7 @@ final class CatsDataProvider: PetsDataSource {
         apiClient.fetchAllBreeds { [weak self] result in
             switch result {
             case .success(let cats):
-                self?.pets = cats.sorted(by: { $0.name < $1.name })
+                self?.pets = cats.sorted(by: { $0.breed < $1.breed })
                 completion?(true)
             case .failure(let error):
                 print(error)
