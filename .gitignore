@@ -48,3 +48,6 @@ Pods/
 # Carthage
 
 Carthage/
+
+# Project specific
+**/AppConfig.plist
