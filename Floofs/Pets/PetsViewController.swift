@@ -3,13 +3,16 @@
 // Floofs
 //
 
+
 import UIKit
 
-final class PetsViewController: UITableViewController {
+final class PetsViewController: UIViewController {
 
     // MARK: - Properties
 
     private let dataSource: any PetsDataSource
+
+    private lazy var customView = PetsView()
 
     // MARK: - Constructor
 
@@ -23,42 +26,65 @@ final class PetsViewController: UITableViewController {
         fatalError("init(coder:) has not been implemented")
     }
 
-    // MARK - API
+    // MARK: - Overrides
+
+    override func loadView() {
+        view = customView
+    }
 
     override func viewDidLoad() {
         super.viewDidLoad()
-        tableView.register(UITableViewCell.self, forCellReuseIdentifier: "cell")
-        tableView.dataSource = self
-        tableView.delegate = self
 
+        customView.collectionView.dataSource = self
+        customView.collectionView.delegate = self
+        customView.collectionView.register(dequeueableCell: PetsCollectionViewCell.self)
+
+        customView.activityView.startAnimating()
         dataSource.fetchPets { [weak self] success in
+            self?.customView.activityView.stopAnimating()
             if success {
-                self?.tableView.reloadData()
+                self?.customView.collectionView.reloadData()
             }
         }
     }
+}
 
-    override func tableView(_ tableView: UITableView, cellForRowAt indexPath: IndexPath) -> UITableViewCell {
-        // Temporarily:
-        let cell = tableView.dequeueReusableCell(withIdentifier: "cell", for: indexPath)
+// MARK: - UICollectionViewDataSource
+
+extension PetsViewController: UICollectionViewDataSource {
+    func collectionView(
+        _ collectionView: UICollectionView,
+        cellForItemAt indexPath: IndexPath
+    ) -> UICollectionViewCell {
+        let cell = collectionView.dequeue(
+            dequeueableCell: PetsCollectionViewCell.self,
+            forIndexPath: indexPath
+        )
         let pet = dataSource.pets[indexPath.row]
-        var cellContext = cell.defaultContentConfiguration()
-        cellContext.text = pet.displayName
-        cellContext.secondaryText = "Images count: \(pet.imageURLs.count)"
-        cell.contentConfiguration = cellContext
+        cell.title = pet.displayName
+        DispatchQueue.main.async {
+            cell.setImage(url: pet.coverImageURL)
+        }
         return cell
     }
 
-    override func tableView(_ tableView: UITableView, numberOfRowsInSection section: Int) -> Int {
+    func collectionView(
+        _ collectionView: UICollectionView,
+        numberOfItemsInSection section: Int
+    ) -> Int {
         dataSource.pets.count
     }
+}
 
-    override func tableView(_ tableView: UITableView, didSelectRowAt indexPath: IndexPath) {
-        tableView.deselectRow(at: indexPath, animated: true)
-        dataSource.fetchImages(petIndex: indexPath.row) { [weak self] success in
-            if success {
-                self?.tableView.reloadRows(at: [indexPath], with: .none)
-            }
-        }
+// MARK: - UICollectionViewDelegateFlowLayout
+
+extension PetsViewController: UICollectionViewDelegateFlowLayout {
+    func collectionView(
+        _ collectionView: UICollectionView,
+        layout collectionViewLayout: UICollectionViewLayout,
+        sizeForItemAt indexPath: IndexPath
+    ) -> CGSize {
+        let halfScreenWidth = collectionView.bounds.width * 0.5
+        return CGSize(width: halfScreenWidth, height: halfScreenWidth)
     }
 }

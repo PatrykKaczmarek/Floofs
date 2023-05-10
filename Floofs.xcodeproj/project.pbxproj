@@ -45,6 +45,12 @@
 		5E68DE7B2A0C4BDE00582122 /* DogsRandomImageRequest.swift in Sources */ = {isa = PBXBuildFile; fileRef = 5E68DE7A2A0C4BDE00582122 /* DogsRandomImageRequest.swift */; };
 		5E68DE7D2A0C4BE700582122 /* DogsRandomImageResponse.swift in Sources */ = {isa = PBXBuildFile; fileRef = 5E68DE7C2A0C4BE700582122 /* DogsRandomImageResponse.swift */; };
 		5E68DE7F2A0C4BF200582122 /* DogsRandomImageResponseMapper.swift in Sources */ = {isa = PBXBuildFile; fileRef = 5E68DE7E2A0C4BF200582122 /* DogsRandomImageResponseMapper.swift */; };
+		5E68DE822A0C515E00582122 /* PetsView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 5E68DE812A0C515E00582122 /* PetsView.swift */; };
+		5E68DE842A0C517F00582122 /* UIView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 5E68DE832A0C517F00582122 /* UIView.swift */; };
+		5E68DE862A0C522900582122 /* PetsCollectionViewCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = 5E68DE852A0C522900582122 /* PetsCollectionViewCell.swift */; };
+		5E68DE882A0C52D600582122 /* UICollectionView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 5E68DE872A0C52D600582122 /* UICollectionView.swift */; };
+		5E68DE8A2A0C52E700582122 /* Dequeueable.swift in Sources */ = {isa = PBXBuildFile; fileRef = 5E68DE892A0C52E700582122 /* Dequeueable.swift */; };
+		5E68DE8D2A0C595A00582122 /* Kingfisher in Frameworks */ = {isa = PBXBuildFile; productRef = 5E68DE8C2A0C595A00582122 /* Kingfisher */; };
 		5EA557D02A0A5CB70023C2E7 /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = 5EA557CF2A0A5CB70023C2E7 /* AppDelegate.swift */; };
 		5EA557D22A0A5CB70023C2E7 /* AppLaunchSceneDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = 5EA557D12A0A5CB70023C2E7 /* AppLaunchSceneDelegate.swift */; };
 		5EA557D92A0A5CBA0023C2E7 /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 5EA557D82A0A5CBA0023C2E7 /* Assets.xcassets */; };
@@ -208,6 +214,11 @@
 		5E68DE7A2A0C4BDE00582122 /* DogsRandomImageRequest.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = DogsRandomImageRequest.swift; sourceTree = "<group>"; };
 		5E68DE7C2A0C4BE700582122 /* DogsRandomImageResponse.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = DogsRandomImageResponse.swift; sourceTree = "<group>"; };
 		5E68DE7E2A0C4BF200582122 /* DogsRandomImageResponseMapper.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = DogsRandomImageResponseMapper.swift; sourceTree = "<group>"; };
+		5E68DE812A0C515E00582122 /* PetsView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = PetsView.swift; sourceTree = "<group>"; };
+		5E68DE832A0C517F00582122 /* UIView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = UIView.swift; sourceTree = "<group>"; };
+		5E68DE852A0C522900582122 /* PetsCollectionViewCell.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = PetsCollectionViewCell.swift; sourceTree = "<group>"; };
+		5E68DE872A0C52D600582122 /* UICollectionView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = UICollectionView.swift; sourceTree = "<group>"; };
+		5E68DE892A0C52E700582122 /* Dequeueable.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Dequeueable.swift; sourceTree = "<group>"; };
 		5EA557CC2A0A5CB70023C2E7 /* Floofs.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = Floofs.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		5EA557CF2A0A5CB70023C2E7 /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
 		5EA557D12A0A5CB70023C2E7 /* AppLaunchSceneDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppLaunchSceneDelegate.swift; sourceTree = "<group>"; };
@@ -264,6 +275,7 @@
 			isa = PBXFrameworksBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				5E68DE8D2A0C595A00582122 /* Kingfisher in Frameworks */,
 				5E68DE122A0BBA1B00582122 /* CatsAPI.framework in Frameworks */,
 				5EA558442A0A70CF0023C2E7 /* DogsAPI.framework in Frameworks */,
 				5EA558052A0A6AE80023C2E7 /* APILayer.framework in Frameworks */,
@@ -452,6 +464,7 @@
 			children = (
 				5E68DE342A0BC73A00582122 /* Tab.swift */,
 				5E68DE362A0BC74200582122 /* TabConfigurable.swift */,
+				5E68DE892A0C52E700582122 /* Dequeueable.swift */,
 			);
 			path = Helpers;
 			sourceTree = "<group>";
@@ -460,6 +473,8 @@
 			isa = PBXGroup;
 			children = (
 				5E68DE6B2A0C2D7800582122 /* Array.swift */,
+				5E68DE832A0C517F00582122 /* UIView.swift */,
+				5E68DE872A0C52D600582122 /* UICollectionView.swift */,
 			);
 			path = Extensions;
 			sourceTree = "<group>";
@@ -468,6 +483,8 @@
 			isa = PBXGroup;
 			children = (
 				5E68DE6F2A0C35B000582122 /* PetsViewController.swift */,
+				5E68DE812A0C515E00582122 /* PetsView.swift */,
+				5E68DE852A0C522900582122 /* PetsCollectionViewCell.swift */,
 				5E68DE712A0C45D500582122 /* PetsDataSource.swift */,
 				5E68DE732A0C45DA00582122 /* Pet.swift */,
 			);
@@ -704,6 +721,9 @@
 				5E68DE112A0BBA1B00582122 /* PBXTargetDependency */,
 			);
 			name = Floofs;
+			packageProductDependencies = (
+				5E68DE8C2A0C595A00582122 /* Kingfisher */,
+			);
 			productName = Floofs;
 			productReference = 5EA557CC2A0A5CB70023C2E7 /* Floofs.app */;
 			productType = "com.apple.product-type.application";
@@ -828,6 +848,9 @@
 				Base,
 			);
 			mainGroup = 5EA557C32A0A5CB70023C2E7;
+			packageReferences = (
+				5E68DE8B2A0C595900582122 /* XCRemoteSwiftPackageReference "Kingfisher" */,
+			);
 			productRefGroup = 5EA557CD2A0A5CB70023C2E7 /* Products */;
 			projectDirPath = "";
 			projectRoot = "";
@@ -931,16 +954,21 @@
 			files = (
 				5E68DE722A0C45D500582122 /* PetsDataSource.swift in Sources */,
 				5E68DE5F2A0C268C00582122 /* CatsDataProvider.swift in Sources */,
+				5E68DE862A0C522900582122 /* PetsCollectionViewCell.swift in Sources */,
 				5E68DE742A0C45DA00582122 /* Pet.swift in Sources */,
 				5E68DE3D2A0BCEF500582122 /* AppLaunchFailureSceneDelegate.swift in Sources */,
+				5E68DE822A0C515E00582122 /* PetsView.swift in Sources */,
 				5E68DE372A0BC74200582122 /* TabConfigurable.swift in Sources */,
 				5E68DE442A0BEB9800582122 /* AppScene.swift in Sources */,
 				5E68DE462A0BEC5E00582122 /* AppLaunchFailureViewController.swift in Sources */,
+				5E68DE882A0C52D600582122 /* UICollectionView.swift in Sources */,
 				5E68DE6C2A0C2D7800582122 /* Array.swift in Sources */,
 				5E68DE482A0BF1E700582122 /* AppConfigError.swift in Sources */,
 				5E68DE792A0C4AC400582122 /* Dog.swift in Sources */,
 				5E68DE6A2A0C2CFD00582122 /* DogsDataProvider.swift in Sources */,
+				5E68DE8A2A0C52E700582122 /* Dequeueable.swift in Sources */,
 				5E68DE702A0C35B100582122 /* PetsViewController.swift in Sources */,
+				5E68DE842A0C517F00582122 /* UIView.swift in Sources */,
 				5E68DE3B2A0BC8F600582122 /* AppConfig.swift in Sources */,
 				5E68DE772A0C4AB200582122 /* Cat.swift in Sources */,
 				5E68DE352A0BC73A00582122 /* Tab.swift in Sources */,
@@ -1632,6 +1660,25 @@
 			defaultConfigurationName = Release;
 		};
 /* End XCConfigurationList section */
+
+/* Begin XCRemoteSwiftPackageReference section */
+		5E68DE8B2A0C595900582122 /* XCRemoteSwiftPackageReference "Kingfisher" */ = {
+			isa = XCRemoteSwiftPackageReference;
+			repositoryURL = "https://github.com/onevcat/Kingfisher";
+			requirement = {
+				kind = upToNextMajorVersion;
+				minimumVersion = 7.0.0;
+			};
+		};
+/* End XCRemoteSwiftPackageReference section */
+
+/* Begin XCSwiftPackageProductDependency section */
+		5E68DE8C2A0C595A00582122 /* Kingfisher */ = {
+			isa = XCSwiftPackageProductDependency;
+			package = 5E68DE8B2A0C595900582122 /* XCRemoteSwiftPackageReference "Kingfisher" */;
+			productName = Kingfisher;
+		};
+/* End XCSwiftPackageProductDependency section */
 	};
 	rootObject = 5EA557C42A0A5CB70023C2E7 /* Project object */;
 }

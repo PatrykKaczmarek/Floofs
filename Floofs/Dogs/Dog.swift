@@ -8,7 +8,7 @@ import DogsAPI
 
 extension Dog: Pet {
     var displayName: String {
-        [breed, subbreed].compactMap({ $0 }).joined(separator: " ")
+        [breed, subbreed].compactMap({ $0?.capitalized }).joined(separator: " ")
     }
 
     var imageURLs: [String] {
