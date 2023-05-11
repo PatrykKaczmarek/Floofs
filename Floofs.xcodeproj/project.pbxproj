@@ -58,6 +58,7 @@
 		5E68DE992A0CE9A100582122 /* AppAppearance.swift in Sources */ = {isa = PBXBuildFile; fileRef = 5E68DE982A0CE9A100582122 /* AppAppearance.swift */; };
 		5E68DE9B2A0CE9D900582122 /* UIViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 5E68DE9A2A0CE9D900582122 /* UIViewController.swift */; };
 		5E68DE9D2A0CFB4100582122 /* ImagesLoadingView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 5E68DE9C2A0CFB4100582122 /* ImagesLoadingView.swift */; };
+		5E68DEA62A0D171600582122 /* PetImageDataProviding.swift in Sources */ = {isa = PBXBuildFile; fileRef = 5E68DEA52A0D171600582122 /* PetImageDataProviding.swift */; };
 		5EA557D02A0A5CB70023C2E7 /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = 5EA557CF2A0A5CB70023C2E7 /* AppDelegate.swift */; };
 		5EA557D22A0A5CB70023C2E7 /* AppLaunchSceneDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = 5EA557D12A0A5CB70023C2E7 /* AppLaunchSceneDelegate.swift */; };
 		5EA557D92A0A5CBA0023C2E7 /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 5EA557D82A0A5CBA0023C2E7 /* Assets.xcassets */; };
@@ -233,6 +234,7 @@
 		5E68DE982A0CE9A100582122 /* AppAppearance.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppAppearance.swift; sourceTree = "<group>"; };
 		5E68DE9A2A0CE9D900582122 /* UIViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = UIViewController.swift; sourceTree = "<group>"; };
 		5E68DE9C2A0CFB4100582122 /* ImagesLoadingView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ImagesLoadingView.swift; sourceTree = "<group>"; };
+		5E68DEA52A0D171600582122 /* PetImageDataProviding.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = PetImageDataProviding.swift; sourceTree = "<group>"; };
 		5EA557CC2A0A5CB70023C2E7 /* Floofs.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = Floofs.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		5EA557CF2A0A5CB70023C2E7 /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
 		5EA557D12A0A5CB70023C2E7 /* AppLaunchSceneDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppLaunchSceneDelegate.swift; sourceTree = "<group>"; };
@@ -495,6 +497,7 @@
 				5E68DE8E2A0CD68100582122 /* Breeds */,
 				5E68DE912A0CD6A200582122 /* Gallery */,
 				5E68DE712A0C45D500582122 /* PetsDataSource.swift */,
+				5E68DEA52A0D171600582122 /* PetImageDataProviding.swift */,
 				5E68DE732A0C45DA00582122 /* Pet.swift */,
 			);
 			path = Pets;
@@ -1016,6 +1019,7 @@
 				5E68DE6C2A0C2D7800582122 /* Array.swift in Sources */,
 				5E68DE482A0BF1E700582122 /* AppConfigError.swift in Sources */,
 				5E68DE792A0C4AC400582122 /* Dog.swift in Sources */,
+				5E68DEA62A0D171600582122 /* PetImageDataProviding.swift in Sources */,
 				5E68DE6A2A0C2CFD00582122 /* DogsDataProvider.swift in Sources */,
 				5E68DE8A2A0C52E700582122 /* Dequeueable.swift in Sources */,
 				5E68DE702A0C35B100582122 /* PetsViewController.swift in Sources */,
