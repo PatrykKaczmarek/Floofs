@@ -12,12 +12,12 @@ final class PetsView: UIView {
 
     lazy var collectionView: UICollectionView = {
         let layout = UICollectionViewFlowLayout()
-        layout.minimumInteritemSpacing = 0
-        layout.minimumLineSpacing = 0
-        layout.sectionInset = .zero
+        layout.minimumInteritemSpacing = 8
+        layout.minimumLineSpacing = 8
+        layout.sectionInset = UIEdgeInsets(top: 0, left: 16, bottom: 0, right: 16)
         layout.scrollDirection = .vertical
         let collectionView = UICollectionView(frame: .zero, collectionViewLayout: layout)
-        collectionView.backgroundColor = .white
+        collectionView.backgroundColor = .backgroundGray
         return collectionView.layoutable()
     }()
 
@@ -28,6 +28,7 @@ final class PetsView: UIView {
     init() {
         super.init(frame: .zero)
 
+        backgroundColor = .backgroundGray
         addSubviews(collectionView, activityView)
         NSLayoutConstraint.activate([
             collectionView.leadingAnchor.constraint(equalTo: leadingAnchor),

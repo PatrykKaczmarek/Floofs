@@ -6,11 +6,17 @@
 
 import UIKit
 
+protocol PetsViewControllerNavigationDelegate: AnyObject {
+    func pets(viewController: PetsViewController, didSelect pet: Pet)
+}
+
 final class PetsViewController: UIViewController {
 
     // MARK: - Properties
 
-    private let dataSource: any PetsDataSource
+    let dataSource: any PetsDataSource
+
+    weak var navigationDelegate: PetsViewControllerNavigationDelegate?
 
     private lazy var customView = PetsView()
 
@@ -47,6 +53,12 @@ final class PetsViewController: UIViewController {
             }
         }
     }
+
+    override func viewWillAppear(_ animated: Bool) {
+        super.viewWillAppear(animated)
+
+        navigationController?.isNavigationBarHidden = true
+    }
 }
 
 // MARK: - UICollectionViewDataSource
@@ -60,7 +72,7 @@ extension PetsViewController: UICollectionViewDataSource {
             dequeueableCell: PetsCollectionViewCell.self,
             forIndexPath: indexPath
         )
-        let pet = dataSource.pets[indexPath.row]
+        let pet = dataSource.pets[indexPath.item]
         cell.title = pet.displayName
         DispatchQueue.main.async {
             cell.setImage(url: pet.coverImageURL)
@@ -84,7 +96,22 @@ extension PetsViewController: UICollectionViewDelegateFlowLayout {
         layout collectionViewLayout: UICollectionViewLayout,
         sizeForItemAt indexPath: IndexPath
     ) -> CGSize {
-        let halfScreenWidth = collectionView.bounds.width * 0.5
-        return CGSize(width: halfScreenWidth, height: halfScreenWidth)
+        let collectionViewWidth = collectionView.bounds.width
+        guard let flowLayout = collectionViewLayout as? UICollectionViewFlowLayout else {
+            return CGSize(
+                width: collectionViewWidth * 0.5,
+                height: collectionViewWidth * 0.5
+            )
+        }
+        let reducedCollectionViewWidth = (collectionViewWidth - flowLayout.minimumInteritemSpacing - flowLayout.sectionInset.left - flowLayout.sectionInset.right) * 0.5
+        let reducedCollectionViewHeight = (collectionViewWidth - flowLayout.minimumLineSpacing - flowLayout.sectionInset.top - flowLayout.sectionInset.bottom) * 0.5
+        return CGSize(
+            width: reducedCollectionViewWidth,
+            height: reducedCollectionViewHeight + PetsCollectionViewCell.estimatedTitleHeight
+        )
+    }
+
+    func collectionView(_ collectionView: UICollectionView, didSelectItemAt indexPath: IndexPath) {
+        navigationDelegate?.pets(viewController: self, didSelect: dataSource.pets[indexPath.item])
     }
 }

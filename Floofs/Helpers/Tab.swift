@@ -6,7 +6,7 @@
 
 import UIKit
 
-enum Tab {
+enum Tab: CaseIterable {
     case dogs
     case cats
 

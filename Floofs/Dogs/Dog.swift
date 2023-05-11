@@ -18,4 +18,8 @@ extension Dog: Pet {
     var coverImageURL: String? {
         images.coverImageUrl
     }
+
+    var isImageFetchCompleted: Bool {
+        images.isComplete
+    }
 }

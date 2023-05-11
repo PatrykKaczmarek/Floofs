@@ -13,7 +13,8 @@ import UIKit
         _ application: UIApplication,
         didFinishLaunchingWithOptions launchOptions: [UIApplication.LaunchOptionsKey: Any]?
     ) -> Bool {
-        true
+        AppAppearance.setup()
+        return true
     }
 
     func application(

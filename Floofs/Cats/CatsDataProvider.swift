@@ -5,7 +5,7 @@
 
 import CatsAPI
 
-final class CatsDataProvider: PetsDataSource {
+final class CatsDataProvider: PetsDataSource, PetImageDataProviding {
 
     // MARK: - Properties
 
@@ -35,19 +35,20 @@ final class CatsDataProvider: PetsDataSource {
         }
     }
 
-    func fetchImages(petIndex: Int, completion: ((Bool) -> Void)?) {
-        apiClient.fetchImages(cat: pets[petIndex]) { [weak self] result in
+    func fetchImages(petIndex: Int, completion: ((Pet) -> Void)?) {
+        let pet = pets[petIndex]
+        apiClient.fetchImages(cat: pet) { [weak self] result in
             switch result {
             case .success(let catWithImages):
                 self?.pets.replace(
                     with: catWithImages,
                     elementMatching: { $0.identifier == catWithImages.identifier }
                 )
-                completion?(true)
+                completion?(catWithImages)
             case .failure(let error):
                 print(error)
                 // TODO: - handle error
-                completion?(false)
+                completion?(pet)
             }
         }
     }
