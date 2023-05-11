@@ -2,7 +2,7 @@
 // CatsImagesResponse.swift
 // CatsAPI
 //
-        
+
 import APILayer
 
 struct CatsImagesResponse: APIResponse {

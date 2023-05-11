@@ -2,7 +2,6 @@
 // TabConfigurable.swift
 // Floofs
 //
-        
 
 import UIKit
 

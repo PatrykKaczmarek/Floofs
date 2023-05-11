@@ -2,7 +2,7 @@
 // DogsDataProvider.swift
 // Floofs
 //
-        
+
 import DogsAPI
 
 final class DogsDataProvider: PetsDataSource, PetImageDataProviding {
@@ -19,7 +19,7 @@ final class DogsDataProvider: PetsDataSource, PetImageDataProviding {
         apiClient = DogsAPIClient(urlSession: .shared)
     }
 
-    // MARK - PetsDataSource
+    // MARK: - PetsDataSource
 
     func fetchPets(completion: ((Bool) -> Void)?) {
         apiClient.fetchAllBreeds { [weak self] result in

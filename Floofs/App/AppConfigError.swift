@@ -2,7 +2,7 @@
 // AppConfigError.swift
 // Floofs
 //
-        
+
 enum AppConfigError: Error {
     case fileNotFound
     case emptyContent

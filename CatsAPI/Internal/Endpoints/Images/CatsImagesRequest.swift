@@ -2,8 +2,8 @@
 // CatsImagesRequest.swift
 // CatsAPI
 //
-        
-import APILayer
+
+import  APILayer
 
 struct CatsImagesRequest: APIRequest {
     typealias ResponseMapper = CatsImagesResponseMapper
@@ -17,7 +17,7 @@ struct CatsImagesRequest: APIRequest {
     }
 
     var apiVersion: String? {
-        CatsAPIVersion.v1.rawValue
+        CatsAPIVersion.version1.rawValue
     }
 
     let limit: Int

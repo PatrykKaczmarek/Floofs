@@ -5,6 +5,7 @@
 
 import APILayer
 
+// swiftlint:disable nesting
 struct CatsBreedsListResponse: APIResponse {
     struct Content: Decodable {
         let identifier: String

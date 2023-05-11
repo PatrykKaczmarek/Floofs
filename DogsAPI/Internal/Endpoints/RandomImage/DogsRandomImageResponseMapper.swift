@@ -2,7 +2,7 @@
 // DogsRandomImageResponseMapper.swift
 // DogsAPI
 //
-        
+
 import APILayer
 
 struct DogsRandomImageResponseMapper: APIResponseCustomMapping {

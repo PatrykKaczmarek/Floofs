@@ -2,7 +2,6 @@
 // PetsView.swift
 // Floofs
 //
-        
 
 import UIKit
 
@@ -37,7 +36,7 @@ final class PetsView: UIView {
             collectionView.topAnchor.constraint(equalTo: topAnchor),
 
             activityView.centerXAnchor.constraint(equalTo: centerXAnchor),
-            activityView.centerYAnchor.constraint(equalTo: centerYAnchor),
+            activityView.centerYAnchor.constraint(equalTo: centerYAnchor)
         ])
     }
 

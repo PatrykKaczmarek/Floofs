@@ -2,8 +2,8 @@
 // DogsRandomImageRequest.swift
 // DogsAPI
 //
-        
-import APILayer
+
+import  APILayer
 
 struct DogsRandomImageRequest: APIRequest {
     typealias ResponseMapper = DogsRandomImageResponseMapper

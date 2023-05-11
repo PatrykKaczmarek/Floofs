@@ -2,7 +2,7 @@
 // AppLaunchFailureSceneDelegate.swift
 // Floofs
 //
-        
+
 import UIKit
 
 final class AppLaunchFailureSceneDelegate: UIResponder, UIWindowSceneDelegate {
@@ -30,4 +30,3 @@ final class AppLaunchFailureSceneDelegate: UIResponder, UIWindowSceneDelegate {
         window?.makeKeyAndVisible()
     }
 }
-

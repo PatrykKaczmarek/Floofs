@@ -2,7 +2,6 @@
 // UIColor.swift
 // Floofs
 //
-        
 
 import UIKit
 
@@ -20,7 +19,7 @@ extension UIColor {
         self.init(
             red: Double(strtoul(String(chars[0...1]), nil, 16)) / 255,
             green: Double(strtoul(String(chars[2...3]), nil, 16)) / 255,
-            blue:  Double(strtoul(String(chars[4...5]), nil, 16)) / 255,
+            blue: Double(strtoul(String(chars[4...5]), nil, 16)) / 255,
             alpha: alpha
         )
     }

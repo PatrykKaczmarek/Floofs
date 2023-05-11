@@ -2,8 +2,8 @@
 // Cat.swift
 // Floofs
 //
-        
-import CatsAPI
+
+import  CatsAPI
 
 extension Cat: Pet {
     var displayName: String {
@@ -22,4 +22,3 @@ extension Cat: Pet {
         images.isComplete
     }
 }
-

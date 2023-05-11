@@ -4,5 +4,5 @@
 //
 
 enum CatsAPIVersion: String {
-    case v1
+    case version1 = "v1"
 }

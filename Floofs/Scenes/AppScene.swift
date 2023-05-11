@@ -4,7 +4,7 @@
 //
 
 import UIKit
-        
+
 enum AppScene {
     case launch
     case failureLaunch

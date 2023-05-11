@@ -3,7 +3,6 @@
 // Floofs
 //
 
-
 import DogsAPI
 
 extension Dog: Pet {

@@ -2,11 +2,11 @@
 // PetsDataSource.swift
 // Floofs
 //
-        
-protocol PetsDataSource {
-    associatedtype T: Pet
 
-    var pets: [T] { get }
+protocol PetsDataSource {
+    associatedtype PetType: Pet
+
+    var pets: [PetType] { get }
 
     func fetchPets(completion: ((Bool) -> Void)?)
 

@@ -19,7 +19,7 @@ final class CatsDataProvider: PetsDataSource, PetImageDataProviding {
         apiClient = CatsAPIClient(urlSession: .shared, apiKey: apiKey)
     }
 
-    // MARK - PetsDataSource
+    // MARK: - PetsDataSource
 
     func fetchPets(completion: ((Bool) -> Void)?) {
         apiClient.fetchAllBreeds { [weak self] result in

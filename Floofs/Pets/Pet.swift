@@ -2,7 +2,7 @@
 // Pet.swift
 // Floofs
 //
-        
+
 protocol Pet {
 
     var identifier: String { get }

@@ -7,7 +7,7 @@ import Foundation
 
 public protocol APIRequest: Encodable {
     associatedtype ResponseMapper: APIResponseCustomMapping
-    
+
     var path: String { get }
 
     var queryItems: [URLQueryItem]? { get }

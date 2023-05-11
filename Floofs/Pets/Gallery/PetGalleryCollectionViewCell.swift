@@ -2,7 +2,6 @@
 // PetGalleryCollectionViewCell.swift
 // Floofs
 //
-        
 
 import UIKit
 import Kingfisher

@@ -2,14 +2,12 @@
 // PetGalleryView.swift
 // Floofs
 //
-        
 
 import UIKit
 
 final class PetGalleryView: UIView {
 
     // MARK: - Properties
-
 
     lazy var collectionView: UICollectionView = {
         let layout = UICollectionViewFlowLayout()

@@ -2,7 +2,6 @@
 // UIViewController.swift
 // Floofs
 //
-        
 
 import UIKit
 

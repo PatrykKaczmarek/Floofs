@@ -2,7 +2,7 @@
 // DogsImagesRequest.swift
 // DogsAPI
 //
-        
+
 import APILayer
 
 struct DogsImagesRequest: APIRequest {

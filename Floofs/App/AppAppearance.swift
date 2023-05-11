@@ -2,7 +2,6 @@
 // AppAppearance.swift
 // Floofs
 //
-        
 
 import UIKit
 

@@ -2,7 +2,6 @@
 // UICollectionView.swift
 // Floofs
 //
-        
 
 import UIKit
 

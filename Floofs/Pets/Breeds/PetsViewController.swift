@@ -3,7 +3,6 @@
 // Floofs
 //
 
-
 import UIKit
 
 protocol PetsViewControllerNavigationDelegate: AnyObject {
@@ -103,8 +102,17 @@ extension PetsViewController: UICollectionViewDelegateFlowLayout {
                 height: collectionViewWidth * 0.5
             )
         }
-        let reducedCollectionViewWidth = (collectionViewWidth - flowLayout.minimumInteritemSpacing - flowLayout.sectionInset.left - flowLayout.sectionInset.right) * 0.5
-        let reducedCollectionViewHeight = (collectionViewWidth - flowLayout.minimumLineSpacing - flowLayout.sectionInset.top - flowLayout.sectionInset.bottom) * 0.5
+        let reducedCollectionViewWidth = (
+            collectionViewWidth -
+            flowLayout.minimumInteritemSpacing -
+            flowLayout.sectionInset.left - flowLayout.sectionInset.right
+        ) * 0.5
+        let reducedCollectionViewHeight = (
+            collectionViewWidth -
+            flowLayout.minimumLineSpacing -
+            flowLayout.sectionInset.top -
+            flowLayout.sectionInset.bottom
+        ) * 0.5
         return CGSize(
             width: reducedCollectionViewWidth,
             height: reducedCollectionViewHeight + PetsCollectionViewCell.estimatedTitleHeight

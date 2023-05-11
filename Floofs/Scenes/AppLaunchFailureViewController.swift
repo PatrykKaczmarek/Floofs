@@ -2,7 +2,6 @@
 // AppLaunchFailureViewController.swift
 // Floofs
 //
-        
 
 import UIKit
 
@@ -47,7 +46,7 @@ final class AppLaunchFailureViewController: UIViewController {
             label.leadingAnchor.constraint(greaterThanOrEqualTo: view.leadingAnchor, constant: 16),
             label.trailingAnchor.constraint(lessThanOrEqualTo: view.trailingAnchor, constant: -16),
             label.topAnchor.constraint(greaterThanOrEqualTo: view.topAnchor, constant: 16),
-            label.bottomAnchor.constraint(lessThanOrEqualTo: view.bottomAnchor, constant: -16),
+            label.bottomAnchor.constraint(lessThanOrEqualTo: view.bottomAnchor, constant: -16)
         ])
     }
 }

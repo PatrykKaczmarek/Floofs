@@ -2,7 +2,6 @@
 // PetsCollectionViewCell.swift
 // Floofs
 //
-        
 
 import UIKit
 

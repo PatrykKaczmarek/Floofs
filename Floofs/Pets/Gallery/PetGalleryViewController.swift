@@ -2,8 +2,8 @@
 // PetGalleryViewController.swift
 // Floofs
 //
-        
-import UIKit
+
+import  UIKit
 
 final class PetGalleryViewController: UIViewController {
 

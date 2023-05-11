@@ -17,6 +17,6 @@ struct CatsBreedsListRequest: APIRequest {
     }
 
     var apiVersion: String? {
-        CatsAPIVersion.v1.rawValue
+        CatsAPIVersion.version1.rawValue
     }
 }

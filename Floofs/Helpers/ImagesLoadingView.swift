@@ -2,7 +2,6 @@
 // ImagesLoadingView.swift
 // Floofs
 //
-        
 
 import Kingfisher
 import UIKit
@@ -37,9 +36,10 @@ extension ImagesLoadingView where Self: AnyObject {
                 .scaleFactor(UIScreen.main.scale),
                 .transition(.fade(0.5)),
                 .cacheOriginalImage
-            ])
-        { [weak self] _ in
-            self?.activityIndicatorView.stopAnimating()
-        }
+            ],
+            completionHandler: { [weak self] _ in
+                self?.activityIndicatorView.stopAnimating()
+            }
+        )
     }
 }

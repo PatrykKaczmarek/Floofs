@@ -49,7 +49,6 @@ public final class DogsAPIClient {
     }
 }
 
-
 // MARK: - Private
 
 private extension DogsAPIClient {

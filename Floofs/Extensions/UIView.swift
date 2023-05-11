@@ -2,8 +2,8 @@
 // UIView.swift
 // Floofs
 //
-        
-import UIKit
+
+import  UIKit
 
 extension UIView {
     class func autoLayoutView() -> Self {

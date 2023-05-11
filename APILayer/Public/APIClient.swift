@@ -35,7 +35,6 @@ open class APIClient {
         do {
             let urlRequest = try encode(request: request)
             session.dataTask(with: urlRequest) { [weak self] data, response, error in
-                /// If API client instance doesn't exist, return.
                 guard let self = self else {
                     return
                 }
@@ -98,30 +97,28 @@ private extension APIClient {
         }
     }
 
+    // swiftlint:disable orphaned_doc_comment
     func validate(data: Data?, response: URLResponse?, error: Error?) throws -> Data {
         /// If there was an error, resolve failure immediately.
         if let error = error {
             throw APIClientError.connectionError(error)
         }
-
         /// If the response is invalid, resolve failure immediately.
         guard let response = response as? HTTPURLResponse else {
             throw APIClientError.responseTypeError
         }
-
         /// Validate against acceptable status codes.
         guard acceptableStatusCodes.contains(response.statusCode) else {
             throw APIClientError.statusCodeError(response.statusCode)
         }
-
         /// If data is missing, resolve failure immediately.
         /// Missing data is not the same as zero-width data – the former is considered erroreus.
         guard let data = data else {
             throw APIClientError.responseDataError
         }
-
         return data
     }
+    // swiftlint:enable orphaned_doc_comment
 }
 
 private extension APIConfiguration {
