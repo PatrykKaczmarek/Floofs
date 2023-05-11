@@ -94,12 +94,12 @@ The project consists of several targets:
 
 ### Icons created by logisstudio - Flaticon
 
-<a href="https://www.flaticon.com/free-icons/paw"><img src="Floofs/Assets.xcassets/paw.imageset/paw.png" align="left" height="48" width="48"></a>
+<a href="https://www.flaticon.com/free-icons/paw"><img src="Floofs/Assets.xcassets/paw.imageset/paw.png" style="background-color:white;" align="left" height="48" width="48"></a>
 
-<a href="https://www.flaticon.com/free-icons/cat"><img src="Floofs/Assets.xcassets/cat_deselected.imageset/cat_deselected@3x.png" align="left" height="48" width="48"></a>
+<a href="https://www.flaticon.com/free-icons/cat"><img src="Floofs/Assets.xcassets/cat_deselected.imageset/cat_deselected@3x.png" style="background-color:white;" align="left" height="48" width="48"></a>
 
-<a href="https://www.flaticon.com/free-icons/cat"><img src="Floofs/Assets.xcassets/cat_selected.imageset/cat_selected@3x.png" align="left" height="48" width="48"></a>
+<a href="https://www.flaticon.com/free-icons/cat"><img src="Floofs/Assets.xcassets/cat_selected.imageset/cat_selected@3x.png" style="background-color:white;" align="left" height="48" width="48"></a>
 
-<a href="https://www.flaticon.com/free-icons/dog"><img src="Floofs/Assets.xcassets/dog_deselected.imageset/dog_deselected@3x.png" align="left" height="48" width="48"></a>
+<a href="https://www.flaticon.com/free-icons/dog"><img src="Floofs/Assets.xcassets/dog_deselected.imageset/dog_deselected@3x.png" style="background-color:white;" align="left" height="48" width="48"></a>
 
-<a href="https://www.flaticon.com/free-icons/dog"><img src="Floofs/Assets.xcassets/dog_selected.imageset/dog_selected@3x.png" align="left" height="48" width="48"></a>
+<a href="https://www.flaticon.com/free-icons/dog"><img src="Floofs/Assets.xcassets/dog_selected.imageset/dog_selected@3x.png" style="background-color:white;" align="left" height="48" width="48"></a>
