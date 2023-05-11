@@ -43,6 +43,8 @@ Things you need to have installed before start working with a project.
 
 	> ⚠️ `AppConfig.plist` is added to `.gitignore` so you won't accidentally push it to the repository.
 
+	> ℹ️ You can obtain your own `CatsAPIKey` by signing up on the [main site](https://thecatapi.com/) and getting one emailed to you for free.
+
 
 4. Open `Floofs.xcodeproj` file and build the project.
 
