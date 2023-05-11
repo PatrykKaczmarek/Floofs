@@ -101,8 +101,13 @@ private extension PetGalleryViewController {
             return
         }
 
+        if pet.imageURLs.count == 0 {
+            customView.activityView.startAnimating()
+        }
+
         imagesProvider.fetchImages(pet: pet) { [weak self] pet in
             self?.pet = pet
+            self?.customView.activityView.stopAnimating()
             self?.customView.collectionView.reloadData()
         }
     }

@@ -20,18 +20,23 @@ final class PetGalleryView: UIView {
         return collectionView.layoutable()
     }()
 
+    lazy var activityView = UIActivityIndicatorView(style: .large).layoutable()
+
     // MARK: - Constructor
 
     init() {
         super.init(frame: .zero)
 
         backgroundColor = .backgroundGray
-        addSubviews(collectionView)
+        addSubviews(collectionView, activityView)
         NSLayoutConstraint.activate([
             collectionView.leadingAnchor.constraint(equalTo: leadingAnchor),
             collectionView.trailingAnchor.constraint(equalTo: trailingAnchor),
             collectionView.bottomAnchor.constraint(equalTo: bottomAnchor),
-            collectionView.topAnchor.constraint(equalTo: topAnchor)
+            collectionView.topAnchor.constraint(equalTo: topAnchor),
+
+            activityView.centerXAnchor.constraint(equalTo: centerXAnchor),
+            activityView.centerYAnchor.constraint(equalTo: centerYAnchor)
         ])
     }
 
