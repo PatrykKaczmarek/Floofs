@@ -16,8 +16,8 @@ struct CatsImagesRequest: APIRequest {
         .get
     }
 
-    var apiVersion: String? {
-        CatsAPIVersion.version1.rawValue
+    var apiVersion: APIVersion? {
+        .version1
     }
 
     let limit: Int

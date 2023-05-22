@@ -12,7 +12,10 @@ struct APIRequestBuilder {
 
     static func build(request: some APIRequest, baseURL: URL, apiKey: APIKey?) throws -> URLRequest {
         var components = URLComponents()
-        components.path = [request.apiVersion, request.path].compactMap { $0 }.joined(separator: "/")
+        components.path = [
+            request.apiVersion?.rawValue,
+            request.path
+        ].compactMap { $0 }.joined(separator: "/")
         components.queryItems = request.queryItems
         guard let url = components.url(relativeTo: baseURL) else {
             throw UnderlyingError.cannotComposeURL

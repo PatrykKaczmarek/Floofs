@@ -17,7 +17,6 @@
 		5E68DE262A0BBAC200582122 /* CatsBreedsListRequest.swift in Sources */ = {isa = PBXBuildFile; fileRef = 5E68DE1F2A0BBAC200582122 /* CatsBreedsListRequest.swift */; };
 		5E68DE282A0BBAC200582122 /* CatsBreedListResponseMapper.swift in Sources */ = {isa = PBXBuildFile; fileRef = 5E68DE212A0BBAC200582122 /* CatsBreedListResponseMapper.swift */; };
 		5E68DE292A0BBAC200582122 /* CatsBreedsListResponse.swift in Sources */ = {isa = PBXBuildFile; fileRef = 5E68DE222A0BBAC200582122 /* CatsBreedsListResponse.swift */; };
-		5E68DE2A2A0BBAC200582122 /* CatsAPIVersion.swift in Sources */ = {isa = PBXBuildFile; fileRef = 5E68DE232A0BBAC200582122 /* CatsAPIVersion.swift */; };
 		5E68DE2B2A0BBAC200582122 /* CatsAPIClient.swift in Sources */ = {isa = PBXBuildFile; fileRef = 5E68DE242A0BBAC200582122 /* CatsAPIClient.swift */; };
 		5E68DE2D2A0BBB3A00582122 /* Cat.swift in Sources */ = {isa = PBXBuildFile; fileRef = 5E68DE2C2A0BBB3A00582122 /* Cat.swift */; };
 		5E68DE352A0BC73A00582122 /* Tab.swift in Sources */ = {isa = PBXBuildFile; fileRef = 5E68DE342A0BC73A00582122 /* Tab.swift */; };
@@ -93,6 +92,7 @@
 		5EA558572A0A712D0023C2E7 /* DogsAPIResponse.swift in Sources */ = {isa = PBXBuildFile; fileRef = 5EA558512A0A712D0023C2E7 /* DogsAPIResponse.swift */; };
 		5EA558582A0A712D0023C2E7 /* DogsAPIClient.swift in Sources */ = {isa = PBXBuildFile; fileRef = 5EA558522A0A712D0023C2E7 /* DogsAPIClient.swift */; };
 		5EA5585C2A0A71C50023C2E7 /* Dog.swift in Sources */ = {isa = PBXBuildFile; fileRef = 5EA5585B2A0A71C50023C2E7 /* Dog.swift */; };
+		5ED5EFBF2A1B8F8E00DB79E5 /* APIVersion.swift in Sources */ = {isa = PBXBuildFile; fileRef = 5ED5EFBE2A1B8F8E00DB79E5 /* APIVersion.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
@@ -194,7 +194,6 @@
 		5E68DE1F2A0BBAC200582122 /* CatsBreedsListRequest.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = CatsBreedsListRequest.swift; sourceTree = "<group>"; };
 		5E68DE212A0BBAC200582122 /* CatsBreedListResponseMapper.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = CatsBreedListResponseMapper.swift; sourceTree = "<group>"; };
 		5E68DE222A0BBAC200582122 /* CatsBreedsListResponse.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = CatsBreedsListResponse.swift; sourceTree = "<group>"; };
-		5E68DE232A0BBAC200582122 /* CatsAPIVersion.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = CatsAPIVersion.swift; sourceTree = "<group>"; };
 		5E68DE242A0BBAC200582122 /* CatsAPIClient.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = CatsAPIClient.swift; sourceTree = "<group>"; };
 		5E68DE2C2A0BBB3A00582122 /* Cat.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Cat.swift; sourceTree = "<group>"; };
 		5E68DE342A0BC73A00582122 /* Tab.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Tab.swift; sourceTree = "<group>"; };
@@ -269,6 +268,7 @@
 		5EA558512A0A712D0023C2E7 /* DogsAPIResponse.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = DogsAPIResponse.swift; sourceTree = "<group>"; };
 		5EA558522A0A712D0023C2E7 /* DogsAPIClient.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = DogsAPIClient.swift; sourceTree = "<group>"; };
 		5EA5585B2A0A71C50023C2E7 /* Dog.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Dog.swift; sourceTree = "<group>"; };
+		5ED5EFBE2A1B8F8E00DB79E5 /* APIVersion.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = APIVersion.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -354,7 +354,6 @@
 			isa = PBXGroup;
 			children = (
 				5E68DE1E2A0BBAC200582122 /* CatsAPIConfiguration.swift */,
-				5E68DE232A0BBAC200582122 /* CatsAPIVersion.swift */,
 				5E68DE312A0BBBA000582122 /* Endpoints */,
 			);
 			path = Internal;
@@ -610,6 +609,7 @@
 			children = (
 				5EA558132A0A6B380023C2E7 /* APIConfiguration.swift */,
 				5EA558142A0A6B380023C2E7 /* APIClient.swift */,
+				5ED5EFBE2A1B8F8E00DB79E5 /* APIVersion.swift */,
 				5EA558152A0A6B380023C2E7 /* APIScheme.swift */,
 				5EA558162A0A6B380023C2E7 /* APIResponseCustomMapping.swift */,
 				5EA558172A0A6B380023C2E7 /* APIRequestMethod.swift */,
@@ -975,7 +975,6 @@
 			files = (
 				5E68DE542A0BFCBC00582122 /* CatsImagesResponse.swift in Sources */,
 				5E68DE292A0BBAC200582122 /* CatsBreedsListResponse.swift in Sources */,
-				5E68DE2A2A0BBAC200582122 /* CatsAPIVersion.swift in Sources */,
 				5E68DE2B2A0BBAC200582122 /* CatsAPIClient.swift in Sources */,
 				5E68DE252A0BBAC200582122 /* CatsAPIConfiguration.swift in Sources */,
 				5E68DE2D2A0BBB3A00582122 /* Cat.swift in Sources */,
@@ -1045,6 +1044,7 @@
 				5EA5581F2A0A6B380023C2E7 /* APIClient.swift in Sources */,
 				5EA558262A0A6B380023C2E7 /* APIRequest.swift in Sources */,
 				5EA558272A0A6B380023C2E7 /* APIResponseNoOpMapper.swift in Sources */,
+				5ED5EFBF2A1B8F8E00DB79E5 /* APIVersion.swift in Sources */,
 				5EA558222A0A6B380023C2E7 /* APIRequestMethod.swift in Sources */,
 				5EA558252A0A6B380023C2E7 /* APIClientError.swift in Sources */,
 				5EA558242A0A6B380023C2E7 /* APIResponse.swift in Sources */,

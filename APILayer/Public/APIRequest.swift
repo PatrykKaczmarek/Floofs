@@ -16,7 +16,7 @@ public protocol APIRequest: Encodable {
 
     var encoder: JSONEncoder { get }
 
-    var apiVersion: String? { get }
+    var apiVersion: APIVersion? { get }
 
     var defaultHeaders: [String: String] { get }
 }
@@ -37,7 +37,7 @@ public extension APIRequest {
         ]
     }
 
-    var apiVersion: String? {
+    var apiVersion: APIVersion? {
         nil
     }
 
