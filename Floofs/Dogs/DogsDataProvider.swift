@@ -35,8 +35,11 @@ final class DogsDataProvider: PetsDataSource, PetImageDataProviding {
         }
     }
 
-    func fetchImages(petIndex: Int, completion: ((Pet) -> Void)?) {
-        let pet = pets[petIndex]
+    func fetchImages(petIndex: Int, completion: ((Pet?) -> Void)?) {
+        guard let pet = pets[safe: petIndex] else {
+            completion?(nil)
+            return
+        }
         apiClient.fetchImages(dog: pet) { [weak self] result in
             switch result {
             case .success(let dogWithImages):
