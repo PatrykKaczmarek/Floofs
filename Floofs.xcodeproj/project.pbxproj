@@ -93,6 +93,7 @@
 		5EA558582A0A712D0023C2E7 /* DogsAPIClient.swift in Sources */ = {isa = PBXBuildFile; fileRef = 5EA558522A0A712D0023C2E7 /* DogsAPIClient.swift */; };
 		5EA5585C2A0A71C50023C2E7 /* Dog.swift in Sources */ = {isa = PBXBuildFile; fileRef = 5EA5585B2A0A71C50023C2E7 /* Dog.swift */; };
 		5ED5EFBF2A1B8F8E00DB79E5 /* APIVersion.swift in Sources */ = {isa = PBXBuildFile; fileRef = 5ED5EFBE2A1B8F8E00DB79E5 /* APIVersion.swift */; };
+		5ED5EFC12A1B91C600DB79E5 /* Collection.swift in Sources */ = {isa = PBXBuildFile; fileRef = 5ED5EFC02A1B91C600DB79E5 /* Collection.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
@@ -269,6 +270,7 @@
 		5EA558522A0A712D0023C2E7 /* DogsAPIClient.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = DogsAPIClient.swift; sourceTree = "<group>"; };
 		5EA5585B2A0A71C50023C2E7 /* Dog.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Dog.swift; sourceTree = "<group>"; };
 		5ED5EFBE2A1B8F8E00DB79E5 /* APIVersion.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = APIVersion.swift; sourceTree = "<group>"; };
+		5ED5EFC02A1B91C600DB79E5 /* Collection.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Collection.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -486,6 +488,7 @@
 				5E68DE872A0C52D600582122 /* UICollectionView.swift */,
 				5E68DE9A2A0CE9D900582122 /* UIViewController.swift */,
 				5E68DE962A0CDD5600582122 /* UIColor.swift */,
+				5ED5EFC02A1B91C600DB79E5 /* Collection.swift */,
 			);
 			path = Extensions;
 			sourceTree = "<group>";
@@ -1007,6 +1010,7 @@
 				5E68DE9D2A0CFB4100582122 /* ImagesLoadingView.swift in Sources */,
 				5E68DE742A0C45DA00582122 /* Pet.swift in Sources */,
 				5E68DE3D2A0BCEF500582122 /* AppLaunchFailureSceneDelegate.swift in Sources */,
+				5ED5EFC12A1B91C600DB79E5 /* Collection.swift in Sources */,
 				5E68DE822A0C515E00582122 /* PetsView.swift in Sources */,
 				5E68DE372A0BC74200582122 /* TabConfigurable.swift in Sources */,
 				5E68DE972A0CDD5600582122 /* UIColor.swift in Sources */,

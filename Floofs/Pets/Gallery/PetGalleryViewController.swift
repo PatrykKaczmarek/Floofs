@@ -63,9 +63,10 @@ extension PetGalleryViewController: UICollectionViewDataSource {
             dequeueableCell: PetGalleryCollectionViewCell.self,
             forIndexPath: indexPath
         )
-        let imageURL = pet.imageURLs[indexPath.item]
-        DispatchQueue.main.async {
-            cell.setImage(url: imageURL)
+        if let imageURL = pet.imageURLs[safe: indexPath.item] {
+            DispatchQueue.main.async {
+                cell.setImage(url: imageURL)
+            }
         }
         fetchImages(currentIndexPath: indexPath)
         return cell

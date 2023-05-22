@@ -71,7 +71,9 @@ extension PetsViewController: UICollectionViewDataSource {
             dequeueableCell: PetsCollectionViewCell.self,
             forIndexPath: indexPath
         )
-        let pet = dataSource.pets[indexPath.item]
+        guard let pet = dataSource.pets[safe: indexPath.item] else {
+            return cell
+        }
         cell.title = pet.displayName
         DispatchQueue.main.async {
             cell.setImage(url: pet.coverImageURL)
@@ -120,6 +122,8 @@ extension PetsViewController: UICollectionViewDelegateFlowLayout {
     }
 
     func collectionView(_ collectionView: UICollectionView, didSelectItemAt indexPath: IndexPath) {
-        navigationDelegate?.pets(viewController: self, didSelect: dataSource.pets[indexPath.item])
+        dataSource.pets[safe: indexPath.item] .flatMap {
+            navigationDelegate?.pets(viewController: self, didSelect: $0)
+        }
     }
 }
