@@ -7,11 +7,13 @@ import Kingfisher
 import UIKit
 
 protocol ImagesLoadingView {
-
+    /// An image view where the downloaded image should be displayed.
     var imageView: UIImageView { get }
 
-    var activityIndicatorView: UIActivityIndicatorView { get }
-
+    /// Downloads an image from given url and
+    /// - Parameters:
+    ///   - string: An url pointing to the external resource.
+    ///   - placeholder: A placeholder that should be visible while loading an image.
     func setImage(url string: String?, placeholder: UIImage)
 }
 
@@ -24,7 +26,6 @@ extension ImagesLoadingView where Self: AnyObject {
             imageView.image = placeholder
             return
         }
-        activityIndicatorView.startAnimating()
         let url = URL(string: urlString)
         let processor = DownsamplingImageProcessor(size: imageView.bounds.size)
         imageView.kf.indicatorType = .activity
@@ -36,10 +37,7 @@ extension ImagesLoadingView where Self: AnyObject {
                 .scaleFactor(UIScreen.main.scale),
                 .transition(.fade(0.5)),
                 .cacheOriginalImage
-            ],
-            completionHandler: { [weak self] _ in
-                self?.activityIndicatorView.stopAnimating()
-            }
+            ]
         )
     }
 }

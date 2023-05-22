@@ -10,8 +10,6 @@ final class PetGalleryCollectionViewCell: UICollectionViewCell, ImagesLoadingVie
 
     // MARK: - Properties
 
-    lazy var activityIndicatorView = UIActivityIndicatorView(style: .large).layoutable()
-
     lazy var imageView: UIImageView = {
         let view = UIImageView.autoLayoutView()
         view.contentMode = .scaleAspectFill
@@ -29,15 +27,12 @@ final class PetGalleryCollectionViewCell: UICollectionViewCell, ImagesLoadingVie
         backgroundColor = .white
         clipsToBounds = true
 
-        contentView.addSubviews(imageView, activityIndicatorView)
+        contentView.addSubviews(imageView)
         NSLayoutConstraint.activate([
             imageView.leadingAnchor.constraint(equalTo: contentView.leadingAnchor),
             imageView.trailingAnchor.constraint(equalTo: contentView.trailingAnchor),
             imageView.topAnchor.constraint(equalTo: contentView.topAnchor),
-            imageView.bottomAnchor.constraint(equalTo: contentView.bottomAnchor),
-
-            activityIndicatorView.centerXAnchor.constraint(equalTo: imageView.centerXAnchor),
-            activityIndicatorView.centerYAnchor.constraint(equalTo: imageView.centerYAnchor)
+            imageView.bottomAnchor.constraint(equalTo: contentView.bottomAnchor)
         ])
     }
 
@@ -52,6 +47,5 @@ final class PetGalleryCollectionViewCell: UICollectionViewCell, ImagesLoadingVie
         super.prepareForReuse()
 
         imageView.image = nil
-        activityIndicatorView.stopAnimating()
     }
 }

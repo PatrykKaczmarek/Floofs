@@ -17,8 +17,6 @@ final class PetsCollectionViewCell: UICollectionViewCell, ImagesLoadingView {
         set { titleLabel.text = newValue }
     }
 
-    lazy var activityIndicatorView = UIActivityIndicatorView(style: .large).layoutable()
-
     private lazy var titleLabel: UILabel = {
         let label = UILabel.autoLayoutView()
         label.font = UIFont.systemFont(ofSize: 24)
@@ -53,7 +51,7 @@ final class PetsCollectionViewCell: UICollectionViewCell, ImagesLoadingView {
         layer.shadowColor = UIColor.black.cgColor
         layer.shadowOffset = CGSize(width: 2, height: 2)
 
-        contentView.addSubviews(imageView, titleLabel, activityIndicatorView)
+        contentView.addSubviews(imageView, titleLabel)
         NSLayoutConstraint.activate([
             imageView.leadingAnchor.constraint(equalTo: contentView.leadingAnchor),
             imageView.trailingAnchor.constraint(equalTo: contentView.trailingAnchor),
@@ -63,10 +61,7 @@ final class PetsCollectionViewCell: UICollectionViewCell, ImagesLoadingView {
             titleLabel.leadingAnchor.constraint(equalTo: contentView.leadingAnchor, constant: 16),
             titleLabel.trailingAnchor.constraint(equalTo: contentView.trailingAnchor, constant: -16),
             titleLabel.topAnchor.constraint(equalTo: imageView.bottomAnchor, constant: 16),
-            titleLabel.bottomAnchor.constraint(equalTo: contentView.bottomAnchor, constant: -16),
-
-            activityIndicatorView.centerXAnchor.constraint(equalTo: imageView.centerXAnchor),
-            activityIndicatorView.centerYAnchor.constraint(equalTo: imageView.centerYAnchor)
+            titleLabel.bottomAnchor.constraint(equalTo: contentView.bottomAnchor, constant: -16)
         ])
     }
 
@@ -91,6 +86,5 @@ final class PetsCollectionViewCell: UICollectionViewCell, ImagesLoadingView {
 
         imageView.image = nil
         titleLabel.text = nil
-        activityIndicatorView.stopAnimating()
     }
 }

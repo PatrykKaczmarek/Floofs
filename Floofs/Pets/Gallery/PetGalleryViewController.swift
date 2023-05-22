@@ -102,7 +102,7 @@ private extension PetGalleryViewController {
             return
         }
 
-        if pet.imageURLs.count == 0 {
+        if pet.imageURLs.isEmpty {
             customView.activityView.startAnimating()
         }
 
