@@ -3,22 +3,10 @@
 	archiveVersion = 1;
 	classes = {
 	};
-	objectVersion = 56;
+	objectVersion = 60;
 	objects = {
 
 /* Begin PBXBuildFile section */
-		5E68DE012A0BBA1A00582122 /* CatsAPI.docc in Sources */ = {isa = PBXBuildFile; fileRef = 5E68DE002A0BBA1A00582122 /* CatsAPI.docc */; };
-		5E68DE072A0BBA1A00582122 /* CatsAPI.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 5E68DDFD2A0BBA1900582122 /* CatsAPI.framework */; };
-		5E68DE0E2A0BBA1B00582122 /* CatsAPITests.swift in Sources */ = {isa = PBXBuildFile; fileRef = 5E68DE0D2A0BBA1B00582122 /* CatsAPITests.swift */; };
-		5E68DE0F2A0BBA1B00582122 /* CatsAPI.h in Headers */ = {isa = PBXBuildFile; fileRef = 5E68DDFF2A0BBA1A00582122 /* CatsAPI.h */; settings = {ATTRIBUTES = (Public, ); }; };
-		5E68DE122A0BBA1B00582122 /* CatsAPI.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 5E68DDFD2A0BBA1900582122 /* CatsAPI.framework */; };
-		5E68DE132A0BBA1B00582122 /* CatsAPI.framework in Embed Frameworks */ = {isa = PBXBuildFile; fileRef = 5E68DDFD2A0BBA1900582122 /* CatsAPI.framework */; settings = {ATTRIBUTES = (CodeSignOnCopy, RemoveHeadersOnCopy, ); }; };
-		5E68DE252A0BBAC200582122 /* CatsAPIConfiguration.swift in Sources */ = {isa = PBXBuildFile; fileRef = 5E68DE1E2A0BBAC200582122 /* CatsAPIConfiguration.swift */; };
-		5E68DE262A0BBAC200582122 /* CatsBreedsListRequest.swift in Sources */ = {isa = PBXBuildFile; fileRef = 5E68DE1F2A0BBAC200582122 /* CatsBreedsListRequest.swift */; };
-		5E68DE282A0BBAC200582122 /* CatsBreedListResponseMapper.swift in Sources */ = {isa = PBXBuildFile; fileRef = 5E68DE212A0BBAC200582122 /* CatsBreedListResponseMapper.swift */; };
-		5E68DE292A0BBAC200582122 /* CatsBreedsListResponse.swift in Sources */ = {isa = PBXBuildFile; fileRef = 5E68DE222A0BBAC200582122 /* CatsBreedsListResponse.swift */; };
-		5E68DE2B2A0BBAC200582122 /* CatsAPIClient.swift in Sources */ = {isa = PBXBuildFile; fileRef = 5E68DE242A0BBAC200582122 /* CatsAPIClient.swift */; };
-		5E68DE2D2A0BBB3A00582122 /* Cat.swift in Sources */ = {isa = PBXBuildFile; fileRef = 5E68DE2C2A0BBB3A00582122 /* Cat.swift */; };
 		5E68DE352A0BC73A00582122 /* Tab.swift in Sources */ = {isa = PBXBuildFile; fileRef = 5E68DE342A0BC73A00582122 /* Tab.swift */; };
 		5E68DE372A0BC74200582122 /* TabConfigurable.swift in Sources */ = {isa = PBXBuildFile; fileRef = 5E68DE362A0BC74200582122 /* TabConfigurable.swift */; };
 		5E68DE3B2A0BC8F600582122 /* AppConfig.swift in Sources */ = {isa = PBXBuildFile; fileRef = 5E68DE3A2A0BC8F600582122 /* AppConfig.swift */; };
@@ -27,13 +15,7 @@
 		5E68DE462A0BEC5E00582122 /* AppLaunchFailureViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 5E68DE452A0BEC5E00582122 /* AppLaunchFailureViewController.swift */; };
 		5E68DE482A0BF1E700582122 /* AppConfigError.swift in Sources */ = {isa = PBXBuildFile; fileRef = 5E68DE472A0BF1E700582122 /* AppConfigError.swift */; };
 		5E68DE4C2A0BF68D00582122 /* AppConfig.plist in Resources */ = {isa = PBXBuildFile; fileRef = 5E68DE4B2A0BF68D00582122 /* AppConfig.plist */; };
-		5E68DE4F2A0BFC3900582122 /* CatsImagesRequest.swift in Sources */ = {isa = PBXBuildFile; fileRef = 5E68DE4E2A0BFC3900582122 /* CatsImagesRequest.swift */; };
-		5E68DE522A0BFCAF00582122 /* CatsImagesResponseMapper.swift in Sources */ = {isa = PBXBuildFile; fileRef = 5E68DE512A0BFCAF00582122 /* CatsImagesResponseMapper.swift */; };
-		5E68DE542A0BFCBC00582122 /* CatsImagesResponse.swift in Sources */ = {isa = PBXBuildFile; fileRef = 5E68DE532A0BFCBC00582122 /* CatsImagesResponse.swift */; };
 		5E68DE5F2A0C268C00582122 /* CatsDataProvider.swift in Sources */ = {isa = PBXBuildFile; fileRef = 5E68DE5E2A0C268C00582122 /* CatsDataProvider.swift */; };
-		5E68DE612A0C2A5600582122 /* DogsImagesRequest.swift in Sources */ = {isa = PBXBuildFile; fileRef = 5E68DE602A0C2A5600582122 /* DogsImagesRequest.swift */; };
-		5E68DE632A0C2A6100582122 /* DogsImagesResponse.swift in Sources */ = {isa = PBXBuildFile; fileRef = 5E68DE622A0C2A6100582122 /* DogsImagesResponse.swift */; };
-		5E68DE652A0C2A6A00582122 /* DogsImagesResponseMapper.swift in Sources */ = {isa = PBXBuildFile; fileRef = 5E68DE642A0C2A6A00582122 /* DogsImagesResponseMapper.swift */; };
 		5E68DE6A2A0C2CFD00582122 /* DogsDataProvider.swift in Sources */ = {isa = PBXBuildFile; fileRef = 5E68DE692A0C2CFD00582122 /* DogsDataProvider.swift */; };
 		5E68DE6C2A0C2D7800582122 /* Array.swift in Sources */ = {isa = PBXBuildFile; fileRef = 5E68DE6B2A0C2D7800582122 /* Array.swift */; };
 		5E68DE702A0C35B100582122 /* PetsViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 5E68DE6F2A0C35B000582122 /* PetsViewController.swift */; };
@@ -41,9 +23,6 @@
 		5E68DE742A0C45DA00582122 /* Pet.swift in Sources */ = {isa = PBXBuildFile; fileRef = 5E68DE732A0C45DA00582122 /* Pet.swift */; };
 		5E68DE772A0C4AB200582122 /* Cat.swift in Sources */ = {isa = PBXBuildFile; fileRef = 5E68DE762A0C4AB200582122 /* Cat.swift */; };
 		5E68DE792A0C4AC400582122 /* Dog.swift in Sources */ = {isa = PBXBuildFile; fileRef = 5E68DE782A0C4AC400582122 /* Dog.swift */; };
-		5E68DE7B2A0C4BDE00582122 /* DogsRandomImageRequest.swift in Sources */ = {isa = PBXBuildFile; fileRef = 5E68DE7A2A0C4BDE00582122 /* DogsRandomImageRequest.swift */; };
-		5E68DE7D2A0C4BE700582122 /* DogsRandomImageResponse.swift in Sources */ = {isa = PBXBuildFile; fileRef = 5E68DE7C2A0C4BE700582122 /* DogsRandomImageResponse.swift */; };
-		5E68DE7F2A0C4BF200582122 /* DogsRandomImageResponseMapper.swift in Sources */ = {isa = PBXBuildFile; fileRef = 5E68DE7E2A0C4BF200582122 /* DogsRandomImageResponseMapper.swift */; };
 		5E68DE822A0C515E00582122 /* PetsView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 5E68DE812A0C515E00582122 /* PetsView.swift */; };
 		5E68DE842A0C517F00582122 /* UIView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 5E68DE832A0C517F00582122 /* UIView.swift */; };
 		5E68DE862A0C522900582122 /* PetsCollectionViewCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = 5E68DE852A0C522900582122 /* PetsCollectionViewCell.swift */; };
@@ -62,112 +41,10 @@
 		5EA557D22A0A5CB70023C2E7 /* AppLaunchSceneDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = 5EA557D12A0A5CB70023C2E7 /* AppLaunchSceneDelegate.swift */; };
 		5EA557D92A0A5CBA0023C2E7 /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 5EA557D82A0A5CBA0023C2E7 /* Assets.xcassets */; };
 		5EA557DC2A0A5CBA0023C2E7 /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 5EA557DA2A0A5CBA0023C2E7 /* LaunchScreen.storyboard */; };
-		5EA557F42A0A6AE70023C2E7 /* APILayer.docc in Sources */ = {isa = PBXBuildFile; fileRef = 5EA557F32A0A6AE70023C2E7 /* APILayer.docc */; };
-		5EA557FA2A0A6AE80023C2E7 /* APILayer.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 5EA557F02A0A6AE70023C2E7 /* APILayer.framework */; };
-		5EA558012A0A6AE80023C2E7 /* APILayerTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = 5EA558002A0A6AE80023C2E7 /* APILayerTests.swift */; };
-		5EA558022A0A6AE80023C2E7 /* APILayer.h in Headers */ = {isa = PBXBuildFile; fileRef = 5EA557F22A0A6AE70023C2E7 /* APILayer.h */; settings = {ATTRIBUTES = (Public, ); }; };
-		5EA558052A0A6AE80023C2E7 /* APILayer.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 5EA557F02A0A6AE70023C2E7 /* APILayer.framework */; };
-		5EA558062A0A6AE90023C2E7 /* APILayer.framework in Embed Frameworks */ = {isa = PBXBuildFile; fileRef = 5EA557F02A0A6AE70023C2E7 /* APILayer.framework */; settings = {ATTRIBUTES = (CodeSignOnCopy, RemoveHeadersOnCopy, ); }; };
-		5EA5581D2A0A6B380023C2E7 /* APIRequestBuilder.swift in Sources */ = {isa = PBXBuildFile; fileRef = 5EA558112A0A6B380023C2E7 /* APIRequestBuilder.swift */; };
-		5EA5581E2A0A6B380023C2E7 /* APIConfiguration.swift in Sources */ = {isa = PBXBuildFile; fileRef = 5EA558132A0A6B380023C2E7 /* APIConfiguration.swift */; };
-		5EA5581F2A0A6B380023C2E7 /* APIClient.swift in Sources */ = {isa = PBXBuildFile; fileRef = 5EA558142A0A6B380023C2E7 /* APIClient.swift */; };
-		5EA558202A0A6B380023C2E7 /* APIScheme.swift in Sources */ = {isa = PBXBuildFile; fileRef = 5EA558152A0A6B380023C2E7 /* APIScheme.swift */; };
-		5EA558212A0A6B380023C2E7 /* APIResponseCustomMapping.swift in Sources */ = {isa = PBXBuildFile; fileRef = 5EA558162A0A6B380023C2E7 /* APIResponseCustomMapping.swift */; };
-		5EA558222A0A6B380023C2E7 /* APIRequestMethod.swift in Sources */ = {isa = PBXBuildFile; fileRef = 5EA558172A0A6B380023C2E7 /* APIRequestMethod.swift */; };
-		5EA558232A0A6B380023C2E7 /* APIKey.swift in Sources */ = {isa = PBXBuildFile; fileRef = 5EA558182A0A6B380023C2E7 /* APIKey.swift */; };
-		5EA558242A0A6B380023C2E7 /* APIResponse.swift in Sources */ = {isa = PBXBuildFile; fileRef = 5EA558192A0A6B380023C2E7 /* APIResponse.swift */; };
-		5EA558252A0A6B380023C2E7 /* APIClientError.swift in Sources */ = {isa = PBXBuildFile; fileRef = 5EA5581A2A0A6B380023C2E7 /* APIClientError.swift */; };
-		5EA558262A0A6B380023C2E7 /* APIRequest.swift in Sources */ = {isa = PBXBuildFile; fileRef = 5EA5581B2A0A6B380023C2E7 /* APIRequest.swift */; };
-		5EA558272A0A6B380023C2E7 /* APIResponseNoOpMapper.swift in Sources */ = {isa = PBXBuildFile; fileRef = 5EA5581C2A0A6B380023C2E7 /* APIResponseNoOpMapper.swift */; };
-		5EA558332A0A70CE0023C2E7 /* DogsAPI.docc in Sources */ = {isa = PBXBuildFile; fileRef = 5EA558322A0A70CE0023C2E7 /* DogsAPI.docc */; };
-		5EA558392A0A70CE0023C2E7 /* DogsAPI.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 5EA5582F2A0A70CD0023C2E7 /* DogsAPI.framework */; };
-		5EA558402A0A70CF0023C2E7 /* DogsAPITests.swift in Sources */ = {isa = PBXBuildFile; fileRef = 5EA5583F2A0A70CF0023C2E7 /* DogsAPITests.swift */; };
-		5EA558412A0A70CF0023C2E7 /* DogsAPI.h in Headers */ = {isa = PBXBuildFile; fileRef = 5EA558312A0A70CE0023C2E7 /* DogsAPI.h */; settings = {ATTRIBUTES = (Public, ); }; };
-		5EA558442A0A70CF0023C2E7 /* DogsAPI.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 5EA5582F2A0A70CD0023C2E7 /* DogsAPI.framework */; };
-		5EA558452A0A70CF0023C2E7 /* DogsAPI.framework in Embed Frameworks */ = {isa = PBXBuildFile; fileRef = 5EA5582F2A0A70CD0023C2E7 /* DogsAPI.framework */; settings = {ATTRIBUTES = (CodeSignOnCopy, RemoveHeadersOnCopy, ); }; };
-		5EA558532A0A712D0023C2E7 /* DogsAPIConfiguration.swift in Sources */ = {isa = PBXBuildFile; fileRef = 5EA5584C2A0A712D0023C2E7 /* DogsAPIConfiguration.swift */; };
-		5EA558542A0A712D0023C2E7 /* DogsBreedListResponseMapper.swift in Sources */ = {isa = PBXBuildFile; fileRef = 5EA5584E2A0A712D0023C2E7 /* DogsBreedListResponseMapper.swift */; };
-		5EA558552A0A712D0023C2E7 /* DogsBreedsListResponse.swift in Sources */ = {isa = PBXBuildFile; fileRef = 5EA5584F2A0A712D0023C2E7 /* DogsBreedsListResponse.swift */; };
-		5EA558562A0A712D0023C2E7 /* DogsBreedsListRequest.swift in Sources */ = {isa = PBXBuildFile; fileRef = 5EA558502A0A712D0023C2E7 /* DogsBreedsListRequest.swift */; };
-		5EA558572A0A712D0023C2E7 /* DogsAPIResponse.swift in Sources */ = {isa = PBXBuildFile; fileRef = 5EA558512A0A712D0023C2E7 /* DogsAPIResponse.swift */; };
-		5EA558582A0A712D0023C2E7 /* DogsAPIClient.swift in Sources */ = {isa = PBXBuildFile; fileRef = 5EA558522A0A712D0023C2E7 /* DogsAPIClient.swift */; };
-		5EA5585C2A0A71C50023C2E7 /* Dog.swift in Sources */ = {isa = PBXBuildFile; fileRef = 5EA5585B2A0A71C50023C2E7 /* Dog.swift */; };
-		5ED5EFBF2A1B8F8E00DB79E5 /* APIVersion.swift in Sources */ = {isa = PBXBuildFile; fileRef = 5ED5EFBE2A1B8F8E00DB79E5 /* APIVersion.swift */; };
+		5EA6F8022C579A9700E217B6 /* CatsAPI in Frameworks */ = {isa = PBXBuildFile; productRef = 5EA6F8012C579A9700E217B6 /* CatsAPI */; };
+		5EA6F8052C579ABA00E217B6 /* DogsAPI in Frameworks */ = {isa = PBXBuildFile; productRef = 5EA6F8042C579ABA00E217B6 /* DogsAPI */; };
 		5ED5EFC12A1B91C600DB79E5 /* Collection.swift in Sources */ = {isa = PBXBuildFile; fileRef = 5ED5EFC02A1B91C600DB79E5 /* Collection.swift */; };
 /* End PBXBuildFile section */
-
-/* Begin PBXContainerItemProxy section */
-		5E68DE082A0BBA1A00582122 /* PBXContainerItemProxy */ = {
-			isa = PBXContainerItemProxy;
-			containerPortal = 5EA557C42A0A5CB70023C2E7 /* Project object */;
-			proxyType = 1;
-			remoteGlobalIDString = 5E68DDFC2A0BBA1900582122;
-			remoteInfo = CatsAPI;
-		};
-		5E68DE0A2A0BBA1B00582122 /* PBXContainerItemProxy */ = {
-			isa = PBXContainerItemProxy;
-			containerPortal = 5EA557C42A0A5CB70023C2E7 /* Project object */;
-			proxyType = 1;
-			remoteGlobalIDString = 5EA557CB2A0A5CB70023C2E7;
-			remoteInfo = Floofs;
-		};
-		5E68DE102A0BBA1B00582122 /* PBXContainerItemProxy */ = {
-			isa = PBXContainerItemProxy;
-			containerPortal = 5EA557C42A0A5CB70023C2E7 /* Project object */;
-			proxyType = 1;
-			remoteGlobalIDString = 5E68DDFC2A0BBA1900582122;
-			remoteInfo = CatsAPI;
-		};
-		5E68DE1A2A0BBA3B00582122 /* PBXContainerItemProxy */ = {
-			isa = PBXContainerItemProxy;
-			containerPortal = 5EA557C42A0A5CB70023C2E7 /* Project object */;
-			proxyType = 1;
-			remoteGlobalIDString = 5EA557EF2A0A6AE70023C2E7;
-			remoteInfo = APILayer;
-		};
-		5EA557FB2A0A6AE80023C2E7 /* PBXContainerItemProxy */ = {
-			isa = PBXContainerItemProxy;
-			containerPortal = 5EA557C42A0A5CB70023C2E7 /* Project object */;
-			proxyType = 1;
-			remoteGlobalIDString = 5EA557EF2A0A6AE70023C2E7;
-			remoteInfo = APILayer;
-		};
-		5EA557FD2A0A6AE80023C2E7 /* PBXContainerItemProxy */ = {
-			isa = PBXContainerItemProxy;
-			containerPortal = 5EA557C42A0A5CB70023C2E7 /* Project object */;
-			proxyType = 1;
-			remoteGlobalIDString = 5EA557CB2A0A5CB70023C2E7;
-			remoteInfo = Floofs;
-		};
-		5EA5583A2A0A70CE0023C2E7 /* PBXContainerItemProxy */ = {
-			isa = PBXContainerItemProxy;
-			containerPortal = 5EA557C42A0A5CB70023C2E7 /* Project object */;
-			proxyType = 1;
-			remoteGlobalIDString = 5EA5582E2A0A70CD0023C2E7;
-			remoteInfo = DogsAPI;
-		};
-		5EA5583C2A0A70CF0023C2E7 /* PBXContainerItemProxy */ = {
-			isa = PBXContainerItemProxy;
-			containerPortal = 5EA557C42A0A5CB70023C2E7 /* Project object */;
-			proxyType = 1;
-			remoteGlobalIDString = 5EA557CB2A0A5CB70023C2E7;
-			remoteInfo = Floofs;
-		};
-		5EA558422A0A70CF0023C2E7 /* PBXContainerItemProxy */ = {
-			isa = PBXContainerItemProxy;
-			containerPortal = 5EA557C42A0A5CB70023C2E7 /* Project object */;
-			proxyType = 1;
-			remoteGlobalIDString = 5EA5582E2A0A70CD0023C2E7;
-			remoteInfo = DogsAPI;
-		};
-		5EA5585F2A0BAF4C0023C2E7 /* PBXContainerItemProxy */ = {
-			isa = PBXContainerItemProxy;
-			containerPortal = 5EA557C42A0A5CB70023C2E7 /* Project object */;
-			proxyType = 1;
-			remoteGlobalIDString = 5EA557EF2A0A6AE70023C2E7;
-			remoteInfo = APILayer;
-		};
-/* End PBXContainerItemProxy section */
 
 /* Begin PBXCopyFilesBuildPhase section */
 		5EA5580A2A0A6AE90023C2E7 /* Embed Frameworks */ = {
@@ -176,9 +53,6 @@
 			dstPath = "";
 			dstSubfolderSpec = 10;
 			files = (
-				5E68DE132A0BBA1B00582122 /* CatsAPI.framework in Embed Frameworks */,
-				5EA558452A0A70CF0023C2E7 /* DogsAPI.framework in Embed Frameworks */,
-				5EA558062A0A6AE90023C2E7 /* APILayer.framework in Embed Frameworks */,
 			);
 			name = "Embed Frameworks";
 			runOnlyForDeploymentPostprocessing = 0;
@@ -186,17 +60,6 @@
 /* End PBXCopyFilesBuildPhase section */
 
 /* Begin PBXFileReference section */
-		5E68DDFD2A0BBA1900582122 /* CatsAPI.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = CatsAPI.framework; sourceTree = BUILT_PRODUCTS_DIR; };
-		5E68DDFF2A0BBA1A00582122 /* CatsAPI.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = CatsAPI.h; sourceTree = "<group>"; };
-		5E68DE002A0BBA1A00582122 /* CatsAPI.docc */ = {isa = PBXFileReference; lastKnownFileType = folder.documentationcatalog; path = CatsAPI.docc; sourceTree = "<group>"; };
-		5E68DE062A0BBA1A00582122 /* CatsAPITests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = CatsAPITests.xctest; sourceTree = BUILT_PRODUCTS_DIR; };
-		5E68DE0D2A0BBA1B00582122 /* CatsAPITests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = CatsAPITests.swift; sourceTree = "<group>"; };
-		5E68DE1E2A0BBAC200582122 /* CatsAPIConfiguration.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = CatsAPIConfiguration.swift; sourceTree = "<group>"; };
-		5E68DE1F2A0BBAC200582122 /* CatsBreedsListRequest.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = CatsBreedsListRequest.swift; sourceTree = "<group>"; };
-		5E68DE212A0BBAC200582122 /* CatsBreedListResponseMapper.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = CatsBreedListResponseMapper.swift; sourceTree = "<group>"; };
-		5E68DE222A0BBAC200582122 /* CatsBreedsListResponse.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = CatsBreedsListResponse.swift; sourceTree = "<group>"; };
-		5E68DE242A0BBAC200582122 /* CatsAPIClient.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = CatsAPIClient.swift; sourceTree = "<group>"; };
-		5E68DE2C2A0BBB3A00582122 /* Cat.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Cat.swift; sourceTree = "<group>"; };
 		5E68DE342A0BC73A00582122 /* Tab.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Tab.swift; sourceTree = "<group>"; };
 		5E68DE362A0BC74200582122 /* TabConfigurable.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = TabConfigurable.swift; sourceTree = "<group>"; };
 		5E68DE3A2A0BC8F600582122 /* AppConfig.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppConfig.swift; sourceTree = "<group>"; };
@@ -205,13 +68,7 @@
 		5E68DE452A0BEC5E00582122 /* AppLaunchFailureViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppLaunchFailureViewController.swift; sourceTree = "<group>"; };
 		5E68DE472A0BF1E700582122 /* AppConfigError.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppConfigError.swift; sourceTree = "<group>"; };
 		5E68DE4B2A0BF68D00582122 /* AppConfig.plist */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text.plist.xml; path = AppConfig.plist; sourceTree = "<group>"; };
-		5E68DE4E2A0BFC3900582122 /* CatsImagesRequest.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = CatsImagesRequest.swift; sourceTree = "<group>"; };
-		5E68DE512A0BFCAF00582122 /* CatsImagesResponseMapper.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = CatsImagesResponseMapper.swift; sourceTree = "<group>"; };
-		5E68DE532A0BFCBC00582122 /* CatsImagesResponse.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = CatsImagesResponse.swift; sourceTree = "<group>"; };
 		5E68DE5E2A0C268C00582122 /* CatsDataProvider.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = CatsDataProvider.swift; sourceTree = "<group>"; };
-		5E68DE602A0C2A5600582122 /* DogsImagesRequest.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = DogsImagesRequest.swift; sourceTree = "<group>"; };
-		5E68DE622A0C2A6100582122 /* DogsImagesResponse.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = DogsImagesResponse.swift; sourceTree = "<group>"; };
-		5E68DE642A0C2A6A00582122 /* DogsImagesResponseMapper.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = DogsImagesResponseMapper.swift; sourceTree = "<group>"; };
 		5E68DE692A0C2CFD00582122 /* DogsDataProvider.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = DogsDataProvider.swift; sourceTree = "<group>"; };
 		5E68DE6B2A0C2D7800582122 /* Array.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Array.swift; sourceTree = "<group>"; };
 		5E68DE6F2A0C35B000582122 /* PetsViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = PetsViewController.swift; sourceTree = "<group>"; };
@@ -219,9 +76,6 @@
 		5E68DE732A0C45DA00582122 /* Pet.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Pet.swift; sourceTree = "<group>"; };
 		5E68DE762A0C4AB200582122 /* Cat.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Cat.swift; sourceTree = "<group>"; };
 		5E68DE782A0C4AC400582122 /* Dog.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Dog.swift; sourceTree = "<group>"; };
-		5E68DE7A2A0C4BDE00582122 /* DogsRandomImageRequest.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = DogsRandomImageRequest.swift; sourceTree = "<group>"; };
-		5E68DE7C2A0C4BE700582122 /* DogsRandomImageResponse.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = DogsRandomImageResponse.swift; sourceTree = "<group>"; };
-		5E68DE7E2A0C4BF200582122 /* DogsRandomImageResponseMapper.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = DogsRandomImageResponseMapper.swift; sourceTree = "<group>"; };
 		5E68DE812A0C515E00582122 /* PetsView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = PetsView.swift; sourceTree = "<group>"; };
 		5E68DE832A0C517F00582122 /* UIView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = UIView.swift; sourceTree = "<group>"; };
 		5E68DE852A0C522900582122 /* PetsCollectionViewCell.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = PetsCollectionViewCell.swift; sourceTree = "<group>"; };
@@ -241,163 +95,23 @@
 		5EA557D82A0A5CBA0023C2E7 /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
 		5EA557DB2A0A5CBA0023C2E7 /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/LaunchScreen.storyboard; sourceTree = "<group>"; };
 		5EA557DD2A0A5CBA0023C2E7 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
-		5EA557F02A0A6AE70023C2E7 /* APILayer.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = APILayer.framework; sourceTree = BUILT_PRODUCTS_DIR; };
-		5EA557F22A0A6AE70023C2E7 /* APILayer.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = APILayer.h; sourceTree = "<group>"; };
-		5EA557F32A0A6AE70023C2E7 /* APILayer.docc */ = {isa = PBXFileReference; lastKnownFileType = folder.documentationcatalog; path = APILayer.docc; sourceTree = "<group>"; };
-		5EA557F92A0A6AE80023C2E7 /* APILayerTests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = APILayerTests.xctest; sourceTree = BUILT_PRODUCTS_DIR; };
-		5EA558002A0A6AE80023C2E7 /* APILayerTests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = APILayerTests.swift; sourceTree = "<group>"; };
-		5EA558112A0A6B380023C2E7 /* APIRequestBuilder.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = APIRequestBuilder.swift; sourceTree = "<group>"; };
-		5EA558132A0A6B380023C2E7 /* APIConfiguration.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = APIConfiguration.swift; sourceTree = "<group>"; };
-		5EA558142A0A6B380023C2E7 /* APIClient.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = APIClient.swift; sourceTree = "<group>"; };
-		5EA558152A0A6B380023C2E7 /* APIScheme.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = APIScheme.swift; sourceTree = "<group>"; };
-		5EA558162A0A6B380023C2E7 /* APIResponseCustomMapping.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = APIResponseCustomMapping.swift; sourceTree = "<group>"; };
-		5EA558172A0A6B380023C2E7 /* APIRequestMethod.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = APIRequestMethod.swift; sourceTree = "<group>"; };
-		5EA558182A0A6B380023C2E7 /* APIKey.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = APIKey.swift; sourceTree = "<group>"; };
-		5EA558192A0A6B380023C2E7 /* APIResponse.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = APIResponse.swift; sourceTree = "<group>"; };
-		5EA5581A2A0A6B380023C2E7 /* APIClientError.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = APIClientError.swift; sourceTree = "<group>"; };
-		5EA5581B2A0A6B380023C2E7 /* APIRequest.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = APIRequest.swift; sourceTree = "<group>"; };
-		5EA5581C2A0A6B380023C2E7 /* APIResponseNoOpMapper.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = APIResponseNoOpMapper.swift; sourceTree = "<group>"; };
-		5EA5582F2A0A70CD0023C2E7 /* DogsAPI.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = DogsAPI.framework; sourceTree = BUILT_PRODUCTS_DIR; };
-		5EA558312A0A70CE0023C2E7 /* DogsAPI.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = DogsAPI.h; sourceTree = "<group>"; };
-		5EA558322A0A70CE0023C2E7 /* DogsAPI.docc */ = {isa = PBXFileReference; lastKnownFileType = folder.documentationcatalog; path = DogsAPI.docc; sourceTree = "<group>"; };
-		5EA558382A0A70CE0023C2E7 /* DogsAPITests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = DogsAPITests.xctest; sourceTree = BUILT_PRODUCTS_DIR; };
-		5EA5583F2A0A70CF0023C2E7 /* DogsAPITests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = DogsAPITests.swift; sourceTree = "<group>"; };
-		5EA5584C2A0A712D0023C2E7 /* DogsAPIConfiguration.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = DogsAPIConfiguration.swift; sourceTree = "<group>"; };
-		5EA5584E2A0A712D0023C2E7 /* DogsBreedListResponseMapper.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = DogsBreedListResponseMapper.swift; sourceTree = "<group>"; };
-		5EA5584F2A0A712D0023C2E7 /* DogsBreedsListResponse.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = DogsBreedsListResponse.swift; sourceTree = "<group>"; };
-		5EA558502A0A712D0023C2E7 /* DogsBreedsListRequest.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = DogsBreedsListRequest.swift; sourceTree = "<group>"; };
-		5EA558512A0A712D0023C2E7 /* DogsAPIResponse.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = DogsAPIResponse.swift; sourceTree = "<group>"; };
-		5EA558522A0A712D0023C2E7 /* DogsAPIClient.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = DogsAPIClient.swift; sourceTree = "<group>"; };
-		5EA5585B2A0A71C50023C2E7 /* Dog.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Dog.swift; sourceTree = "<group>"; };
-		5ED5EFBE2A1B8F8E00DB79E5 /* APIVersion.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = APIVersion.swift; sourceTree = "<group>"; };
 		5ED5EFC02A1B91C600DB79E5 /* Collection.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Collection.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
-		5E68DDFA2A0BBA1900582122 /* Frameworks */ = {
-			isa = PBXFrameworksBuildPhase;
-			buildActionMask = 2147483647;
-			files = (
-			);
-			runOnlyForDeploymentPostprocessing = 0;
-		};
-		5E68DE032A0BBA1A00582122 /* Frameworks */ = {
-			isa = PBXFrameworksBuildPhase;
-			buildActionMask = 2147483647;
-			files = (
-				5E68DE072A0BBA1A00582122 /* CatsAPI.framework in Frameworks */,
-			);
-			runOnlyForDeploymentPostprocessing = 0;
-		};
 		5EA557C92A0A5CB70023C2E7 /* Frameworks */ = {
 			isa = PBXFrameworksBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				5EA6F8052C579ABA00E217B6 /* DogsAPI in Frameworks */,
 				5E68DE8D2A0C595A00582122 /* Kingfisher in Frameworks */,
-				5E68DE122A0BBA1B00582122 /* CatsAPI.framework in Frameworks */,
-				5EA558442A0A70CF0023C2E7 /* DogsAPI.framework in Frameworks */,
-				5EA558052A0A6AE80023C2E7 /* APILayer.framework in Frameworks */,
-			);
-			runOnlyForDeploymentPostprocessing = 0;
-		};
-		5EA557ED2A0A6AE70023C2E7 /* Frameworks */ = {
-			isa = PBXFrameworksBuildPhase;
-			buildActionMask = 2147483647;
-			files = (
-			);
-			runOnlyForDeploymentPostprocessing = 0;
-		};
-		5EA557F62A0A6AE80023C2E7 /* Frameworks */ = {
-			isa = PBXFrameworksBuildPhase;
-			buildActionMask = 2147483647;
-			files = (
-				5EA557FA2A0A6AE80023C2E7 /* APILayer.framework in Frameworks */,
-			);
-			runOnlyForDeploymentPostprocessing = 0;
-		};
-		5EA5582C2A0A70CD0023C2E7 /* Frameworks */ = {
-			isa = PBXFrameworksBuildPhase;
-			buildActionMask = 2147483647;
-			files = (
-			);
-			runOnlyForDeploymentPostprocessing = 0;
-		};
-		5EA558352A0A70CE0023C2E7 /* Frameworks */ = {
-			isa = PBXFrameworksBuildPhase;
-			buildActionMask = 2147483647;
-			files = (
-				5EA558392A0A70CE0023C2E7 /* DogsAPI.framework in Frameworks */,
+				5EA6F8022C579A9700E217B6 /* CatsAPI in Frameworks */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
 /* End PBXFrameworksBuildPhase section */
 
 /* Begin PBXGroup section */
-		5E68DDFE2A0BBA1900582122 /* CatsAPI */ = {
-			isa = PBXGroup;
-			children = (
-				5E68DE002A0BBA1A00582122 /* CatsAPI.docc */,
-				5E68DDFF2A0BBA1A00582122 /* CatsAPI.h */,
-				5E68DE1D2A0BBAC200582122 /* Public */,
-				5E68DE1C2A0BBAC200582122 /* Internal */,
-			);
-			path = CatsAPI;
-			sourceTree = "<group>";
-		};
-		5E68DE0C2A0BBA1B00582122 /* CatsAPITests */ = {
-			isa = PBXGroup;
-			children = (
-				5E68DE0D2A0BBA1B00582122 /* CatsAPITests.swift */,
-			);
-			path = CatsAPITests;
-			sourceTree = "<group>";
-		};
-		5E68DE1C2A0BBAC200582122 /* Internal */ = {
-			isa = PBXGroup;
-			children = (
-				5E68DE1E2A0BBAC200582122 /* CatsAPIConfiguration.swift */,
-				5E68DE312A0BBBA000582122 /* Endpoints */,
-			);
-			path = Internal;
-			sourceTree = "<group>";
-		};
-		5E68DE1D2A0BBAC200582122 /* Public */ = {
-			isa = PBXGroup;
-			children = (
-				5E68DE242A0BBAC200582122 /* CatsAPIClient.swift */,
-				5E68DE2C2A0BBB3A00582122 /* Cat.swift */,
-			);
-			path = Public;
-			sourceTree = "<group>";
-		};
-		5E68DE2F2A0BBB5000582122 /* Public */ = {
-			isa = PBXGroup;
-			children = (
-				5EA558522A0A712D0023C2E7 /* DogsAPIClient.swift */,
-				5EA5585B2A0A71C50023C2E7 /* Dog.swift */,
-			);
-			path = Public;
-			sourceTree = "<group>";
-		};
-		5E68DE302A0BBB8700582122 /* Internal */ = {
-			isa = PBXGroup;
-			children = (
-				5EA5584C2A0A712D0023C2E7 /* DogsAPIConfiguration.swift */,
-				5EA558512A0A712D0023C2E7 /* DogsAPIResponse.swift */,
-				5EA5584D2A0A712D0023C2E7 /* Endpoints */,
-			);
-			path = Internal;
-			sourceTree = "<group>";
-		};
-		5E68DE312A0BBBA000582122 /* Endpoints */ = {
-			isa = PBXGroup;
-			children = (
-				5E68DE4D2A0BFBBC00582122 /* BreedsList */,
-				5E68DE502A0BFC3E00582122 /* Images */,
-			);
-			path = Endpoints;
-			sourceTree = "<group>";
-		};
 		5E68DE3E2A0BDB2600582122 /* Dogs */ = {
 			isa = PBXGroup;
 			children = (
@@ -439,36 +153,6 @@
 			path = App;
 			sourceTree = "<group>";
 		};
-		5E68DE4D2A0BFBBC00582122 /* BreedsList */ = {
-			isa = PBXGroup;
-			children = (
-				5E68DE1F2A0BBAC200582122 /* CatsBreedsListRequest.swift */,
-				5E68DE212A0BBAC200582122 /* CatsBreedListResponseMapper.swift */,
-				5E68DE222A0BBAC200582122 /* CatsBreedsListResponse.swift */,
-			);
-			path = BreedsList;
-			sourceTree = "<group>";
-		};
-		5E68DE502A0BFC3E00582122 /* Images */ = {
-			isa = PBXGroup;
-			children = (
-				5E68DE4E2A0BFC3900582122 /* CatsImagesRequest.swift */,
-				5E68DE512A0BFCAF00582122 /* CatsImagesResponseMapper.swift */,
-				5E68DE532A0BFCBC00582122 /* CatsImagesResponse.swift */,
-			);
-			path = Images;
-			sourceTree = "<group>";
-		};
-		5E68DE662A0C2A7000582122 /* Images */ = {
-			isa = PBXGroup;
-			children = (
-				5E68DE602A0C2A5600582122 /* DogsImagesRequest.swift */,
-				5E68DE622A0C2A6100582122 /* DogsImagesResponse.swift */,
-				5E68DE642A0C2A6A00582122 /* DogsImagesResponseMapper.swift */,
-			);
-			path = Images;
-			sourceTree = "<group>";
-		};
 		5E68DE6D2A0C2D7E00582122 /* Helpers */ = {
 			isa = PBXGroup;
 			children = (
@@ -505,16 +189,6 @@
 			path = Pets;
 			sourceTree = "<group>";
 		};
-		5E68DE802A0C4BF600582122 /* RandomImage */ = {
-			isa = PBXGroup;
-			children = (
-				5E68DE7A2A0C4BDE00582122 /* DogsRandomImageRequest.swift */,
-				5E68DE7C2A0C4BE700582122 /* DogsRandomImageResponse.swift */,
-				5E68DE7E2A0C4BF200582122 /* DogsRandomImageResponseMapper.swift */,
-			);
-			path = RandomImage;
-			sourceTree = "<group>";
-		};
 		5E68DE8E2A0CD68100582122 /* Breeds */ = {
 			isa = PBXGroup;
 			children = (
@@ -539,12 +213,6 @@
 			isa = PBXGroup;
 			children = (
 				5EA557CE2A0A5CB70023C2E7 /* Floofs */,
-				5EA557F12A0A6AE70023C2E7 /* APILayer */,
-				5EA557FF2A0A6AE80023C2E7 /* APILayerTests */,
-				5EA558302A0A70CE0023C2E7 /* DogsAPI */,
-				5EA5583E2A0A70CF0023C2E7 /* DogsAPITests */,
-				5E68DDFE2A0BBA1900582122 /* CatsAPI */,
-				5E68DE0C2A0BBA1B00582122 /* CatsAPITests */,
 				5EA557CD2A0A5CB70023C2E7 /* Products */,
 			);
 			sourceTree = "<group>";
@@ -553,12 +221,6 @@
 			isa = PBXGroup;
 			children = (
 				5EA557CC2A0A5CB70023C2E7 /* Floofs.app */,
-				5EA557F02A0A6AE70023C2E7 /* APILayer.framework */,
-				5EA557F92A0A6AE80023C2E7 /* APILayerTests.xctest */,
-				5EA5582F2A0A70CD0023C2E7 /* DogsAPI.framework */,
-				5EA558382A0A70CE0023C2E7 /* DogsAPITests.xctest */,
-				5E68DDFD2A0BBA1900582122 /* CatsAPI.framework */,
-				5E68DE062A0BBA1A00582122 /* CatsAPITests.xctest */,
 			);
 			name = Products;
 			sourceTree = "<group>";
@@ -580,158 +242,9 @@
 			path = Floofs;
 			sourceTree = "<group>";
 		};
-		5EA557F12A0A6AE70023C2E7 /* APILayer */ = {
-			isa = PBXGroup;
-			children = (
-				5EA557F32A0A6AE70023C2E7 /* APILayer.docc */,
-				5EA557F22A0A6AE70023C2E7 /* APILayer.h */,
-				5EA558102A0A6B380023C2E7 /* Internal */,
-				5EA558122A0A6B380023C2E7 /* Public */,
-			);
-			path = APILayer;
-			sourceTree = "<group>";
-		};
-		5EA557FF2A0A6AE80023C2E7 /* APILayerTests */ = {
-			isa = PBXGroup;
-			children = (
-				5EA558002A0A6AE80023C2E7 /* APILayerTests.swift */,
-			);
-			path = APILayerTests;
-			sourceTree = "<group>";
-		};
-		5EA558102A0A6B380023C2E7 /* Internal */ = {
-			isa = PBXGroup;
-			children = (
-				5EA558112A0A6B380023C2E7 /* APIRequestBuilder.swift */,
-			);
-			path = Internal;
-			sourceTree = "<group>";
-		};
-		5EA558122A0A6B380023C2E7 /* Public */ = {
-			isa = PBXGroup;
-			children = (
-				5EA558132A0A6B380023C2E7 /* APIConfiguration.swift */,
-				5EA558142A0A6B380023C2E7 /* APIClient.swift */,
-				5ED5EFBE2A1B8F8E00DB79E5 /* APIVersion.swift */,
-				5EA558152A0A6B380023C2E7 /* APIScheme.swift */,
-				5EA558162A0A6B380023C2E7 /* APIResponseCustomMapping.swift */,
-				5EA558172A0A6B380023C2E7 /* APIRequestMethod.swift */,
-				5EA558182A0A6B380023C2E7 /* APIKey.swift */,
-				5EA558192A0A6B380023C2E7 /* APIResponse.swift */,
-				5EA5581A2A0A6B380023C2E7 /* APIClientError.swift */,
-				5EA5581B2A0A6B380023C2E7 /* APIRequest.swift */,
-				5EA5581C2A0A6B380023C2E7 /* APIResponseNoOpMapper.swift */,
-			);
-			path = Public;
-			sourceTree = "<group>";
-		};
-		5EA558302A0A70CE0023C2E7 /* DogsAPI */ = {
-			isa = PBXGroup;
-			children = (
-				5EA558322A0A70CE0023C2E7 /* DogsAPI.docc */,
-				5EA558312A0A70CE0023C2E7 /* DogsAPI.h */,
-				5E68DE2F2A0BBB5000582122 /* Public */,
-				5E68DE302A0BBB8700582122 /* Internal */,
-			);
-			path = DogsAPI;
-			sourceTree = "<group>";
-		};
-		5EA5583E2A0A70CF0023C2E7 /* DogsAPITests */ = {
-			isa = PBXGroup;
-			children = (
-				5EA5583F2A0A70CF0023C2E7 /* DogsAPITests.swift */,
-			);
-			path = DogsAPITests;
-			sourceTree = "<group>";
-		};
-		5EA5584D2A0A712D0023C2E7 /* Endpoints */ = {
-			isa = PBXGroup;
-			children = (
-				5EA558592A0A71750023C2E7 /* BreedsList */,
-				5E68DE662A0C2A7000582122 /* Images */,
-				5E68DE802A0C4BF600582122 /* RandomImage */,
-			);
-			path = Endpoints;
-			sourceTree = "<group>";
-		};
-		5EA558592A0A71750023C2E7 /* BreedsList */ = {
-			isa = PBXGroup;
-			children = (
-				5EA5584E2A0A712D0023C2E7 /* DogsBreedListResponseMapper.swift */,
-				5EA5584F2A0A712D0023C2E7 /* DogsBreedsListResponse.swift */,
-				5EA558502A0A712D0023C2E7 /* DogsBreedsListRequest.swift */,
-			);
-			path = BreedsList;
-			sourceTree = "<group>";
-		};
 /* End PBXGroup section */
 
-/* Begin PBXHeadersBuildPhase section */
-		5E68DDF82A0BBA1900582122 /* Headers */ = {
-			isa = PBXHeadersBuildPhase;
-			buildActionMask = 2147483647;
-			files = (
-				5E68DE0F2A0BBA1B00582122 /* CatsAPI.h in Headers */,
-			);
-			runOnlyForDeploymentPostprocessing = 0;
-		};
-		5EA557EB2A0A6AE70023C2E7 /* Headers */ = {
-			isa = PBXHeadersBuildPhase;
-			buildActionMask = 2147483647;
-			files = (
-				5EA558022A0A6AE80023C2E7 /* APILayer.h in Headers */,
-			);
-			runOnlyForDeploymentPostprocessing = 0;
-		};
-		5EA5582A2A0A70CD0023C2E7 /* Headers */ = {
-			isa = PBXHeadersBuildPhase;
-			buildActionMask = 2147483647;
-			files = (
-				5EA558412A0A70CF0023C2E7 /* DogsAPI.h in Headers */,
-			);
-			runOnlyForDeploymentPostprocessing = 0;
-		};
-/* End PBXHeadersBuildPhase section */
-
 /* Begin PBXNativeTarget section */
-		5E68DDFC2A0BBA1900582122 /* CatsAPI */ = {
-			isa = PBXNativeTarget;
-			buildConfigurationList = 5E68DE182A0BBA1B00582122 /* Build configuration list for PBXNativeTarget "CatsAPI" */;
-			buildPhases = (
-				5E68DDF82A0BBA1900582122 /* Headers */,
-				5E68DDF92A0BBA1900582122 /* Sources */,
-				5E68DDFA2A0BBA1900582122 /* Frameworks */,
-				5E68DDFB2A0BBA1900582122 /* Resources */,
-			);
-			buildRules = (
-			);
-			dependencies = (
-				5E68DE1B2A0BBA3B00582122 /* PBXTargetDependency */,
-			);
-			name = CatsAPI;
-			productName = CatsAPI;
-			productReference = 5E68DDFD2A0BBA1900582122 /* CatsAPI.framework */;
-			productType = "com.apple.product-type.framework";
-		};
-		5E68DE052A0BBA1A00582122 /* CatsAPITests */ = {
-			isa = PBXNativeTarget;
-			buildConfigurationList = 5E68DE192A0BBA1B00582122 /* Build configuration list for PBXNativeTarget "CatsAPITests" */;
-			buildPhases = (
-				5E68DE022A0BBA1A00582122 /* Sources */,
-				5E68DE032A0BBA1A00582122 /* Frameworks */,
-				5E68DE042A0BBA1A00582122 /* Resources */,
-			);
-			buildRules = (
-			);
-			dependencies = (
-				5E68DE092A0BBA1A00582122 /* PBXTargetDependency */,
-				5E68DE0B2A0BBA1B00582122 /* PBXTargetDependency */,
-			);
-			name = CatsAPITests;
-			productName = CatsAPITests;
-			productReference = 5E68DE062A0BBA1A00582122 /* CatsAPITests.xctest */;
-			productType = "com.apple.product-type.bundle.unit-test";
-		};
 		5EA557CB2A0A5CB70023C2E7 /* Floofs */ = {
 			isa = PBXNativeTarget;
 			buildConfigurationList = 5EA557E02A0A5CBA0023C2E7 /* Build configuration list for PBXNativeTarget "Floofs" */;
@@ -745,91 +258,16 @@
 			buildRules = (
 			);
 			dependencies = (
-				5EA558432A0A70CF0023C2E7 /* PBXTargetDependency */,
-				5E68DE112A0BBA1B00582122 /* PBXTargetDependency */,
 			);
 			name = Floofs;
 			packageProductDependencies = (
 				5E68DE8C2A0C595A00582122 /* Kingfisher */,
+				5EA6F8012C579A9700E217B6 /* CatsAPI */,
+				5EA6F8042C579ABA00E217B6 /* DogsAPI */,
 			);
 			productName = Floofs;
 			productReference = 5EA557CC2A0A5CB70023C2E7 /* Floofs.app */;
 			productType = "com.apple.product-type.application";
-		};
-		5EA557EF2A0A6AE70023C2E7 /* APILayer */ = {
-			isa = PBXNativeTarget;
-			buildConfigurationList = 5EA558072A0A6AE90023C2E7 /* Build configuration list for PBXNativeTarget "APILayer" */;
-			buildPhases = (
-				5EA557EB2A0A6AE70023C2E7 /* Headers */,
-				5EA557EC2A0A6AE70023C2E7 /* Sources */,
-				5EA557ED2A0A6AE70023C2E7 /* Frameworks */,
-				5EA557EE2A0A6AE70023C2E7 /* Resources */,
-			);
-			buildRules = (
-			);
-			dependencies = (
-			);
-			name = APILayer;
-			productName = APILayer;
-			productReference = 5EA557F02A0A6AE70023C2E7 /* APILayer.framework */;
-			productType = "com.apple.product-type.framework";
-		};
-		5EA557F82A0A6AE80023C2E7 /* APILayerTests */ = {
-			isa = PBXNativeTarget;
-			buildConfigurationList = 5EA5580B2A0A6AE90023C2E7 /* Build configuration list for PBXNativeTarget "APILayerTests" */;
-			buildPhases = (
-				5EA557F52A0A6AE80023C2E7 /* Sources */,
-				5EA557F62A0A6AE80023C2E7 /* Frameworks */,
-				5EA557F72A0A6AE80023C2E7 /* Resources */,
-			);
-			buildRules = (
-			);
-			dependencies = (
-				5EA557FC2A0A6AE80023C2E7 /* PBXTargetDependency */,
-				5EA557FE2A0A6AE80023C2E7 /* PBXTargetDependency */,
-			);
-			name = APILayerTests;
-			productName = APILayerTests;
-			productReference = 5EA557F92A0A6AE80023C2E7 /* APILayerTests.xctest */;
-			productType = "com.apple.product-type.bundle.unit-test";
-		};
-		5EA5582E2A0A70CD0023C2E7 /* DogsAPI */ = {
-			isa = PBXNativeTarget;
-			buildConfigurationList = 5EA558462A0A70CF0023C2E7 /* Build configuration list for PBXNativeTarget "DogsAPI" */;
-			buildPhases = (
-				5EA5582A2A0A70CD0023C2E7 /* Headers */,
-				5EA5582B2A0A70CD0023C2E7 /* Sources */,
-				5EA5582C2A0A70CD0023C2E7 /* Frameworks */,
-				5EA5582D2A0A70CD0023C2E7 /* Resources */,
-			);
-			buildRules = (
-			);
-			dependencies = (
-				5EA558602A0BAF4C0023C2E7 /* PBXTargetDependency */,
-			);
-			name = DogsAPI;
-			productName = DogsAPI;
-			productReference = 5EA5582F2A0A70CD0023C2E7 /* DogsAPI.framework */;
-			productType = "com.apple.product-type.framework";
-		};
-		5EA558372A0A70CE0023C2E7 /* DogsAPITests */ = {
-			isa = PBXNativeTarget;
-			buildConfigurationList = 5EA558492A0A70CF0023C2E7 /* Build configuration list for PBXNativeTarget "DogsAPITests" */;
-			buildPhases = (
-				5EA558342A0A70CE0023C2E7 /* Sources */,
-				5EA558352A0A70CE0023C2E7 /* Frameworks */,
-				5EA558362A0A70CE0023C2E7 /* Resources */,
-			);
-			buildRules = (
-			);
-			dependencies = (
-				5EA5583B2A0A70CE0023C2E7 /* PBXTargetDependency */,
-				5EA5583D2A0A70CF0023C2E7 /* PBXTargetDependency */,
-			);
-			name = DogsAPITests;
-			productName = DogsAPITests;
-			productReference = 5EA558382A0A70CE0023C2E7 /* DogsAPITests.xctest */;
-			productType = "com.apple.product-type.bundle.unit-test";
 		};
 /* End PBXNativeTarget section */
 
@@ -841,29 +279,8 @@
 				LastSwiftUpdateCheck = 1430;
 				LastUpgradeCheck = 1430;
 				TargetAttributes = {
-					5E68DDFC2A0BBA1900582122 = {
-						CreatedOnToolsVersion = 14.3;
-					};
-					5E68DE052A0BBA1A00582122 = {
-						CreatedOnToolsVersion = 14.3;
-						TestTargetID = 5EA557CB2A0A5CB70023C2E7;
-					};
 					5EA557CB2A0A5CB70023C2E7 = {
 						CreatedOnToolsVersion = 14.3;
-					};
-					5EA557EF2A0A6AE70023C2E7 = {
-						CreatedOnToolsVersion = 14.3;
-					};
-					5EA557F82A0A6AE80023C2E7 = {
-						CreatedOnToolsVersion = 14.3;
-						TestTargetID = 5EA557CB2A0A5CB70023C2E7;
-					};
-					5EA5582E2A0A70CD0023C2E7 = {
-						CreatedOnToolsVersion = 14.3;
-					};
-					5EA558372A0A70CE0023C2E7 = {
-						CreatedOnToolsVersion = 14.3;
-						TestTargetID = 5EA557CB2A0A5CB70023C2E7;
 					};
 				};
 			};
@@ -878,37 +295,19 @@
 			mainGroup = 5EA557C32A0A5CB70023C2E7;
 			packageReferences = (
 				5E68DE8B2A0C595900582122 /* XCRemoteSwiftPackageReference "Kingfisher" */,
+				5EA6F8002C579A9700E217B6 /* XCLocalSwiftPackageReference "Packages/CatsAPI" */,
+				5EA6F8032C579ABA00E217B6 /* XCLocalSwiftPackageReference "Packages/DogsAPI" */,
 			);
 			productRefGroup = 5EA557CD2A0A5CB70023C2E7 /* Products */;
 			projectDirPath = "";
 			projectRoot = "";
 			targets = (
 				5EA557CB2A0A5CB70023C2E7 /* Floofs */,
-				5EA557EF2A0A6AE70023C2E7 /* APILayer */,
-				5EA557F82A0A6AE80023C2E7 /* APILayerTests */,
-				5EA5582E2A0A70CD0023C2E7 /* DogsAPI */,
-				5EA558372A0A70CE0023C2E7 /* DogsAPITests */,
-				5E68DDFC2A0BBA1900582122 /* CatsAPI */,
-				5E68DE052A0BBA1A00582122 /* CatsAPITests */,
 			);
 		};
 /* End PBXProject section */
 
 /* Begin PBXResourcesBuildPhase section */
-		5E68DDFB2A0BBA1900582122 /* Resources */ = {
-			isa = PBXResourcesBuildPhase;
-			buildActionMask = 2147483647;
-			files = (
-			);
-			runOnlyForDeploymentPostprocessing = 0;
-		};
-		5E68DE042A0BBA1A00582122 /* Resources */ = {
-			isa = PBXResourcesBuildPhase;
-			buildActionMask = 2147483647;
-			files = (
-			);
-			runOnlyForDeploymentPostprocessing = 0;
-		};
 		5EA557CA2A0A5CB70023C2E7 /* Resources */ = {
 			isa = PBXResourcesBuildPhase;
 			buildActionMask = 2147483647;
@@ -916,34 +315,6 @@
 				5E68DE4C2A0BF68D00582122 /* AppConfig.plist in Resources */,
 				5EA557DC2A0A5CBA0023C2E7 /* LaunchScreen.storyboard in Resources */,
 				5EA557D92A0A5CBA0023C2E7 /* Assets.xcassets in Resources */,
-			);
-			runOnlyForDeploymentPostprocessing = 0;
-		};
-		5EA557EE2A0A6AE70023C2E7 /* Resources */ = {
-			isa = PBXResourcesBuildPhase;
-			buildActionMask = 2147483647;
-			files = (
-			);
-			runOnlyForDeploymentPostprocessing = 0;
-		};
-		5EA557F72A0A6AE80023C2E7 /* Resources */ = {
-			isa = PBXResourcesBuildPhase;
-			buildActionMask = 2147483647;
-			files = (
-			);
-			runOnlyForDeploymentPostprocessing = 0;
-		};
-		5EA5582D2A0A70CD0023C2E7 /* Resources */ = {
-			isa = PBXResourcesBuildPhase;
-			buildActionMask = 2147483647;
-			files = (
-			);
-			runOnlyForDeploymentPostprocessing = 0;
-		};
-		5EA558362A0A70CE0023C2E7 /* Resources */ = {
-			isa = PBXResourcesBuildPhase;
-			buildActionMask = 2147483647;
-			files = (
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -972,31 +343,6 @@
 /* End PBXShellScriptBuildPhase section */
 
 /* Begin PBXSourcesBuildPhase section */
-		5E68DDF92A0BBA1900582122 /* Sources */ = {
-			isa = PBXSourcesBuildPhase;
-			buildActionMask = 2147483647;
-			files = (
-				5E68DE542A0BFCBC00582122 /* CatsImagesResponse.swift in Sources */,
-				5E68DE292A0BBAC200582122 /* CatsBreedsListResponse.swift in Sources */,
-				5E68DE2B2A0BBAC200582122 /* CatsAPIClient.swift in Sources */,
-				5E68DE252A0BBAC200582122 /* CatsAPIConfiguration.swift in Sources */,
-				5E68DE2D2A0BBB3A00582122 /* Cat.swift in Sources */,
-				5E68DE012A0BBA1A00582122 /* CatsAPI.docc in Sources */,
-				5E68DE282A0BBAC200582122 /* CatsBreedListResponseMapper.swift in Sources */,
-				5E68DE4F2A0BFC3900582122 /* CatsImagesRequest.swift in Sources */,
-				5E68DE522A0BFCAF00582122 /* CatsImagesResponseMapper.swift in Sources */,
-				5E68DE262A0BBAC200582122 /* CatsBreedsListRequest.swift in Sources */,
-			);
-			runOnlyForDeploymentPostprocessing = 0;
-		};
-		5E68DE022A0BBA1A00582122 /* Sources */ = {
-			isa = PBXSourcesBuildPhase;
-			buildActionMask = 2147483647;
-			files = (
-				5E68DE0E2A0BBA1B00582122 /* CatsAPITests.swift in Sources */,
-			);
-			runOnlyForDeploymentPostprocessing = 0;
-		};
 		5EA557C82A0A5CB70023C2E7 /* Sources */ = {
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
@@ -1035,117 +381,7 @@
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
-		5EA557EC2A0A6AE70023C2E7 /* Sources */ = {
-			isa = PBXSourcesBuildPhase;
-			buildActionMask = 2147483647;
-			files = (
-				5EA558202A0A6B380023C2E7 /* APIScheme.swift in Sources */,
-				5EA558212A0A6B380023C2E7 /* APIResponseCustomMapping.swift in Sources */,
-				5EA558232A0A6B380023C2E7 /* APIKey.swift in Sources */,
-				5EA5581D2A0A6B380023C2E7 /* APIRequestBuilder.swift in Sources */,
-				5EA5581E2A0A6B380023C2E7 /* APIConfiguration.swift in Sources */,
-				5EA557F42A0A6AE70023C2E7 /* APILayer.docc in Sources */,
-				5EA5581F2A0A6B380023C2E7 /* APIClient.swift in Sources */,
-				5EA558262A0A6B380023C2E7 /* APIRequest.swift in Sources */,
-				5EA558272A0A6B380023C2E7 /* APIResponseNoOpMapper.swift in Sources */,
-				5ED5EFBF2A1B8F8E00DB79E5 /* APIVersion.swift in Sources */,
-				5EA558222A0A6B380023C2E7 /* APIRequestMethod.swift in Sources */,
-				5EA558252A0A6B380023C2E7 /* APIClientError.swift in Sources */,
-				5EA558242A0A6B380023C2E7 /* APIResponse.swift in Sources */,
-			);
-			runOnlyForDeploymentPostprocessing = 0;
-		};
-		5EA557F52A0A6AE80023C2E7 /* Sources */ = {
-			isa = PBXSourcesBuildPhase;
-			buildActionMask = 2147483647;
-			files = (
-				5EA558012A0A6AE80023C2E7 /* APILayerTests.swift in Sources */,
-			);
-			runOnlyForDeploymentPostprocessing = 0;
-		};
-		5EA5582B2A0A70CD0023C2E7 /* Sources */ = {
-			isa = PBXSourcesBuildPhase;
-			buildActionMask = 2147483647;
-			files = (
-				5EA558542A0A712D0023C2E7 /* DogsBreedListResponseMapper.swift in Sources */,
-				5E68DE7B2A0C4BDE00582122 /* DogsRandomImageRequest.swift in Sources */,
-				5E68DE7D2A0C4BE700582122 /* DogsRandomImageResponse.swift in Sources */,
-				5EA558532A0A712D0023C2E7 /* DogsAPIConfiguration.swift in Sources */,
-				5EA558572A0A712D0023C2E7 /* DogsAPIResponse.swift in Sources */,
-				5EA558582A0A712D0023C2E7 /* DogsAPIClient.swift in Sources */,
-				5EA558562A0A712D0023C2E7 /* DogsBreedsListRequest.swift in Sources */,
-				5E68DE7F2A0C4BF200582122 /* DogsRandomImageResponseMapper.swift in Sources */,
-				5E68DE652A0C2A6A00582122 /* DogsImagesResponseMapper.swift in Sources */,
-				5EA5585C2A0A71C50023C2E7 /* Dog.swift in Sources */,
-				5EA558332A0A70CE0023C2E7 /* DogsAPI.docc in Sources */,
-				5E68DE632A0C2A6100582122 /* DogsImagesResponse.swift in Sources */,
-				5E68DE612A0C2A5600582122 /* DogsImagesRequest.swift in Sources */,
-				5EA558552A0A712D0023C2E7 /* DogsBreedsListResponse.swift in Sources */,
-			);
-			runOnlyForDeploymentPostprocessing = 0;
-		};
-		5EA558342A0A70CE0023C2E7 /* Sources */ = {
-			isa = PBXSourcesBuildPhase;
-			buildActionMask = 2147483647;
-			files = (
-				5EA558402A0A70CF0023C2E7 /* DogsAPITests.swift in Sources */,
-			);
-			runOnlyForDeploymentPostprocessing = 0;
-		};
 /* End PBXSourcesBuildPhase section */
-
-/* Begin PBXTargetDependency section */
-		5E68DE092A0BBA1A00582122 /* PBXTargetDependency */ = {
-			isa = PBXTargetDependency;
-			target = 5E68DDFC2A0BBA1900582122 /* CatsAPI */;
-			targetProxy = 5E68DE082A0BBA1A00582122 /* PBXContainerItemProxy */;
-		};
-		5E68DE0B2A0BBA1B00582122 /* PBXTargetDependency */ = {
-			isa = PBXTargetDependency;
-			target = 5EA557CB2A0A5CB70023C2E7 /* Floofs */;
-			targetProxy = 5E68DE0A2A0BBA1B00582122 /* PBXContainerItemProxy */;
-		};
-		5E68DE112A0BBA1B00582122 /* PBXTargetDependency */ = {
-			isa = PBXTargetDependency;
-			target = 5E68DDFC2A0BBA1900582122 /* CatsAPI */;
-			targetProxy = 5E68DE102A0BBA1B00582122 /* PBXContainerItemProxy */;
-		};
-		5E68DE1B2A0BBA3B00582122 /* PBXTargetDependency */ = {
-			isa = PBXTargetDependency;
-			target = 5EA557EF2A0A6AE70023C2E7 /* APILayer */;
-			targetProxy = 5E68DE1A2A0BBA3B00582122 /* PBXContainerItemProxy */;
-		};
-		5EA557FC2A0A6AE80023C2E7 /* PBXTargetDependency */ = {
-			isa = PBXTargetDependency;
-			target = 5EA557EF2A0A6AE70023C2E7 /* APILayer */;
-			targetProxy = 5EA557FB2A0A6AE80023C2E7 /* PBXContainerItemProxy */;
-		};
-		5EA557FE2A0A6AE80023C2E7 /* PBXTargetDependency */ = {
-			isa = PBXTargetDependency;
-			target = 5EA557CB2A0A5CB70023C2E7 /* Floofs */;
-			targetProxy = 5EA557FD2A0A6AE80023C2E7 /* PBXContainerItemProxy */;
-		};
-		5EA5583B2A0A70CE0023C2E7 /* PBXTargetDependency */ = {
-			isa = PBXTargetDependency;
-			target = 5EA5582E2A0A70CD0023C2E7 /* DogsAPI */;
-			targetProxy = 5EA5583A2A0A70CE0023C2E7 /* PBXContainerItemProxy */;
-		};
-		5EA5583D2A0A70CF0023C2E7 /* PBXTargetDependency */ = {
-			isa = PBXTargetDependency;
-			target = 5EA557CB2A0A5CB70023C2E7 /* Floofs */;
-			targetProxy = 5EA5583C2A0A70CF0023C2E7 /* PBXContainerItemProxy */;
-		};
-		5EA558432A0A70CF0023C2E7 /* PBXTargetDependency */ = {
-			isa = PBXTargetDependency;
-			target = 5EA5582E2A0A70CD0023C2E7 /* DogsAPI */;
-			targetProxy = 5EA558422A0A70CF0023C2E7 /* PBXContainerItemProxy */;
-		};
-		5EA558602A0BAF4C0023C2E7 /* PBXTargetDependency */ = {
-			isa = PBXTargetDependency;
-			target = 5EA557EF2A0A6AE70023C2E7 /* APILayer */;
-			targetProxy = 5EA5585F2A0BAF4C0023C2E7 /* PBXContainerItemProxy */;
-		};
-/* End PBXTargetDependency section */
 
 /* Begin PBXVariantGroup section */
 		5EA557DA2A0A5CBA0023C2E7 /* LaunchScreen.storyboard */ = {
@@ -1159,110 +395,6 @@
 /* End PBXVariantGroup section */
 
 /* Begin XCBuildConfiguration section */
-		5E68DE142A0BBA1B00582122 /* Debug */ = {
-			isa = XCBuildConfiguration;
-			buildSettings = {
-				CODE_SIGN_STYLE = Automatic;
-				CURRENT_PROJECT_VERSION = 1;
-				DEFINES_MODULE = YES;
-				DEVELOPMENT_TEAM = 665R2CAQ6E;
-				DYLIB_COMPATIBILITY_VERSION = 1;
-				DYLIB_CURRENT_VERSION = 1;
-				DYLIB_INSTALL_NAME_BASE = "@rpath";
-				ENABLE_MODULE_VERIFIER = YES;
-				GENERATE_INFOPLIST_FILE = YES;
-				INFOPLIST_KEY_NSHumanReadableCopyright = "";
-				INSTALL_PATH = "$(LOCAL_LIBRARY_DIR)/Frameworks";
-				IPHONEOS_DEPLOYMENT_TARGET = 14.0;
-				LD_RUNPATH_SEARCH_PATHS = (
-					"$(inherited)",
-					"@executable_path/Frameworks",
-					"@loader_path/Frameworks",
-				);
-				MARKETING_VERSION = 1.0;
-				MODULE_VERIFIER_SUPPORTED_LANGUAGES = "objective-c objective-c++";
-				MODULE_VERIFIER_SUPPORTED_LANGUAGE_STANDARDS = "gnu11 gnu++20";
-				PRODUCT_BUNDLE_IDENTIFIER = com.nerubianin.CatsAPI;
-				PRODUCT_NAME = "$(TARGET_NAME:c99extidentifier)";
-				SKIP_INSTALL = YES;
-				SWIFT_EMIT_LOC_STRINGS = YES;
-				SWIFT_VERSION = 5.0;
-				TARGETED_DEVICE_FAMILY = "1,2";
-				VERSIONING_SYSTEM = "apple-generic";
-				VERSION_INFO_PREFIX = "";
-			};
-			name = Debug;
-		};
-		5E68DE152A0BBA1B00582122 /* Release */ = {
-			isa = XCBuildConfiguration;
-			buildSettings = {
-				CODE_SIGN_STYLE = Automatic;
-				CURRENT_PROJECT_VERSION = 1;
-				DEFINES_MODULE = YES;
-				DEVELOPMENT_TEAM = 665R2CAQ6E;
-				DYLIB_COMPATIBILITY_VERSION = 1;
-				DYLIB_CURRENT_VERSION = 1;
-				DYLIB_INSTALL_NAME_BASE = "@rpath";
-				ENABLE_MODULE_VERIFIER = YES;
-				GENERATE_INFOPLIST_FILE = YES;
-				INFOPLIST_KEY_NSHumanReadableCopyright = "";
-				INSTALL_PATH = "$(LOCAL_LIBRARY_DIR)/Frameworks";
-				IPHONEOS_DEPLOYMENT_TARGET = 14.0;
-				LD_RUNPATH_SEARCH_PATHS = (
-					"$(inherited)",
-					"@executable_path/Frameworks",
-					"@loader_path/Frameworks",
-				);
-				MARKETING_VERSION = 1.0;
-				MODULE_VERIFIER_SUPPORTED_LANGUAGES = "objective-c objective-c++";
-				MODULE_VERIFIER_SUPPORTED_LANGUAGE_STANDARDS = "gnu11 gnu++20";
-				PRODUCT_BUNDLE_IDENTIFIER = com.nerubianin.CatsAPI;
-				PRODUCT_NAME = "$(TARGET_NAME:c99extidentifier)";
-				SKIP_INSTALL = YES;
-				SWIFT_EMIT_LOC_STRINGS = YES;
-				SWIFT_VERSION = 5.0;
-				TARGETED_DEVICE_FAMILY = "1,2";
-				VERSIONING_SYSTEM = "apple-generic";
-				VERSION_INFO_PREFIX = "";
-			};
-			name = Release;
-		};
-		5E68DE162A0BBA1B00582122 /* Debug */ = {
-			isa = XCBuildConfiguration;
-			buildSettings = {
-				ALWAYS_EMBED_SWIFT_STANDARD_LIBRARIES = YES;
-				CODE_SIGN_STYLE = Automatic;
-				CURRENT_PROJECT_VERSION = 1;
-				DEVELOPMENT_TEAM = 665R2CAQ6E;
-				GENERATE_INFOPLIST_FILE = YES;
-				MARKETING_VERSION = 1.0;
-				PRODUCT_BUNDLE_IDENTIFIER = com.nerubianin.CatsAPITests;
-				PRODUCT_NAME = "$(TARGET_NAME)";
-				SWIFT_EMIT_LOC_STRINGS = NO;
-				SWIFT_VERSION = 5.0;
-				TARGETED_DEVICE_FAMILY = "1,2";
-				TEST_HOST = "$(BUILT_PRODUCTS_DIR)/Floofs.app/$(BUNDLE_EXECUTABLE_FOLDER_PATH)/Floofs";
-			};
-			name = Debug;
-		};
-		5E68DE172A0BBA1B00582122 /* Release */ = {
-			isa = XCBuildConfiguration;
-			buildSettings = {
-				ALWAYS_EMBED_SWIFT_STANDARD_LIBRARIES = YES;
-				CODE_SIGN_STYLE = Automatic;
-				CURRENT_PROJECT_VERSION = 1;
-				DEVELOPMENT_TEAM = 665R2CAQ6E;
-				GENERATE_INFOPLIST_FILE = YES;
-				MARKETING_VERSION = 1.0;
-				PRODUCT_BUNDLE_IDENTIFIER = com.nerubianin.CatsAPITests;
-				PRODUCT_NAME = "$(TARGET_NAME)";
-				SWIFT_EMIT_LOC_STRINGS = NO;
-				SWIFT_VERSION = 5.0;
-				TARGETED_DEVICE_FAMILY = "1,2";
-				TEST_HOST = "$(BUILT_PRODUCTS_DIR)/Floofs.app/$(BUNDLE_EXECUTABLE_FOLDER_PATH)/Floofs";
-			};
-			name = Release;
-		};
 		5EA557DE2A0A5CBA0023C2E7 /* Debug */ = {
 			isa = XCBuildConfiguration;
 			buildSettings = {
@@ -1380,7 +512,6 @@
 		5EA557E12A0A5CBA0023C2E7 /* Debug */ = {
 			isa = XCBuildConfiguration;
 			buildSettings = {
-				ALWAYS_EMBED_SWIFT_STANDARD_LIBRARIES = YES;
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
 				ASSETCATALOG_COMPILER_GLOBAL_ACCENT_COLOR_NAME = AccentColor;
 				CODE_SIGN_STYLE = Automatic;
@@ -1409,7 +540,6 @@
 		5EA557E22A0A5CBA0023C2E7 /* Release */ = {
 			isa = XCBuildConfiguration;
 			buildSettings = {
-				ALWAYS_EMBED_SWIFT_STANDARD_LIBRARIES = YES;
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
 				ASSETCATALOG_COMPILER_GLOBAL_ACCENT_COLOR_NAME = AccentColor;
 				CODE_SIGN_STYLE = Automatic;
@@ -1435,235 +565,9 @@
 			};
 			name = Release;
 		};
-		5EA558082A0A6AE90023C2E7 /* Debug */ = {
-			isa = XCBuildConfiguration;
-			buildSettings = {
-				CODE_SIGN_STYLE = Automatic;
-				CURRENT_PROJECT_VERSION = 1;
-				DEFINES_MODULE = YES;
-				DEVELOPMENT_TEAM = 665R2CAQ6E;
-				DYLIB_COMPATIBILITY_VERSION = 1;
-				DYLIB_CURRENT_VERSION = 1;
-				DYLIB_INSTALL_NAME_BASE = "@rpath";
-				ENABLE_MODULE_VERIFIER = YES;
-				GENERATE_INFOPLIST_FILE = YES;
-				INFOPLIST_KEY_NSHumanReadableCopyright = "";
-				INSTALL_PATH = "$(LOCAL_LIBRARY_DIR)/Frameworks";
-				IPHONEOS_DEPLOYMENT_TARGET = 14.0;
-				LD_RUNPATH_SEARCH_PATHS = (
-					"$(inherited)",
-					"@executable_path/Frameworks",
-					"@loader_path/Frameworks",
-				);
-				MARKETING_VERSION = 1.0;
-				MODULE_VERIFIER_SUPPORTED_LANGUAGES = "objective-c objective-c++";
-				MODULE_VERIFIER_SUPPORTED_LANGUAGE_STANDARDS = "gnu11 gnu++20";
-				PRODUCT_BUNDLE_IDENTIFIER = com.nerubianin.APILayer;
-				PRODUCT_NAME = "$(TARGET_NAME:c99extidentifier)";
-				SKIP_INSTALL = YES;
-				SWIFT_EMIT_LOC_STRINGS = YES;
-				SWIFT_VERSION = 5.0;
-				TARGETED_DEVICE_FAMILY = "1,2";
-				VERSIONING_SYSTEM = "apple-generic";
-				VERSION_INFO_PREFIX = "";
-			};
-			name = Debug;
-		};
-		5EA558092A0A6AE90023C2E7 /* Release */ = {
-			isa = XCBuildConfiguration;
-			buildSettings = {
-				CODE_SIGN_STYLE = Automatic;
-				CURRENT_PROJECT_VERSION = 1;
-				DEFINES_MODULE = YES;
-				DEVELOPMENT_TEAM = 665R2CAQ6E;
-				DYLIB_COMPATIBILITY_VERSION = 1;
-				DYLIB_CURRENT_VERSION = 1;
-				DYLIB_INSTALL_NAME_BASE = "@rpath";
-				ENABLE_MODULE_VERIFIER = YES;
-				GENERATE_INFOPLIST_FILE = YES;
-				INFOPLIST_KEY_NSHumanReadableCopyright = "";
-				INSTALL_PATH = "$(LOCAL_LIBRARY_DIR)/Frameworks";
-				IPHONEOS_DEPLOYMENT_TARGET = 14.0;
-				LD_RUNPATH_SEARCH_PATHS = (
-					"$(inherited)",
-					"@executable_path/Frameworks",
-					"@loader_path/Frameworks",
-				);
-				MARKETING_VERSION = 1.0;
-				MODULE_VERIFIER_SUPPORTED_LANGUAGES = "objective-c objective-c++";
-				MODULE_VERIFIER_SUPPORTED_LANGUAGE_STANDARDS = "gnu11 gnu++20";
-				PRODUCT_BUNDLE_IDENTIFIER = com.nerubianin.APILayer;
-				PRODUCT_NAME = "$(TARGET_NAME:c99extidentifier)";
-				SKIP_INSTALL = YES;
-				SWIFT_EMIT_LOC_STRINGS = YES;
-				SWIFT_VERSION = 5.0;
-				TARGETED_DEVICE_FAMILY = "1,2";
-				VERSIONING_SYSTEM = "apple-generic";
-				VERSION_INFO_PREFIX = "";
-			};
-			name = Release;
-		};
-		5EA5580C2A0A6AE90023C2E7 /* Debug */ = {
-			isa = XCBuildConfiguration;
-			buildSettings = {
-				ALWAYS_EMBED_SWIFT_STANDARD_LIBRARIES = YES;
-				CODE_SIGN_STYLE = Automatic;
-				CURRENT_PROJECT_VERSION = 1;
-				DEVELOPMENT_TEAM = 665R2CAQ6E;
-				GENERATE_INFOPLIST_FILE = YES;
-				MARKETING_VERSION = 1.0;
-				PRODUCT_BUNDLE_IDENTIFIER = com.nerubianin.APILayerTests;
-				PRODUCT_NAME = "$(TARGET_NAME)";
-				SWIFT_EMIT_LOC_STRINGS = NO;
-				SWIFT_VERSION = 5.0;
-				TARGETED_DEVICE_FAMILY = "1,2";
-				TEST_HOST = "$(BUILT_PRODUCTS_DIR)/Floofs.app/$(BUNDLE_EXECUTABLE_FOLDER_PATH)/Floofs";
-			};
-			name = Debug;
-		};
-		5EA5580D2A0A6AE90023C2E7 /* Release */ = {
-			isa = XCBuildConfiguration;
-			buildSettings = {
-				ALWAYS_EMBED_SWIFT_STANDARD_LIBRARIES = YES;
-				CODE_SIGN_STYLE = Automatic;
-				CURRENT_PROJECT_VERSION = 1;
-				DEVELOPMENT_TEAM = 665R2CAQ6E;
-				GENERATE_INFOPLIST_FILE = YES;
-				MARKETING_VERSION = 1.0;
-				PRODUCT_BUNDLE_IDENTIFIER = com.nerubianin.APILayerTests;
-				PRODUCT_NAME = "$(TARGET_NAME)";
-				SWIFT_EMIT_LOC_STRINGS = NO;
-				SWIFT_VERSION = 5.0;
-				TARGETED_DEVICE_FAMILY = "1,2";
-				TEST_HOST = "$(BUILT_PRODUCTS_DIR)/Floofs.app/$(BUNDLE_EXECUTABLE_FOLDER_PATH)/Floofs";
-			};
-			name = Release;
-		};
-		5EA558472A0A70CF0023C2E7 /* Debug */ = {
-			isa = XCBuildConfiguration;
-			buildSettings = {
-				CODE_SIGN_STYLE = Automatic;
-				CURRENT_PROJECT_VERSION = 1;
-				DEFINES_MODULE = YES;
-				DEVELOPMENT_TEAM = 665R2CAQ6E;
-				DYLIB_COMPATIBILITY_VERSION = 1;
-				DYLIB_CURRENT_VERSION = 1;
-				DYLIB_INSTALL_NAME_BASE = "@rpath";
-				ENABLE_MODULE_VERIFIER = YES;
-				GENERATE_INFOPLIST_FILE = YES;
-				INFOPLIST_KEY_NSHumanReadableCopyright = "";
-				INSTALL_PATH = "$(LOCAL_LIBRARY_DIR)/Frameworks";
-				IPHONEOS_DEPLOYMENT_TARGET = 14.0;
-				LD_RUNPATH_SEARCH_PATHS = (
-					"$(inherited)",
-					"@executable_path/Frameworks",
-					"@loader_path/Frameworks",
-				);
-				MARKETING_VERSION = 1.0;
-				MODULE_VERIFIER_SUPPORTED_LANGUAGES = "objective-c objective-c++";
-				MODULE_VERIFIER_SUPPORTED_LANGUAGE_STANDARDS = "gnu11 gnu++20";
-				PRODUCT_BUNDLE_IDENTIFIER = com.nerubianin.DogsAPI;
-				PRODUCT_NAME = "$(TARGET_NAME:c99extidentifier)";
-				SKIP_INSTALL = YES;
-				SWIFT_EMIT_LOC_STRINGS = YES;
-				SWIFT_VERSION = 5.0;
-				TARGETED_DEVICE_FAMILY = "1,2";
-				VERSIONING_SYSTEM = "apple-generic";
-				VERSION_INFO_PREFIX = "";
-			};
-			name = Debug;
-		};
-		5EA558482A0A70CF0023C2E7 /* Release */ = {
-			isa = XCBuildConfiguration;
-			buildSettings = {
-				CODE_SIGN_STYLE = Automatic;
-				CURRENT_PROJECT_VERSION = 1;
-				DEFINES_MODULE = YES;
-				DEVELOPMENT_TEAM = 665R2CAQ6E;
-				DYLIB_COMPATIBILITY_VERSION = 1;
-				DYLIB_CURRENT_VERSION = 1;
-				DYLIB_INSTALL_NAME_BASE = "@rpath";
-				ENABLE_MODULE_VERIFIER = YES;
-				GENERATE_INFOPLIST_FILE = YES;
-				INFOPLIST_KEY_NSHumanReadableCopyright = "";
-				INSTALL_PATH = "$(LOCAL_LIBRARY_DIR)/Frameworks";
-				IPHONEOS_DEPLOYMENT_TARGET = 14.0;
-				LD_RUNPATH_SEARCH_PATHS = (
-					"$(inherited)",
-					"@executable_path/Frameworks",
-					"@loader_path/Frameworks",
-				);
-				MARKETING_VERSION = 1.0;
-				MODULE_VERIFIER_SUPPORTED_LANGUAGES = "objective-c objective-c++";
-				MODULE_VERIFIER_SUPPORTED_LANGUAGE_STANDARDS = "gnu11 gnu++20";
-				PRODUCT_BUNDLE_IDENTIFIER = com.nerubianin.DogsAPI;
-				PRODUCT_NAME = "$(TARGET_NAME:c99extidentifier)";
-				SKIP_INSTALL = YES;
-				SWIFT_EMIT_LOC_STRINGS = YES;
-				SWIFT_VERSION = 5.0;
-				TARGETED_DEVICE_FAMILY = "1,2";
-				VERSIONING_SYSTEM = "apple-generic";
-				VERSION_INFO_PREFIX = "";
-			};
-			name = Release;
-		};
-		5EA5584A2A0A70CF0023C2E7 /* Debug */ = {
-			isa = XCBuildConfiguration;
-			buildSettings = {
-				ALWAYS_EMBED_SWIFT_STANDARD_LIBRARIES = YES;
-				CODE_SIGN_STYLE = Automatic;
-				CURRENT_PROJECT_VERSION = 1;
-				DEVELOPMENT_TEAM = 665R2CAQ6E;
-				GENERATE_INFOPLIST_FILE = YES;
-				MARKETING_VERSION = 1.0;
-				PRODUCT_BUNDLE_IDENTIFIER = com.nerubianin.DogsAPITests;
-				PRODUCT_NAME = "$(TARGET_NAME)";
-				SWIFT_EMIT_LOC_STRINGS = NO;
-				SWIFT_VERSION = 5.0;
-				TARGETED_DEVICE_FAMILY = "1,2";
-				TEST_HOST = "$(BUILT_PRODUCTS_DIR)/Floofs.app/$(BUNDLE_EXECUTABLE_FOLDER_PATH)/Floofs";
-			};
-			name = Debug;
-		};
-		5EA5584B2A0A70CF0023C2E7 /* Release */ = {
-			isa = XCBuildConfiguration;
-			buildSettings = {
-				ALWAYS_EMBED_SWIFT_STANDARD_LIBRARIES = YES;
-				CODE_SIGN_STYLE = Automatic;
-				CURRENT_PROJECT_VERSION = 1;
-				DEVELOPMENT_TEAM = 665R2CAQ6E;
-				GENERATE_INFOPLIST_FILE = YES;
-				MARKETING_VERSION = 1.0;
-				PRODUCT_BUNDLE_IDENTIFIER = com.nerubianin.DogsAPITests;
-				PRODUCT_NAME = "$(TARGET_NAME)";
-				SWIFT_EMIT_LOC_STRINGS = NO;
-				SWIFT_VERSION = 5.0;
-				TARGETED_DEVICE_FAMILY = "1,2";
-				TEST_HOST = "$(BUILT_PRODUCTS_DIR)/Floofs.app/$(BUNDLE_EXECUTABLE_FOLDER_PATH)/Floofs";
-			};
-			name = Release;
-		};
 /* End XCBuildConfiguration section */
 
 /* Begin XCConfigurationList section */
-		5E68DE182A0BBA1B00582122 /* Build configuration list for PBXNativeTarget "CatsAPI" */ = {
-			isa = XCConfigurationList;
-			buildConfigurations = (
-				5E68DE142A0BBA1B00582122 /* Debug */,
-				5E68DE152A0BBA1B00582122 /* Release */,
-			);
-			defaultConfigurationIsVisible = 0;
-			defaultConfigurationName = Release;
-		};
-		5E68DE192A0BBA1B00582122 /* Build configuration list for PBXNativeTarget "CatsAPITests" */ = {
-			isa = XCConfigurationList;
-			buildConfigurations = (
-				5E68DE162A0BBA1B00582122 /* Debug */,
-				5E68DE172A0BBA1B00582122 /* Release */,
-			);
-			defaultConfigurationIsVisible = 0;
-			defaultConfigurationName = Release;
-		};
 		5EA557C72A0A5CB70023C2E7 /* Build configuration list for PBXProject "Floofs" */ = {
 			isa = XCConfigurationList;
 			buildConfigurations = (
@@ -1682,43 +586,18 @@
 			defaultConfigurationIsVisible = 0;
 			defaultConfigurationName = Release;
 		};
-		5EA558072A0A6AE90023C2E7 /* Build configuration list for PBXNativeTarget "APILayer" */ = {
-			isa = XCConfigurationList;
-			buildConfigurations = (
-				5EA558082A0A6AE90023C2E7 /* Debug */,
-				5EA558092A0A6AE90023C2E7 /* Release */,
-			);
-			defaultConfigurationIsVisible = 0;
-			defaultConfigurationName = Release;
-		};
-		5EA5580B2A0A6AE90023C2E7 /* Build configuration list for PBXNativeTarget "APILayerTests" */ = {
-			isa = XCConfigurationList;
-			buildConfigurations = (
-				5EA5580C2A0A6AE90023C2E7 /* Debug */,
-				5EA5580D2A0A6AE90023C2E7 /* Release */,
-			);
-			defaultConfigurationIsVisible = 0;
-			defaultConfigurationName = Release;
-		};
-		5EA558462A0A70CF0023C2E7 /* Build configuration list for PBXNativeTarget "DogsAPI" */ = {
-			isa = XCConfigurationList;
-			buildConfigurations = (
-				5EA558472A0A70CF0023C2E7 /* Debug */,
-				5EA558482A0A70CF0023C2E7 /* Release */,
-			);
-			defaultConfigurationIsVisible = 0;
-			defaultConfigurationName = Release;
-		};
-		5EA558492A0A70CF0023C2E7 /* Build configuration list for PBXNativeTarget "DogsAPITests" */ = {
-			isa = XCConfigurationList;
-			buildConfigurations = (
-				5EA5584A2A0A70CF0023C2E7 /* Debug */,
-				5EA5584B2A0A70CF0023C2E7 /* Release */,
-			);
-			defaultConfigurationIsVisible = 0;
-			defaultConfigurationName = Release;
-		};
 /* End XCConfigurationList section */
+
+/* Begin XCLocalSwiftPackageReference section */
+		5EA6F8002C579A9700E217B6 /* XCLocalSwiftPackageReference "Packages/CatsAPI" */ = {
+			isa = XCLocalSwiftPackageReference;
+			relativePath = Packages/CatsAPI;
+		};
+		5EA6F8032C579ABA00E217B6 /* XCLocalSwiftPackageReference "Packages/DogsAPI" */ = {
+			isa = XCLocalSwiftPackageReference;
+			relativePath = Packages/DogsAPI;
+		};
+/* End XCLocalSwiftPackageReference section */
 
 /* Begin XCRemoteSwiftPackageReference section */
 		5E68DE8B2A0C595900582122 /* XCRemoteSwiftPackageReference "Kingfisher" */ = {
@@ -1736,6 +615,14 @@
 			isa = XCSwiftPackageProductDependency;
 			package = 5E68DE8B2A0C595900582122 /* XCRemoteSwiftPackageReference "Kingfisher" */;
 			productName = Kingfisher;
+		};
+		5EA6F8012C579A9700E217B6 /* CatsAPI */ = {
+			isa = XCSwiftPackageProductDependency;
+			productName = CatsAPI;
+		};
+		5EA6F8042C579ABA00E217B6 /* DogsAPI */ = {
+			isa = XCSwiftPackageProductDependency;
+			productName = DogsAPI;
 		};
 /* End XCSwiftPackageProductDependency section */
 	};
