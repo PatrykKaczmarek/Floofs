@@ -253,11 +253,11 @@
 				5EA557C92A0A5CB70023C2E7 /* Frameworks */,
 				5EA557CA2A0A5CB70023C2E7 /* Resources */,
 				5EA5580A2A0A6AE90023C2E7 /* Embed Frameworks */,
-				5E68DEA22A0D04DF00582122 /* Run SwiftLint */,
 			);
 			buildRules = (
 			);
 			dependencies = (
+				5E0604E82C57A7E400B09C59 /* PBXTargetDependency */,
 			);
 			name = Floofs;
 			packageProductDependencies = (
@@ -297,6 +297,7 @@
 				5E68DE8B2A0C595900582122 /* XCRemoteSwiftPackageReference "Kingfisher" */,
 				5EA6F8002C579A9700E217B6 /* XCLocalSwiftPackageReference "Packages/CatsAPI" */,
 				5EA6F8032C579ABA00E217B6 /* XCLocalSwiftPackageReference "Packages/DogsAPI" */,
+				5E0604E62C57A79200B09C59 /* XCRemoteSwiftPackageReference "SwiftLintPlugins" */,
 			);
 			productRefGroup = 5EA557CD2A0A5CB70023C2E7 /* Products */;
 			projectDirPath = "";
@@ -319,28 +320,6 @@
 			runOnlyForDeploymentPostprocessing = 0;
 		};
 /* End PBXResourcesBuildPhase section */
-
-/* Begin PBXShellScriptBuildPhase section */
-		5E68DEA22A0D04DF00582122 /* Run SwiftLint */ = {
-			isa = PBXShellScriptBuildPhase;
-			alwaysOutOfDate = 1;
-			buildActionMask = 2147483647;
-			files = (
-			);
-			inputFileListPaths = (
-			);
-			inputPaths = (
-			);
-			name = "Run SwiftLint";
-			outputFileListPaths = (
-			);
-			outputPaths = (
-			);
-			runOnlyForDeploymentPostprocessing = 0;
-			shellPath = /bin/sh;
-			shellScript = "if which swiftlint > /dev/null; then\n  swiftlint\nelse\n  echo \"warning: SwiftLint not installed, download from https://github.com/realm/SwiftLint\"\nfi\n";
-		};
-/* End PBXShellScriptBuildPhase section */
 
 /* Begin PBXSourcesBuildPhase section */
 		5EA557C82A0A5CB70023C2E7 /* Sources */ = {
@@ -382,6 +361,13 @@
 			runOnlyForDeploymentPostprocessing = 0;
 		};
 /* End PBXSourcesBuildPhase section */
+
+/* Begin PBXTargetDependency section */
+		5E0604E82C57A7E400B09C59 /* PBXTargetDependency */ = {
+			isa = PBXTargetDependency;
+			productRef = 5E0604E72C57A7E400B09C59 /* SwiftLintBuildToolPlugin */;
+		};
+/* End PBXTargetDependency section */
 
 /* Begin PBXVariantGroup section */
 		5EA557DA2A0A5CBA0023C2E7 /* LaunchScreen.storyboard */ = {
@@ -600,6 +586,14 @@
 /* End XCLocalSwiftPackageReference section */
 
 /* Begin XCRemoteSwiftPackageReference section */
+		5E0604E62C57A79200B09C59 /* XCRemoteSwiftPackageReference "SwiftLintPlugins" */ = {
+			isa = XCRemoteSwiftPackageReference;
+			repositoryURL = "https://github.com/SimplyDanny/SwiftLintPlugins";
+			requirement = {
+				kind = upToNextMajorVersion;
+				minimumVersion = 0.55.1;
+			};
+		};
 		5E68DE8B2A0C595900582122 /* XCRemoteSwiftPackageReference "Kingfisher" */ = {
 			isa = XCRemoteSwiftPackageReference;
 			repositoryURL = "https://github.com/onevcat/Kingfisher";
@@ -611,6 +605,11 @@
 /* End XCRemoteSwiftPackageReference section */
 
 /* Begin XCSwiftPackageProductDependency section */
+		5E0604E72C57A7E400B09C59 /* SwiftLintBuildToolPlugin */ = {
+			isa = XCSwiftPackageProductDependency;
+			package = 5E0604E62C57A79200B09C59 /* XCRemoteSwiftPackageReference "SwiftLintPlugins" */;
+			productName = "plugin:SwiftLintBuildToolPlugin";
+		};
 		5E68DE8C2A0C595A00582122 /* Kingfisher */ = {
 			isa = XCSwiftPackageProductDependency;
 			package = 5E68DE8B2A0C595900582122 /* XCRemoteSwiftPackageReference "Kingfisher" */;

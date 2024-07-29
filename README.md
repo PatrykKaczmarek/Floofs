@@ -16,12 +16,6 @@
 
 ## Project Setup
 
-### Prerequisites
-
-Things you need to have installed before start working with a project.
-
-* [Homebrew](https://brew.sh)
-
 ### Instalation
 
 1. Clone repository:
@@ -33,20 +27,14 @@ Things you need to have installed before start working with a project.
   git clone git@github.com:PatrykKaczmarek/Floofs.git
   ```
 
-2. Install project's development tools:
-
-  ```bash
-  sh bootstrap.sh
-  ```
-
-3. Go to `{SRCROOT}/Floofs/App/` and duplicate `AppConfig.sample.plist`. Change its name to `AppConfig.plist`. Open it and use appropriate config values. Alternatively paste `AppConfig.plist` receivedby the author.
+2. Go to `{SRCROOT}/Floofs/App/` and duplicate `AppConfig.sample.plist`. Change its name to `AppConfig.plist`. Open it and use appropriate config values. Alternatively paste `AppConfig.plist` receivedby the author.
 
 	> ⚠️ `AppConfig.plist` is added to `.gitignore` so you won't accidentally push it to the repository.
 
 	> ℹ️ You can obtain your own `CatsAPIKey` by signing up on the [main site](https://thecatapi.com/) and getting one emailed to you for free.
 
 
-4. Open `Floofs.xcodeproj` file and build the project.
+3. Open `Floofs.xcodeproj` file and build the project.
 
 ## Coding guidelines
 
@@ -54,18 +42,10 @@ Things you need to have installed before start working with a project.
 - The code must be readable and self-explanatory - full variable names, meaningful methods, etc.
 - Don't leave any commented-out code.
 
-## Project structure
-
-The project consists of several targets:
-
-- `APILayer` - a generic framework for handling REST requests and responses
-- `CatsAPI` - a framework using [Cat API](https://thecatapi.com/) to retrieve cats' data and serve it to the host application. Uses `APILayer`.
-- `DogsAPI` - a framework using [Dog API](https://dog.ceo/dog-api/) to retrieve dogs' data and serve it to the host application. Uses `APILayer`.
-- `Floofs` - the main (host) app displaying `Floofs`!
 
 ## Technicalities
 
-- **Separation of Concerns:** API part has been divided into 3 parts: generic `APILayer` that is being used by `DogsAPI` and `CatsAPI` frameworks. It strongly separates API services' logic and, at the same time, removes a lot of repetitions. Additionally, it allows using `open` and `public` access control modifiers to distinguish interface visibility even more.
+- **Separation of Concerns:** API part has been divided into 3 parts: generic `APILayer` that is being used by `DogsAPI` and `CatsAPI` packages. It strongly separates API services' logic and, at the same time, removes a lot of repetitions. Additionally, it allows using `open` and `public` access control modifiers to distinguish interface visibility even more.
 - **Extendability:** using a generic-first approach, `Cat` and `Dog` models conform to `Pet` protocol, so the app can display type-erased models leveraging the same UI components. So maybe the user will see more floofs in the future? Who knows...
 - **Repetitions Reduction:** leveraging caching mechanism, the app can remember and restore data without the neccessity of retrieving them from the API again:
 	- **Model Caching** - `Cat` and `Dog` models are unique across the app. It means, when they change, old models are replaced by new models so the newly fetched data is stored for later usage.
