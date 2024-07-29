@@ -1,7 +1,7 @@
 ## Floofs - exceptionally fluffy pets browser 🐾
 
+> [!NOTE]  
 > [flüf]. Noun. Definition: A pet with fluffy, cloudlike fur; the fur of an exceptionally fluffy pet
-
 
 ## Authors
 
@@ -29,9 +29,12 @@
 
 2. Go to `{SRCROOT}/Floofs/App/` and duplicate `AppConfig.sample.plist`. Change its name to `AppConfig.plist`. Open it and use appropriate config values. Alternatively paste `AppConfig.plist` receivedby the author.
 
-	> ⚠️ `AppConfig.plist` is added to `.gitignore` so you won't accidentally push it to the repository.
+> [!IMPORTANT]  
+> `AppConfig.plist` is added to `.gitignore` so you won't accidentally push it to the repository.
 
-	> ℹ️ You can obtain your own `CatsAPIKey` by signing up on the [main site](https://thecatapi.com/) and getting one emailed to you for free.
+
+> [!TIP]  
+> You can obtain your own `CatsAPIKey` by signing up on the [main site](https://thecatapi.com/) and getting one emailed to you for free.
 
 
 3. Open `Floofs.xcodeproj` file and build the project.
